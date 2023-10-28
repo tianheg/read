@@ -2,9 +2,15 @@ import { defineConfig } from "vitepress"
 
 export default defineConfig({
   title: "书Book",
+  titleTemplate: "📚",
+  lang: "zh-CN",
   cleanUrls: true,
 
   themeConfig: {
+    search: {
+      provider: "local"
+    },
+    
     sidebar:
     [
       {
@@ -13,7 +19,8 @@ export default defineConfig({
         items: [
           { text: "什锦拼盘", link: "/2020/shijin-pinpan" },
           { text: "拉多之星", link: "/2020/la-duo-zhi-xing" },
-          { text: "什锦拼盘", link: "/2020/wo-shengyouya-yuanwujin" },
+          { text: "我生有涯愿无尽：梁漱溟自述文录", link: "/2020/wo-shengyouya-yuanwujin" },
+          { text: "时间之书", link: "/2020/shijian-zhi-shu" },
         ]
       },
       {
@@ -29,5 +36,5 @@ export default defineConfig({
         ]
       }
     ]
-  }
+  },
 })
