@@ -33,6 +33,7 @@ module.exports = {
     "linebreak-style": [ "error", "unix" ],
     "quotes": [ "error", "double" ],
     "semi": [ "error", "never" ],
-    "object-curly-spacing": ["error", "always"]
+    "object-curly-spacing": [ "error", "always" ],
+    "no-trailing-spaces": "error"
   }
 }

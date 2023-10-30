@@ -67,14 +67,14 @@ export default defineConfig({
     ]
   },
   vite: {
-    plugins: [SearchPlugin({                                                                                                                                                            
-      previewLength: 62,                                                                                                                                                       
-      buttonLabel: "Search",                                                                                                                                                   
-      placeholder: "Search docs",                                                                                                                                              
-      allow: [],                                                                                                                                                               
-      ignore: [],                                                                                                                                                              
-      encode: false,                                                                                                                                                           
-      tokenize: "full"                                                                                                                                                     
+    plugins: [SearchPlugin({
+      previewLength: 62,
+      buttonLabel: "搜",
+      placeholder: "搜...",
+      allow: [],
+      ignore: [],
+      encode: false,
+      tokenize: "full"
     })]
   }
 })
