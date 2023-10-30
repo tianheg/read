@@ -35,6 +35,7 @@ export default defineConfig({
           { text: "朝花夕拾", link: "/2021/zhaohua-xishi" },
           { text: "人性的枷锁", link: "/2021/of-human-bondage" },
           { text: "刀锋", link: "/2021/the-razors-edge" },
+          { text: "图解HTTP", link: "/2021/tujie-http" },
         ]
       },
       {
@@ -72,11 +73,6 @@ export default defineConfig({
       placeholder: "搜索文档",
       emptyText: "空空如也",
       heading: "共 {{searchResult}} 条结果",
-      customSearchQuery(input){
-        return input.replace(/[\u4e00-\u9fa5]/g, " $& ")
-          .replace(/\s+/g," ")
-          .trim()
-      }
     })],
   }
 })
