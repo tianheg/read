@@ -9,6 +9,9 @@ export default defineConfig({
 
   themeConfig: {
     outline: [2, 3],
+    search: {
+      provider: "local"
+    },
     sidebar:
     [
       {
