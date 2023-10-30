@@ -3808,4 +3808,4 @@ getSelection()
 
 ### 通过表单提交富文本
 
-[^1]: [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict\\\_mode#invoking\\\_strict\\\_mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict\_mode#invoking\_strict\_mode)
+
