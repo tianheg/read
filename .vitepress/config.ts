@@ -1,5 +1,4 @@
 import { defineConfig } from "vitepress"
-import { pagefindPlugin } from "vitepress-plugin-pagefind"
 
 export default defineConfig({
   title: "书Book",
@@ -68,14 +67,5 @@ export default defineConfig({
         ]
       }
     ]
-  },
-
-  vite:{
-    plugins:[pagefindPlugin({
-      btnPlaceholder: "搜索",
-      placeholder: "搜索文档",
-      emptyText: "空空如也",
-      heading: "共 {{searchResult}} 条结果",
-    })],
   }
 })
