@@ -12,6 +12,36 @@ export default defineConfig({
     sidebar:
     [
       {
+        text: "2023",
+        collapsed: false,
+        items: [
+          { text: "玄幻小说", link: "/2023/xuanhuan" },
+          { text: "哑舍", link: "/2023/yashe" },
+        ]
+      },
+      {
+        text: "2022",
+        collapsed: true,
+        items: [
+          { text: "操作系统概念", link: "/2022/operating-system-concepts" },
+          { text: "操作系统导论", link: "/2022/operating-system-three-easy-pieces" },
+          { text: "文化苦旅", link: "/2022/wenhua-kulv" },
+          { text: "挽救计划", link: "/2022/project-hail-mary" },
+          { text: "小偷家族", link: "/2022/shoplifters" },
+          { text: "献给阿尔吉侬的花束", link: "/2022/flowers-for-algernon" },
+          { text: "只是为了好玩", link: "/2022/just-for-fun" },
+          { text: "索拉里斯星", link: "/2022/solaris" },
+          { text: "以鸟兽之名", link: "/2022/yiniaoshou-zhi-ming" },
+          { text: "寂寞的游戏", link: "/2022/jimo-de-youxi" },
+          { text: "钢铁是怎样炼成的", link: "/2022/how-the-steel-was-tempered" },
+          { text: "心理学与生活", link: "/2022/psychology-and-life" },
+          { text: "哲学的故事", link: "/2022/story-of-philosophy" },
+          { text: "CSS设计的禅意", link: "/2022/the-zen-of-css-design" },
+          { text: "窗边的小豆豆", link: "/2022/chuangbian-de-xiaodoudou" },
+          { text: "张春桥：1949及以后", link: "/2022/zhang-chunqiao-1949-jiyihou" },
+        ]
+      },
+      {
         text: "2021",
         collapsed: true,
         items: [
