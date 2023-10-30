@@ -36,6 +36,16 @@ export default defineConfig({
           { text: "人性的枷锁", link: "/2021/of-human-bondage" },
           { text: "刀锋", link: "/2021/the-razors-edge" },
           { text: "图解HTTP", link: "/2021/tujie-http" },
+          { text: "寻欢作乐", link: "/2021/cakes-and-ale" },
+          { text: "爱你就像爱生命", link: "/2021/aini-jiuxiang-aishengming" },
+          { text: "天生有罪", link: "/2021/born-a-crime" },
+          { text: "Web开发JS专业指南", link: "/2021/professional-javascript-for-web-developers" },
+          { text: "读书随想录", link: "/2021/thoughts-about-books" },
+          { text: "雪崩", link: "/2021/snow-crash" },
+          { text: "极简个性心理学", link: "/2021/making-sence-of-people" },
+          { text: "牧羊少年奇幻之旅", link: "/2021/o-alquimista" },
+          { text: "爱因斯坦自述", link: "/2021/einstein-himself" },
+          { text: "克拉拉与太阳", link: "/2021/klara-and-the-sun" },
         ]
       },
       {
