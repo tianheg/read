@@ -19,5 +19,9 @@
   },
   "lint-staged": {
     ".vitepress/*.ts": "eslint --fix --ignore-pattern '!.vitepress'"
+  },
+  "dependencies": {
+    "pagefind": "^1.0.3",
+    "vitepress-plugin-pagefind": "^0.2.10"
   }
 }
