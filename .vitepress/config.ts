@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress"
+import { SearchPlugin } from "vitepress-plugin-search"
 
 export default defineConfig({
   title: "书Book",
@@ -8,9 +9,6 @@ export default defineConfig({
 
   themeConfig: {
     outline: [2, 3],
-    search: {
-      provider: "local"
-    },
     sidebar:
     [
       {
@@ -67,5 +65,16 @@ export default defineConfig({
         ]
       }
     ]
+  },
+  vite: {
+    plugins: [SearchPlugin({                                                                                                                                                            
+      previewLength: 62,                                                                                                                                                       
+      buttonLabel: "Search",                                                                                                                                                   
+      placeholder: "Search docs",                                                                                                                                              
+      allow: [],                                                                                                                                                               
+      ignore: [],                                                                                                                                                              
+      encode: false,                                                                                                                                                           
+      tokenize: "full"                                                                                                                                                     
+    })]
   }
 })
