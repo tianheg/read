@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "vitepress dev --port 4321",
     "build": "vitepress build",
     "lint": "eslint .vitepress/*.ts --fix --ignore-pattern '!.vitepress'",
     "prepare": "husky install"
