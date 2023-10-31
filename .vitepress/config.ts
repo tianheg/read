@@ -5,6 +5,7 @@ export default defineConfig({
   title: "书Book",
   titleTemplate: "📚",
   lang: "zh-CN",
+  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   cleanUrls: true,
 
   themeConfig: {
@@ -15,6 +16,7 @@ export default defineConfig({
         text: "2023",
         collapsed: false,
         items: [
+          { text: "穷查理宝典", link: "/2023/poor-charlies-almanack" },
           { text: "玄幻小说", link: "/2023/xuanhuan" },
           { text: "哑舍", link: "/2023/yashe" },
         ]
