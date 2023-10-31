@@ -1,6 +1,6 @@
 # 书帮助我思考
 
-![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.webp)
+![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.avif)
 
 -   [爱因斯坦自述](file:///posts/einstein-himself/)，by 爱因斯坦\
 -   哲学的故事，by Will Durant\
