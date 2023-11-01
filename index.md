@@ -2,50 +2,20 @@
 
 ![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.avif)
 
--   [爱因斯坦自述](file:///posts/einstein-himself/)，by 爱因斯坦\
--   哲学的故事，by Will Durant\
--   全球通史，by L. S. Stavrianos\
--   社会心理学，by David G.Myers\
--   幸福的方法，by Tal Ben-Shahar\
--   人的自我寻求，by 罗洛·梅\
--   [道德经](file:///posts/tao-te-ching/) by 老子\
--   [极简个性心理学](file:///posts/making-sence-of-people/)，by
-    塞缪尔·巴伦德斯\
--   哲学概论，by 杨方\
--   如何阅读一本书，by 莫提默·J. 艾德勒、查尔斯·范多伦\
--   学会如何学习，by Barbara Oakley\
--   [黑客与画家](file:///posts/paul-graham-hackers-and-painters/)，by
-    Paul Graham\
--   [只是为了好玩](file:///posts/just-for-fun/)，by Linus Torvalds\
--   [朝花夕拾](file:///posts/luxun-zhaohuaxishi/) by 鲁迅\
--   [永恒的终结](file:///posts/asimov-the-end-of-eternity/) by 阿西莫夫\
--   [遥远的救世主](file:///posts/distant-savior/) by 豆豆\
--   [红楼梦](file:///posts/dream-of-the-red-chamber/) by 曹雪芹\
--   毛姆
-    -   月亮与六便士\
-    -    刀锋\
-    -    人性的枷锁\
-    -   面纱\
-    -   寻欢作乐\
-    -   [读书随想录](file:///posts/maugham-thoughts-about-books/)\
+## 待整理书单
+
 -   狼王梦，by 沈石溪\
 -   狼的故事（独狼），by 金曾毫\
--   哑舍全集，by 玄色\
 -   致 D 情史，by 安德烈·高兹\
--   三体全集（三部），by 刘慈欣\
 -   明天也是小春日和，by 津端英子、津端修一\
 -   小窗幽记，by 陆绍珩\
 -   二十首情诗和一首绝望的歌，by 巴勃罗・聂鲁达\
--    [牧羊少年奇幻之旅](file:///posts/o-alquimista/)，by 保罗・柯艾略\
--   [恍惚人间](file:///posts/huang-hu-ren-jian/) by 小考拉\
 -   沙漠里的爱情，by 巴尔扎克（士兵与母豹的奇妙爱情）\
--   谈美，by 朱光潜\
 -   卢思浩
     -   愿有人陪你颠沛流离\
     -   离开前请叫醒我\
 -   刘同
     -   我在未来等你\
-    -   谁的青春不迷茫\
 -   瓦尔登湖，by 梭罗\
 -   人生有何意义，by 胡适\
 -    林清玄散文精选，by 林清玄\
@@ -55,7 +25,6 @@
 -   青春电影手册：影史 100 佳青春电影，by 程青松\
 -   时间之问，by 汪波\
 -   傅雷家书，by 傅雷、朱敏馥、傅聪、傅敏\
--   看见，by 柴静\
 -    外婆的道歉信，by 弗雷德里克・巴克曼\
 -    过于喧嚣的孤独，by 博胡米尔·赫拉巴尔\
 -    82 年生的金智英，by \[韩\] 赵南柱\
@@ -108,8 +77,7 @@
 -    [寂寞的游戏](file:///posts/book-the-lonely-game/)，by 袁哲生\
 -   时间之墟，by 宝树
 
-很好的资源
-==========
+## 很好的资源
 
 -   [中国哲学书电子化计划](https://ctext.org/zhs)\
 -   [All IT eBooks - Best Free IT eBooks
@@ -135,8 +103,7 @@
     Beyond](https://www.digforfire.net/)\
 -   [读书](https://doosho.com/)
 
-外文书籍网站
-------------
+### 外文书籍网站
 
 1.  [World Digital
     Library](https://www.loc.gov/collections/world-digital-library/about-this-collection/)\
@@ -147,8 +114,7 @@
 5.  [MagazineLib](https://magazinelib.com/)\
 6.  <https://libbyapp.com/>
 
-网上书店
---------
+### 网上书店
 
 1.  [Amazon Kindle Books](https://www.amazon.com/kindle-dbs/storefront)\
 2.  [当当图书](https://book.dangdang.com/)\
@@ -159,8 +125,7 @@
 7.  [博库网](https://www.bookuu.com/)\
 8.  [商务印书馆](https://www.cp.com.cn/)
 
-找绝版书
---------
+### 找绝版书
 
 <https://mp.weixin.qq.com/s/PNjMNmD6M8xcpNr3WnJltw>
 
@@ -171,24 +136,19 @@
     找到联系方式；通过出版社的社交媒体；联系作者/译者购买样书）。更好的做法，是找到出版社仍在持续更新，明显有人在打理的社交媒体，然后留言。\
 4.  图书馆借阅后复印/淘宝买影印版
 
-论文检索
---------
+### 论文检索
 
 1.  Sci-Hub <https://sci-hub.wf/> <https://sci-hub.ren/>\
      <https://sci-hub.se/>\
 2.  <https://arxiv.org/archive/cs>
 
-读书工具
-========
+### 读书工具
 
-纸质
-----
+### 纸质
 
-微信读书
---------
+### 微信读书
 
-Kindle
-------
+### Kindle
 
 -   [Kindle 退出中国市场后购买 Kindle 设备的四种渠道 –
     书伴](https://bookfere.com/post/1010.html)\
