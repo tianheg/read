@@ -117,8 +117,8 @@ export default defineConfig({
   vite: {
     plugins: [SearchPlugin({
       previewLength: 62,
-      buttonLabel: "搜",
-      placeholder: "搜...",
+      buttonLabel: "Search",
+      placeholder: "Search...",
       allow: [],
       ignore: [],
       encode: false,
