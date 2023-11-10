@@ -112,6 +112,9 @@ export default defineConfig({
           { text: "遥远的救世主", link: "/2019/yaoyuande-jiushizhu" },
         ]
       }
+    ],
+    socialLinks: [
+      { icon: "github", link: "https://vitepress.dev/guide/what-is-vitepress" },
     ]
   },
   vite: {
