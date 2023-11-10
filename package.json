@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vitepress dev --port 4321",
     "build": "vitepress build",
-    "lint": "eslint .vitepress/*.ts --fix --ignore-pattern '!.vitepress'",
+    "lint": "eslint .vitepress/**/*.{ts,js} --fix --ignore-pattern '!.vitepress'",
     "postinstall": "husky install"
   },
   "devDependencies": {
@@ -20,6 +20,6 @@
     "vitepress-plugin-search": "1.0.4-alpha.20"
   },
   "lint-staged": {
-    ".vitepress/*.ts": "eslint --fix --ignore-pattern '!.vitepress'"
+    ".vitepress/**/*.{ts,js}": "eslint --fix --ignore-pattern '!.vitepress'"
   }
 }
