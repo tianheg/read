@@ -4,6 +4,7 @@ import { SearchPlugin } from "vitepress-plugin-search"
 export default defineConfig({
   title: "书Book",
   titleTemplate: "📚",
+  description: "一生所读，尽皆于此",
   lang: "zh-CN",
   head: [["link", { rel: "icon", href: "/favicon.svg" }]],
   cleanUrls: true,
