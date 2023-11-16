@@ -16,8 +16,8 @@
     "flexsearch": "^0.7.31",
     "husky": "^8.0.0",
     "lint-staged": "^15.0.2",
-    "vitepress": "1.0.0-rc.24",
-    "vitepress-plugin-search": "1.0.4-alpha.20"
+    "vitepress": "^1.0.0-rc.24",
+    "vitepress-plugin-search": "^1.0.4-alpha.20"
   },
   "lint-staged": {
     ".vitepress/**/*.{ts,js}": "eslint --fix --ignore-pattern '!.vitepress'"
