@@ -113,7 +113,8 @@ export default defineConfig({
           { text: "你的第一本哲学书", link: "/2019/what-does-it-all-mean" },
           { text: "遥远的救世主", link: "/2019/yaoyuande-jiushizhu" },
         ]
-      }
+      },
+      { text: "金句X", link: "/x-twitter" }
     ],
     socialLinks: [
       { icon: "github", link: "https://vitepress.dev/guide/what-is-vitepress" },
