@@ -33,6 +33,7 @@ export default defineConfig({
         text: "2022",
         collapsed: true,
         items: [
+          { text: "狂热分子", link: "/2022/true-believer" },
           { text: "操作系统概念", link: "/2022/operating-system-concepts" },
           { text: "操作系统导论", link: "/2022/operating-system-three-easy-pieces" },
           { text: "文化苦旅", link: "/2022/wenhua-kulv" },
