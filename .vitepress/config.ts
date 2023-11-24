@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress"
-import { SearchPlugin } from "vitepress-plugin-search"
+import { pagefindPlugin } from "vitepress-plugin-pagefind"
 
 export default defineConfig({
   title: "书Book",
@@ -122,14 +122,13 @@ export default defineConfig({
     ]
   },
   vite: {
-    plugins: [SearchPlugin({
-      previewLength: 62,
-      buttonLabel: "Search",
-      placeholder: "Search...",
-      allow: [],
-      ignore: [],
-      encode: false,
-      tokenize: "full"
-    })]
+    plugins:[pagefindPlugin({
+      customSearchQuery(input){
+        // 将搜索的每个中文单字两侧加上空格
+        return input.replace(/[\u4e00-\u9fa5]/g, " $& ")
+          .replace(/\s+/g," ")
+          .trim()
+      }
+    })],
   }
 })
