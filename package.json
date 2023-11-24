@@ -1,13 +1,5 @@
 {
   "name": "read",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "vitepress dev --port 4321",
-    "build": "vitepress build",
-    "lint": "eslint .vitepress/**/*.{ts,js} --fix --ignore-pattern '!.vitepress'",
-    "postinstall": "husky install"
-  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
@@ -20,8 +12,12 @@
   "lint-staged": {
     ".vitepress/**/*.{ts,js}": "eslint --fix --ignore-pattern '!.vitepress'"
   },
-  "dependencies": {
-    "pagefind": "^1.0.4",
-    "vitepress-plugin-pagefind": "^0.2.10"
-  }
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev --port 4321",
+    "build": "vitepress build",
+    "lint": "eslint .vitepress/**/*.{ts,js} --fix --ignore-pattern '!.vitepress'",
+    "postinstall": "husky install"
+  },
+  "type": "module"
 }

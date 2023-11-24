@@ -1,5 +1,4 @@
 import { defineConfig } from "vitepress"
-import { pagefindPlugin } from "vitepress-plugin-pagefind"
 
 export default defineConfig({
   title: "书Book",
@@ -120,15 +119,5 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://vitepress.dev/guide/what-is-vitepress" },
     ]
-  },
-  vite: {
-    plugins:[pagefindPlugin({
-      customSearchQuery(input){
-        // 将搜索的每个中文单字两侧加上空格
-        return input.replace(/[\u4e00-\u9fa5]/g, " $& ")
-          .replace(/\s+/g," ")
-          .trim()
-      }
-    })],
   }
 })
