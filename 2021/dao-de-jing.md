@@ -1,6 +1,8 @@
+# 道德经
 
 <https://ctext.org/dao-de-jing/zhs>
 
+英文的一个版本：<https://terebess.hu/english/tao/gia.html> （使用Chrome打开）
 
 ## 第一章 {#第一章}
 
