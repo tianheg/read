@@ -1,5 +1,7 @@
 # 穷查理宝典 Poor Charlie's Almanack
 
+https://www.stripe.press/poor-charlies-almanack/cover
+
 ## 献给查理·芒格
 
 芒格将会用他自己的话来告诉你：
