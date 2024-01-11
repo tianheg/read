@@ -2,6 +2,12 @@
 
 ![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.avif)
 
+> 不能改变我思想的书不需要记笔记
+>
+> 改变思想定义：让我做出积极改变
+>
+> 博客不记不是自己的话产出的内容
+
 ## 待整理书单
 
 -   狼王梦，by 沈石溪\
