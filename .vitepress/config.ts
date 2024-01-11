@@ -14,8 +14,15 @@ export default defineConfig({
     sidebar:
     [
       {
-        text: "2023",
+        text: "2024",
         collapsed: false,
+        items: [
+          { text: "狼书Node.js", link: "/2024/langshu-nodejs" }
+        ]
+      },
+      {
+        text: "2023",
+        collapsed: true,
         items: [
           { text: "面纱", link: "/2023/the-painted-veil" },
           { text: "月亮与六便士", link: "/2023/the-moon-and-sixpence" },
