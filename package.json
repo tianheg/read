@@ -5,9 +5,9 @@
     "@typescript-eslint/parser": "^6.9.0",
     "eslint": "^8.52.0",
     "eslint-plugin-vue": "^9.18.1",
-    "husky": "^8.0.0",
+    "husky": "latest",
     "lint-staged": "^15.0.2",
-    "vitepress": "^1.0.0-rc.24"
+    "vitepress": "latest"
   },
   "lint-staged": {
     ".vitepress/**/*.{ts,js}": "eslint --fix --ignore-pattern '!.vitepress'"
@@ -17,7 +17,7 @@
     "dev": "vitepress dev --port 4321",
     "build": "vitepress build",
     "lint": "eslint .vitepress/**/*.{ts,js} --fix --ignore-pattern '!.vitepress'",
-    "postinstall": "husky install"
+    "prepare": "husky"
   },
   "type": "module"
 }
