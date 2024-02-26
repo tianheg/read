@@ -1,5 +1,11 @@
 # 书帮助我思考
 
+To those who speak English:
+
+If you have difficulty reading Chinese, you can use https://immersivetranslate.com/en/ to translate from Chinese to English in order to partially understand my Chinese notes. Welcome to learn Chinese, I am happy to help you([email](https://tianheg.co/about/)).
+
+---
+
 ![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.avif)
 
 > 不能改变我思想的书不需要记笔记
