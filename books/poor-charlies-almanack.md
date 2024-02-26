@@ -2,6 +2,10 @@
 
 https://www.stripe.press/poor-charlies-almanack/cover
 
+https://www.poorcharliesalmanack.com/
+
+https://www.acquired.fm/episodes/charlie-munger
+
 ## 献给查理·芒格
 
 芒格将会用他自己的话来告诉你：
