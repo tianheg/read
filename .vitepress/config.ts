@@ -25,6 +25,7 @@ export default defineConfig({
       { text: "学会如何学习", link: "/learning-how-to-learn" },
       { text: "人的自我寻求", link: "/mans-search-for-himself" },
       { text: "幸福的方法", link: "/happier" },
+      { text: "芒格之道", link: "/tao-of-munger" },
       { text: "穷查理宝典", link: "/poor-charlies-almanack" },
       { text: "玄幻小说", link: "/xuanhuan" },
       { text: "哑舍", link: "/yashe" },
