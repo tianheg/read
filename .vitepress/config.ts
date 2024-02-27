@@ -5,7 +5,10 @@ export default defineConfig({
   titleTemplate: "📚",
   description: "一生所读，尽皆于此",
   lang: "zh-CN",
-  head: [["link", { rel: "icon", href: "/favicon.svg" }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.svg" }],
+    ["script", { async: "", src: "https://wa.tianheg.org/script.js", "data-website-id": "ca63440b-f131-42eb-a62a-d07ae9563b71" }]
+  ],
   cleanUrls: true,
   srcDir: "books",
   lastUpdated: true,
