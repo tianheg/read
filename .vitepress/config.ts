@@ -20,6 +20,7 @@ export default defineConfig({
     outline: [2, 3],
     sidebar:
     [
+      { text: "癌症密码", link: "/cancer-code" },
       { text: "MAKE：独立创客手册", link: "/make-the-indie-maker-handbook" },
       { text: "狼书Node.js", link: "/langshu-nodejs" },
       { text: "面纱", link: "/the-painted-veil" },
