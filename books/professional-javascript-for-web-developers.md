@@ -220,8 +220,8 @@ before continuing to load, and it also need not wait for another script to load 
 示例：
 
 ```js
-let script = document.createElement('script')
-script.src = 'example.js'
+let script = document.createElement("script")
+script.src = "example.js"
 document.head.appendChild(script)
 ```
 
@@ -235,8 +235,8 @@ loading behavior, you can explicitly mark the tag as synchronous. :::
 修改后的示例：
 
 ```js
-let script = document.createElement('script')
-script.src = 'example.js'
+let script = document.createElement("script")
+script.src = "example.js"
 script.async = false
 document.head.appendChild(script)
 ```
@@ -572,12 +572,12 @@ interface, protected, static, let, private, await
 
     ``` js
     function test() {
-      var msg;
-      console.log(msg);
-      msg = 'Hi';
-      console.log(msg);
+      var msg
+      console.log(msg)
+      msg = "Hi"
+      console.log(msg)
     }
-    test();
+    test()
     ```
 
     hoisting 的意思是，解释器将所有对变量的声明放到当前作用域的最开始。
@@ -591,18 +591,18 @@ interface, protected, static, let, private, await
 
     ``` js
     if (true) {
-      var a = 'b';
-      console.log(a);
+      var a = "b"
+      console.log(a)
     }
-    console.log(a);
+    console.log(a)
     ```
 
     ``` js
     if (true) {
-      let a = 'b';
-      console.log(a);
+      let a = "b"
+      console.log(a)
     }
-    console.log(a); // ReferenceError: a is not defined
+    console.log(a) // ReferenceError: a is not defined
     ```
 
     `let` 不允许重复声明变量。
@@ -623,8 +623,8 @@ interface, protected, static, let, private, await
     Dead Zone）"。
 
     ``` js
-    console.log(error);
-    let error = 'error';
+    console.log(error)
+    let error = "error"
     // ReferenceError: Cannot access 'error' before initialization
     ```
 
@@ -650,24 +650,24 @@ interface, protected, static, let, private, await
 
     ``` js
     for (var i = 0; i < 3; i++) {
-      console.log(i); // 0 1 2
+      console.log(i) // 0 1 2
     }
-    console.log(i); // 3
-
+    console.log(i) // 3
+    
     for (let i = 0; i < 3; i++) {
-      console.log(i); // 0 1 2
+      console.log(i) // 0 1 2
     }
-    console.log(i); // Uncaught ReferenceError: i is not defined
+    console.log(i) // Uncaught ReferenceError: i is not defined
     ```
 
     由此可见，let 把变量 i 限制在 for 循环中。
 
     ``` js
     for (var i = 0; i < 3; i++) {
-      setTimeout(() => console.log(i), 0); // 3 3 3
+      setTimeout(() => console.log(i), 0) // 3 3 3
     }
     for (let i = 0; i < 3; i++) {
-      setTimeout(() => console.log(i), 0); // 0 1 2
+      setTimeout(() => console.log(i), 0) // 0 1 2
     }
     ```
 
@@ -680,8 +680,8 @@ interface, protected, static, let, private, await
     在大多数方面表现一致，但是它有一个最大不同------在初始化的时候必须有值，且值在声明后不变。
 
     ``` js
-    const age = 21;
-    age = 22; // TypeError: invalid assignment to const 'age'
+    const age = 21
+    age = 22 // TypeError: invalid assignment to const 'age'
     ```
 
     试图修改 const 变量会导致运行时错误。
@@ -694,19 +694,19 @@ interface, protected, static, let, private, await
     无法重复声明。
 
     ``` js
-    const age = 21;
+    const age = 21
     if (true) {
-      const age = 22;
+      const age = 22
     }
-    console.log(age); // 21
+    console.log(age) // 21
     ```
 
     而且和 let 一样，仅对当前作用域起作用。
 
     ``` js
-    const person = {};
-    person.name = 'tianheg';
-    console.log(person); // Object { name: "tianheg" }
+    const person = {}
+    person.name = "tianheg"
+    console.log(person) // Object { name: "tianheg" }
     ```
 
     const
@@ -715,22 +715,22 @@ interface, protected, static, let, private, await
     ``` js
     for (const i = 0; i < 3; i++) {
       // TypeError: invalid assignment to const 'i'
-      console.log(i); // 0
+      console.log(i) // 0
     }
     ```
 
     const 无法用于这个 for 循环。但是，const 可以用在以下 for 循环。
 
     ``` js
-    let i = 0;
+    let i = 0
     for (const j = 4; i < 3; i++) {
-      console.log(j); // 4 4 4
+      console.log(j) // 4 4 4
     }
     ```
 
     ``` js
     for (const key in { a: 1, b: 2 }) {
-      console.log(key); // a b
+      console.log(key) // a b
     }
     ```
 
@@ -738,11 +738,11 @@ interface, protected, static, let, private, await
 
     ``` js
     for (const value of [1, 2, 3, 4, 5]) {
-      console.log(value); // 1 2 3 4 5
+      console.log(value) // 1 2 3 4 5
     }
 
     for (const value in [1, 2, 3, 4, 5]) {
-      console.log(value); // 0 1 2 3 4
+      console.log(value) // 0 1 2 3 4
     }
     ```
 
@@ -761,15 +761,15 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 1.  `typeof` 操作符
 
     ``` js
-    let a;
-    console.log(typeof a); // "undefined"
-    console.log(typeof 1); // "number"
-    console.log(typeof 1n); // "bigint"
-    console.log(typeof ''); // "string"
-    console.log(typeof function () {}); // "function"
-    console.log(typeof null); // "object" 空的对象引用
-    console.log(typeof true); // "boolean"
-    console.log(typeof Symbol()); // "symbol"
+    let a
+    console.log(typeof a) // "undefined"
+    console.log(typeof 1) // "number"
+    console.log(typeof 1n) // "bigint"
+    console.log(typeof "") // "string"
+    console.log(typeof function () {}) // "function"
+    console.log(typeof null) // "object" 空的对象引用
+    console.log(typeof true) // "boolean"
+    console.log(typeof Symbol()) // "symbol"
     ```
 
 2.  Undefined 类型
@@ -792,17 +792,17 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     才加入标准。这是为了区分空的对象指针和未初始化的变量。 :::
 
     ``` js
-    let age;
-    console.log(age); // "undefined"
-    console.log(message); // ReferenceError: message is not defined
+    let age
+    console.log(age) // "undefined"
+    console.log(message) // ReferenceError: message is not defined
     ```
 
     声明未初始化和未声明的结果是不同的。
 
     ``` js
-    let age;
-    console.log(typeof age); // "undefined"
-    console.log(typeof message); // "undefined"
+    let age
+    console.log(typeof age) // "undefined"
+    console.log(typeof message) // "undefined"
     ```
 
     然而，对于 typeof 而言，两者的输出一致。
@@ -816,17 +816,17 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     falsy 值还是确认变量是否 =undefined=，因为还有其他值是否定含义的。
 
     ``` js
-    let age;
-
+    let age
+    
     if (age) {
-      console.log('Not execute');
+      console.log("Not execute")
     }
     if (!age) {
-      console.log('Executed!'); // Executed!
+      console.log("Executed!") // Executed!
     }
     if (msg) {
       // ReferenceError: msg is not defined
-      console.log('Not execute, and error');
+      console.log("Not execute, and error")
     }
     ```
 
@@ -835,8 +835,8 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     它同样只有一个值：=null=。逻辑上，=null= 是一个空的对象指针。
 
     ``` js
-    let car = null;
-    console.log(typeof car); // object
+    let car = null
+    console.log(typeof car) // object
     ```
 
     声明一个会用作对象的变量时，最好初始化为
@@ -844,7 +844,7 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     是否发生变化。
 
     ``` js
-    console.log(undefined == null); // true
+    console.log(undefined == null) // true
     ```
 
     `null` 也是否定的。
@@ -927,7 +927,7 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     对于很大或很小的数字，当采用科学记数法表示时，会出现小数。
 
     ``` js
-    const num = 2.136e12;
+    const num = 2.136e12
     ```
 
     当一个数字很小，小数点后有 6 个和 6 个以上的 0
@@ -1040,8 +1040,8 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     -   \"\" + \<data type\> 也可以转化字符串（详见操作符）
 
     ``` js
-    const num = 12;
-    num.toString();
+    const num = 12
+    num.toString()
     ```
 
     1.  模板字面量
@@ -1050,41 +1050,41 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 
     ``` js
     let str = `nihao
-    shijie`;
+    shijie`
     ```
 
     1.  字符串插值
 
     ``` js
     let str = `nihao
-    shijie`;
-    console.log(`${str}`);
+    shijie`
+    console.log(`${str}`)
     ```
 
     另外两种方式：
 
     ``` js
-    console.log(`Hello, ${`World`}!`);
-
+    console.log(`Hello, ${"World"}!`)
+    
     // 相当于
-    let foo = { toString: () => 'World' };
-    console.log(`Hello, ${foo}!`);
+    let foo = { toString: () => "World" }
+    console.log(`Hello, ${foo}!`)
     ```
 
     ``` js
     function capitalize(word) {
-      return `${word[0].toUpperCase()}${word.slice(1)}`;
+      return `${word[0].toUpperCase()}${word.slice(1)}`
     }
-    console.log(`${capitalize('hello')}, ${capitalize('world')}!`);
+    console.log(`${capitalize("hello")}, ${capitalize("world")}!`)
     ```
 
     ``` js
-    let value = '';
+    let value = ""
     function append() {
-      value = `${value} abc`;
-      console.log(value);
+      value = `${value} abc`
+      console.log(value)
     }
-    append();
+    append()
     ```
 
     1.  模板字面量标签函数
@@ -1094,87 +1094,87 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     看过例子无法一下子理解。
 
     ``` js
-    let a = 6;
-    let b = 9;
-
+    let a = 6
+    let b = 9
+    
     function simpleTag(strings, aValExpression, bValExpression, sumExpression) {
-      console.log(strings); // Array(4) [ "", " + ", " = ", "" ]
-      console.log(aValExpression); // 6
-      console.log(bValExpression); // 9
-      console.log(sumExpression); // 15
-
-      return 'foobar';
+      console.log(strings) // Array(4) [ "", " + ", " = ", "" ]
+      console.log(aValExpression) // 6
+      console.log(bValExpression) // 9
+      console.log(sumExpression) // 15
+    
+      return "foobar"
     }
 
-    let untaggedResult = `${a} + ${b} = ${a + b}`;
-    let taggedResult = simpleTag`${a} + ${b} = ${a + b}`;
-
-    console.log(untaggedResult); // 6 + 9 = 15
-    console.log(taggedResult); // foobar
+    let untaggedResult = `${a} + ${b} = ${a + b}`
+    let taggedResult = simpleTag`${a} + ${b} = ${a + b}`
+    
+    console.log(untaggedResult) // 6 + 9 = 15
+    console.log(taggedResult) // foobar
     ```
 
     小的改进：
 
     ``` js
-    let a = 6;
-    let b = 9;
-
+    let a = 6
+    let b = 9
+    
     function simpleTag(strings, ...expressions) {
-      console.log(strings); // Array(4) [ "", " + ", " = ", "" ]
+      console.log(strings) // Array(4) [ "", " + ", " = ", "" ]
       for (const expression of expressions) {
-        console.log(expression); // 6 9 15
+        console.log(expression) // 6 9 15
       }
 
-      return 'foobar';
+      return "foobar"
     }
 
-    let taggedResult = simpleTag`${a} + ${b} = ${a + b}`;
-
-    console.log(taggedResult); // foobar
+    let taggedResult = simpleTag`${a} + ${b} = ${a + b}`
+    
+    console.log(taggedResult) // foobar
     ```
 
     标签函数的终极版本。
 
     ``` js
-    let a = 6;
-    let b = 9;
-
+    let a = 6
+    let b = 9
+    
     function zipTag(strings, ...expressions) {
       return (
-        strings[0] + expressions.map((e, i) => `${e}${strings[i + 1]}`).join('')
-      );
+        strings[0] + expressions.map((e, i) => `${e}${strings[i + 1]}`).join("")
+      )
     }
 
-    let untaggedResult = `${a} + ${b} = ${a + b}`;
-    let taggedResult = zipTag`${a} + ${b} = ${a + b}`;
-
-    console.log(untaggedResult); // 6 + 9 = 15
-    console.log(taggedResult); // 6 + 9 = 15
+    let untaggedResult = `${a} + ${b} = ${a + b}`
+    let taggedResult = zipTag`${a} + ${b} = ${a + b}`
+    
+    console.log(untaggedResult) // 6 + 9 = 15
+    console.log(taggedResult) // 6 + 9 = 15
     ```
 
     1.  原始字符串
 
     ``` js
-    '\u00A9';
-    String.raw`\u00A9``first line\nsecond line`;
+    "\u00A9"
+    String.raw`\u00A9``first line\nsecond line`
     ```
 
     如果通过字符串数组的 .raw 方法获得字符串的原始形式（通过标签函数）：
 
     ``` js
     function printRaw(strings) {
-      console.log('Actual characters:');
+      console.log("Actual characters:")
       for (const string of strings) {
-        console.log(string);
+        console.log(string)
       }
 
-      console.log('Escaped characters:');
+      console.log("Escaped characters:")
       for (const rawString of strings.raw) {
-        console.log(rawString);
+        console.log(rawString)
       }
     }
 
-    printRaw`\u00A9${'and'}\n`;
+    printRaw`\u00A9${"and"}\n`
     ```
 
 7.  Symbol 类型
@@ -1188,19 +1188,19 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     1.  基本 Symbol 应用
 
     ``` js
-    let sym = Symbol();
-    console.log(typeof sym); // symbol
+    let sym = Symbol()
+    console.log(typeof sym) // symbol
     ```
 
     ``` js
-    let sym1 = Symbol();
-    let sym2 = Symbol();
-
-    let sym3 = Symbol('foo');
-    let sym4 = Symbol('foo');
-
-    console.log(sym1 == sym2); // false
-    console.log(sym3 == sym4); // false
+    let sym1 = Symbol()
+    let sym2 = Symbol()
+    
+    let sym3 = Symbol("foo")
+    let sym4 = Symbol("foo")
+    
+    console.log(sym1 == sym2) // false
+    console.log(sym3 == sym4) // false
     ```
 
     每次创建的 Symbol 都是不同的。
@@ -1212,24 +1212,24 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     对象包装器，与 Boolean、String、Number 混淆。
 
     ``` js
-    let boolean = new Boolean();
-    console.log(typeof boolean); // object
-
-    let string = new String();
-    console.log(typeof string); // object
-
-    let number = new Number();
-    console.log(typeof number); // object
-
-    let symbol = new Symbol(); // TypeError: Symbol is not a constructor
+    let boolean = new Boolean()
+    console.log(typeof boolean) // object
+    
+    let string = new String()
+    console.log(typeof string) // object
+    
+    let number = new Number()
+    console.log(typeof number) // object
+    
+    let symbol = new Symbol() // TypeError: Symbol is not a constructor
     ```
 
     可以利用对象包装器，对 Symbol 实现类似 Boolean 的功能。
 
     ``` js
-    let symbol = Symbol();
-    let wrappedSymbol = Object(symbol);
-    console.log(typeof wrappedSymbol); // object
+    let symbol = Symbol()
+    let wrappedSymbol = Object(symbol)
+    console.log(typeof wrappedSymbol) // object
     ```
 
     1.  使用全局 Symbol 注册
@@ -1239,21 +1239,21 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     key 寻找 symbol 注册集，找到了就返回，找不到就新建）。
 
     ``` js
-    let firstGlobalSymbol = Symbol.for('foo'); // 新建了一个 symbol
-    let anotherGlobalSymbol = Symbol.for('foo'); // 复用前一个 symbol
-
-    console.log(firstGlobalSymbol === anotherGlobalSymbol); // true
+    let firstGlobalSymbol = Symbol.for("foo") // 新建了一个 symbol
+    let anotherGlobalSymbol = Symbol.for("foo") // 复用前一个 symbol
+    
+    console.log(firstGlobalSymbol === anotherGlobalSymbol) // true
     ```
 
     `Symbol.for()` 与 `Symbol()`
     不同。前后者创建的 symbol 并不相等。
 
     ``` js
-    Symbol.for('bar') === Symbol.for('bar'); // true
-    Symbol('bar') === Symbol('bar'); // false
-
-    const symbol1 = Symbol.for('foo');
-    symbol1.toString(); // "Symbol(foo)"
+    Symbol.for("bar") === Symbol.for("bar") // true
+    Symbol("bar") === Symbol("bar") // false
+    
+    const symbol1 = Symbol.for("foo")
+    symbol1.toString() // "Symbol(foo)"
     ```
 
     可以通过
@@ -1261,18 +1261,18 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     检查一个 symbol 实例是全局（global）还是本地（local）的。
 
     ``` js
-    let globalSymbol = Symbol.for('foo');
-    let localSymbol = Symbol('foo');
-
-    console.log(Symbol.keyFor(globalSymbol)); // foo
-    console.log(Symbol.keyFor(localSymbol)); // undefined
+    let globalSymbol = Symbol.for("foo")
+    let localSymbol = Symbol("foo")
+    
+    console.log(Symbol.keyFor(globalSymbol)) // foo
+    console.log(Symbol.keyFor(localSymbol)) // undefined
     ```
 
     用在非 symbol 数据类型会出错。
 
     ``` js
     // TypeError: "nihao" is not a symbol
-    console.log(Symbol.keyFor('nihao'));
+    console.log(Symbol.keyFor("nihao"))
     ```
 
     1.  使用 Symbol 作为属性
@@ -1283,26 +1283,26 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     作为属性。
 
     ``` js
-    let s1 = Symbol('foo'),
-      s2 = Symbol('bar'),
-      s3 = Symbol('baz'),
-      s4 = Symbol('qux');
-
+    let s1 = Symbol("foo"),
+      s2 = Symbol("bar"),
+      s3 = Symbol("baz"),
+      s4 = Symbol("qux")
+    
     let o = {
-      [s1]: 'foo val',
-    };
+      [s1]: "foo val",
+    }
     // o[s1] = 'foo val' 也可以
-
-    console.log(o); // { [Symbol(foo)]: 'foo val' }
-
-    Object.defineProperty(o, s2, { value: 'bar val' });
-    console.log(o); // { Symbol("foo"): "foo val", … }
-
+    
+    console.log(o) // { [Symbol(foo)]: 'foo val' }
+    
+    Object.defineProperty(o, s2, { value: "bar val" })
+    console.log(o) // { Symbol("foo"): "foo val", … }
+    
     Object.defineProperties(o, {
-      [s3]: { value: 'baz val' },
-      [s4]: { value: 'qux val' },
-    });
-    console.log(o); // { Symbol("foo"): "foo val", … }
+      [s3]: { value: "baz val" },
+      [s4]: { value: "qux val" },
+    })
+    console.log(o) // { Symbol("foo"): "foo val", … }
     ```
 
     在我看来，目前（2022-06-15, Linux, Firefox Developer Edition
@@ -1317,20 +1317,20 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     会返回所有类型的键。
 
     ``` js
-    let s1 = Symbol('foo'),
-      s2 = Symbol('bar');
-
+    let s1 = Symbol("foo"),
+      s2 = Symbol("bar")
+    
     let o = {
-      [s1]: 'foo val',
-      [s2]: 'bar val',
-      baz: 'baz val',
-      qux: 'qux val',
-    };
-
-    console.log(Object.getOwnPropertyNames(o)); // [ "baz", "qux" ]
-    console.log(Object.getOwnPropertySymbols(o)); // [ Symbol("foo"), Symbol("bar") ]
-    console.log(Object.getOwnPropertyDescriptors(o)); // { baz: {…}, qux: {…}, Symbol("foo"): {…}, Symbol("bar"): {…} }
-    console.log(Reflect.ownKeys(o)); // [ "baz", "qux", Symbol("foo"), Symbol("bar") ]
+      [s1]: "foo val",
+      [s2]: "bar val",
+      baz: "baz val",
+      qux: "qux val",
+    }
+    
+    console.log(Object.getOwnPropertyNames(o)) // [ "baz", "qux" ]
+    console.log(Object.getOwnPropertySymbols(o)) // [ Symbol("foo"), Symbol("bar") ]
+    console.log(Object.getOwnPropertyDescriptors(o)) // { baz: {…}, qux: {…}, Symbol("foo"): {…}, Symbol("bar"): {…} }
+    console.log(Reflect.ownKeys(o)) // [ "baz", "qux", Symbol("foo"), Symbol("bar") ]
     ```
 
     如果 symbol 被创建直接用作对象属性，那么 symbol
@@ -1342,17 +1342,17 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 
     ``` js
     let o = {
-      [Symbol('foo')]: 'foo val',
-      [Symbol('bar')]: 'bar val',
-    };
-
-    console.log(o); // { Symbol("foo"): "foo val", Symbol("bar"): "bar val" }
-
+      [Symbol("foo")]: "foo val",
+      [Symbol("bar")]: "bar val",
+    }
+    
+    console.log(o) // { Symbol("foo"): "foo val", Symbol("bar"): "bar val" }
+    
     let barSymbol = Object.getOwnPropertySymbols(o).find((symbol) =>
       symbol.toString().match(/bar/)
-    );
-
-    console.log(barSymbol); // Symbol("bar")
+    )
+    
+    console.log(barSymbol) // Symbol("bar")
     ```
 
     1.  常用 Symbols
@@ -1374,33 +1374,33 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
       async *[Symbol.asyncIterator]() {}
     }
 
-    let f = new Foo();
-    console.log(f[Symbol.asyncIterator]()); // AsyncGenerator {  }
+    let f = new Foo()
+    console.log(f[Symbol.asyncIterator]()) // AsyncGenerator {  }
     ```
 
     ``` js
     class Emitter {
       constructor(max) {
-        this.max = max;
-        this.asyncIdx = 0;
+        this.max = max
+        this.asyncIdx = 0
       }
 
       async *[Symbol.asyncIterator]() {
         while (this.asyncIdx < this.max) {
-          yield new Promise((resolve) => resolve(this.asyncIdx++));
+          yield new Promise((resolve) => resolve(this.asyncIdx++))
         }
       }
     }
 
     async function asyncCount() {
-      let emitter = new Emitter(5);
-
+      let emitter = new Emitter(5)
+    
       for await (const x of emitter) {
-        console.log(x);
+        console.log(x)
       }
     }
 
-    asyncCount();
+    asyncCount()
     // 0 1 2 3 4
     ```
 
@@ -1416,12 +1416,12 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 
     ``` js
     function Foo() {}
-    let f = new Foo();
-    console.log(f instanceof Foo); // true
-
+    let f = new Foo()
+    console.log(f instanceof Foo) // true
+    
     class Bar {}
-    let b = new Bar();
-    console.log(b instanceof Bar); // true
+    let b = new Bar()
+    console.log(b instanceof Bar) // true
     ```
 
     使用 `Symbol.hasInstance` 实现和 `instanceof`
@@ -1429,12 +1429,12 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 
     ``` js
     function Foo() {}
-    let f = new Foo();
-    console.log(Foo[Symbol.hasInstance](f)); // true
-
+    let f = new Foo()
+    console.log(Foo[Symbol.hasInstance](f)) // true
+    
     class Bar {}
-    let b = new Bar();
-    console.log(Bar[Symbol.hasInstance](b)); // true
+    let b = new Bar()
+    console.log(Bar[Symbol.hasInstance](b)) // true
     ```
 
     `Symbol.hasInstance` 属性定义于 `Function`
@@ -1445,15 +1445,15 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     class Bar {}
     class Baz extends Bar {
       static [Symbol.hasInstance]() {
-        return false;
+        return false
       }
     }
 
-    let b = new Baz();
-    console.log(Bar[Symbol.hasInstance](b)); // true
-    console.log(b instanceof Bar); // true
-    console.log(Baz[Symbol.hasInstance](b)); // false
-    console.log(b instanceof Baz); // false
+    let b = new Baz()
+    console.log(Bar[Symbol.hasInstance](b)) // true
+    console.log(b instanceof Bar) // true
+    console.log(Baz[Symbol.hasInstance](b)) // false
+    console.log(b instanceof Baz) // false
     ```
 
     3）[`Symbol.isConcatSpreadable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/isConcatSpreadable)
@@ -1463,24 +1463,24 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     的设置。它是一个属性，值的数据类型为布尔型。
 
     ``` js
-    let initial = ['foo'];
-    let array = ['bar'];
-    console.log(array[Symbol.isConcatSpreadable]); // undefined
-    console.log(initial.concat(array)); // [ "foo", "bar" ]
-    array[Symbol.isConcatSpreadable] = false;
-    console.log(initial.concat(array)); // [ "foo", ['bar'] ]
-
-    let arrayLikeObject = { length: 1, 0: 'baz' };
-    console.log(arrayLikeObject[Symbol.isConcatSpreadable]); // undefined
-    console.log(initial.concat(arrayLikeObject)); // [ "foo", {…} ]
-    arrayLikeObject[Symbol.isConcatSpreadable] = true;
-    console.log(initial.concat(arrayLikeObject)); // [ "foo", "baz" ]
-
-    let otherObject = new Set().add('qux');
-    console.log(otherObject[Symbol.isConcatSpreadable]); // undefined
-    console.log(initial.concat(otherObject)); // [ "foo", Set(1) ]
-    otherObject[Symbol.isConcatSpreadable] = true;
-    console.log(initial.concat(otherObject)); // [ "foo" ]
+    let initial = ["foo"]
+    let array = ["bar"]
+    console.log(array[Symbol.isConcatSpreadable]) // undefined
+    console.log(initial.concat(array)) // [ "foo", "bar" ]
+    array[Symbol.isConcatSpreadable] = false
+    console.log(initial.concat(array)) // [ "foo", ['bar'] ]
+    
+    let arrayLikeObject = { length: 1, 0: "baz" }
+    console.log(arrayLikeObject[Symbol.isConcatSpreadable]) // undefined
+    console.log(initial.concat(arrayLikeObject)) // [ "foo", {…} ]
+    arrayLikeObject[Symbol.isConcatSpreadable] = true
+    console.log(initial.concat(arrayLikeObject)) // [ "foo", "baz" ]
+    
+    let otherObject = new Set().add("qux")
+    console.log(otherObject[Symbol.isConcatSpreadable]) // undefined
+    console.log(initial.concat(otherObject)) // [ "foo", Set(1) ]
+    otherObject[Symbol.isConcatSpreadable] = true
+    console.log(initial.concat(otherObject)) // [ "foo" ]
     ```
 
     4）[`Symbol.iterator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator)
@@ -1491,33 +1491,33 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     class Foo {
       *[Symbol.iterator]() {}
     }
-    let f = new Foo();
-    console.log(f[Symbol.iterator]()); // Generator {  }
+    let f = new Foo()
+    console.log(f[Symbol.iterator]()) // Generator {  }
     ```
 
     ``` js
     class Emitter {
       constructor(max) {
-        this.max = max;
-        this.idx = 0;
+        this.max = max
+        this.idx = 0
       }
 
       *[Symbol.iterator]() {
         while (this.idx < this.max) {
-          yield this.idx++;
+          yield this.idx++
         }
       }
     }
 
     function count() {
-      let emitter = new Emitter(5);
-
+      let emitter = new Emitter(5)
+    
       for (const x of emitter) {
-        console.log(x);
+        console.log(x)
       }
     }
 
-    count(); // 0 1 2 3 4
+    count() // 0 1 2 3 4
     ```
 
     5）[`Symbol.match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/match)
@@ -1526,8 +1526,8 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     背后调用了 =Symbol.match()=。用于匹配正则表达式。
 
     ``` js
-    console.log(RegExp.prototype[Symbol.match]); // function Symbol.match()
-    console.log('foobar'.match(/bar/)); // Array [ 0: "bar", groups: undefined, index: 3, input: "foobar", length: 1]
+    console.log(RegExp.prototype[Symbol.match]) // function Symbol.match()
+    console.log("foobar".match(/bar/)) // Array [ 0: "bar", groups: undefined, index: 3, input: "foobar", length: 1]
     ```
 
     如果 input 为非正则形式，运算的结果是产生一个 `RegExp`
@@ -1536,25 +1536,25 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     ``` js
     class FooMatcher {
       static [Symbol.match](target) {
-        return target.includes('foo');
+        return target.includes("foo")
       }
     }
 
-    console.log('foobar'.match(FooMatcher)); // true
-    console.log('barbaz'.match(FooMatcher)); // false
-
+    console.log("foobar".match(FooMatcher)) // true
+    console.log("barbaz".match(FooMatcher)) // false
+    
     class StringMatcher {
       constructor(str) {
-        this.str = str;
+        this.str = str
       }
 
       [Symbol.match](target) {
-        return target.includes(this.str);
+        return target.includes(this.str)
       }
     }
 
-    console.log('foobar'.match(new StringMatcher('foo'))); // true
-    console.log('barbaz'.match(new StringMatcher('qux'))); // false
+    console.log("foobar".match(new StringMatcher("foo"))) // true
+    console.log("barbaz".match(new StringMatcher("qux"))) // false
     ```
 
     以上重新定义了 `Symbol.match` 函数。
@@ -1566,30 +1566,30 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     调用。
 
     ``` js
-    console.log(RegExp.prototype[Symbol.replace]); // function Symbol.replace()
-    console.log('foobarbaz'.replace(/bar/, 'qux')); // fooquxbaz
+    console.log(RegExp.prototype[Symbol.replace]) // function Symbol.replace()
+    console.log("foobarbaz".replace(/bar/, "qux")) // fooquxbaz
     ```
 
     ``` js
     class FooReplacer {
       static [Symbol.replace](target, replacement) {
-        return target.split('foo').join(replacement);
+        return target.split("foo").join(replacement)
       }
     }
 
-    console.log('barfoobaz'.replace(FooReplacer, 'qux')); // barquxbaz
-
+    console.log("barfoobaz".replace(FooReplacer, "qux")) // barquxbaz
+    
     class StringReplacer {
       constructor(str) {
-        this.str = str;
+        this.str = str
       }
 
       [Symbol.replace](target, replacement) {
-        return target.split(this.str).join(replacement);
+        return target.split(this.str).join(replacement)
       }
     }
 
-    console.log('barfoobaz'.replace(new StringReplacer('foo'), 'qyx')); // barqyxbaz
+    console.log("barfoobaz".replace(new StringReplacer("foo"), "qyx")) // barqyxbaz
     ```
 
     7）[`Symbol.search()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/search)
@@ -1599,34 +1599,34 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     调用。
 
     ``` js
-    console.log(RegExp.prototype[Symbol.search]); // function Symbol.search()
-    console.log('foobarbaz'.search(/bar/)); // 3
+    console.log(RegExp.prototype[Symbol.search]) // function Symbol.search()
+    console.log("foobarbaz".search(/bar/)) // 3
     ```
 
     ``` js
     class FooSearcher {
       static [Symbol.search](target) {
-        return target.indexOf('foo');
+        return target.indexOf("foo")
       }
     }
 
-    console.log('foobar'.search(FooSearcher)); // 0
-    console.log('barfoo'.search(FooSearcher)); // 3
-    console.log('barbaz'.search(FooSearcher)); // -1
-
+    console.log("foobar".search(FooSearcher)) // 0
+    console.log("barfoo".search(FooSearcher)) // 3
+    console.log("barbaz".search(FooSearcher)) // -1
+    
     class StringSearcher {
       constructor(str) {
-        this.str = str;
+        this.str = str
       }
 
       [Symbol.search](target) {
-        return target.indexOf(this.str);
+        return target.indexOf(this.str)
       }
     }
 
-    console.log('foobar'.search(new StringSearcher('foo'))); // 0
-    console.log('barfoo'.search(new StringSearcher('foo'))); // 3
-    console.log('barbaz'.search(new StringSearcher('qux'))); // -1
+    console.log("foobar".search(new StringSearcher("foo"))) // 0
+    console.log("barfoo".search(new StringSearcher("foo"))) // 3
+    console.log("barbaz".search(new StringSearcher("qux"))) // -1
     ```
 
     8）[`Symbol.species`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/species)
@@ -1638,25 +1638,25 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     class Bar extends Array {}
     class Baz extends Array {
       static get [Symbol.species]() {
-        return Array;
+        return Array
       }
     }
 
-    let bar = new Bar();
-    console.log(bar instanceof Array); // true
-    console.log(bar instanceof Bar); // true
-    bar = bar.concat('bar');
-    console.log(bar); // [ 'bar' ]
-    console.log(bar instanceof Array); // true
-    console.log(bar instanceof Bar); // true
-
-    let baz = new Baz();
-    console.log(baz instanceof Array); // true
-    console.log(baz instanceof Baz); // true
-    baz = baz.concat('baz');
-    console.log(baz); // [ 'baz' ]
-    console.log(baz instanceof Array); // true
-    console.log(baz instanceof Baz); // false
+    let bar = new Bar()
+    console.log(bar instanceof Array) // true
+    console.log(bar instanceof Bar) // true
+    bar = bar.concat("bar")
+    console.log(bar) // [ 'bar' ]
+    console.log(bar instanceof Array) // true
+    console.log(bar instanceof Bar) // true
+    
+    let baz = new Baz()
+    console.log(baz instanceof Array) // true
+    console.log(baz instanceof Baz) // true
+    baz = baz.concat("baz")
+    console.log(baz) // [ 'baz' ]
+    console.log(baz instanceof Array) // true
+    console.log(baz instanceof Baz) // false
     ```
 
     9）[`Symbol.split`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/split)
@@ -1666,28 +1666,28 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     调用。
 
     ``` js
-    console.log(RegExp.prototype[Symbol.split]); // function Symbol.split()
-    console.log('foobarbaz'.split(/bar/)); // [ "foo", "baz" ]
+    console.log(RegExp.prototype[Symbol.split]) // function Symbol.split()
+    console.log("foobarbaz".split(/bar/)) // [ "foo", "baz" ]
     ```
 
     ``` js
     class FooSplitter {
       static [Symbol.split](target) {
-        return target.split('foo');
+        return target.split("foo")
       }
     }
-    console.log('barfoobaz'.split(FooSplitter)); // [ "bar", "baz" ]
-
+    console.log("barfoobaz".split(FooSplitter)) // [ "bar", "baz" ]
+    
     class StringSplitter {
       constructor(str) {
-        this.str = str;
+        this.str = str
       }
 
       [Symbol.split](target) {
-        return target.split(this.str);
+        return target.split(this.str)
       }
     }
-    console.log('barfoobaz'.split(new StringSplitter('foo'))); // [ "bar", "baz" ]
+    console.log("barfoobaz".split(new StringSplitter("foo"))) // [ "bar", "baz" ]
     ```
 
     10）[`Symbol.toPrimitive`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toPrimitive)
@@ -1696,30 +1696,30 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 
     ``` js
     class Foo {}
-    let foo = new Foo();
-    console.log(3 + foo); // 3[object Object]
-    console.log(3 - foo); // NaN
-    console.log(String(foo)); // [object Object]
-
+    let foo = new Foo()
+    console.log(3 + foo) // 3[object Object]
+    console.log(3 - foo) // NaN
+    console.log(String(foo)) // [object Object]
+    
     class Bar {
       constructor() {
         this[Symbol.toPrimitive] = function (hint) {
           switch (hint) {
-            case 'number':
-              return 4;
-            case 'string':
-              return 'string baz';
-            case 'default':
-            default:
-              return 'default baz';
+          case "number":
+            return 4
+          case "string":
+            return "string baz"
+          case "default":
+          default:
+            return "default baz"
           }
-        };
+        }
       }
     }
-    let baz = new Bar();
-    console.log(3 + baz); // 3default baz
-    console.log(3 - baz); // -1
-    console.log(String(baz)); // string baz
+    let baz = new Bar()
+    console.log(3 + baz) // 3default baz
+    console.log(3 - baz) // -1
+    console.log(String(baz)) // string baz
     ```
 
     11）[`Symbol.toStringTag`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/toStringTag)
@@ -1727,26 +1727,26 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     用于创建对象的默认字符串描述。
 
     ``` js
-    let s = new Set();
-    console.log(s); // Set []
-    console.log(s.toString()); // [object Set]
-    console.log(s[Symbol.toStringTag]); // Set
-
+    let s = new Set()
+    console.log(s) // Set []
+    console.log(s.toString()) // [object Set]
+    console.log(s[Symbol.toStringTag]) // Set
+    
     class Foo {}
-    let foo = new Foo();
-    console.log(foo); // Object {  }
-    console.log(foo.toString()); // [object Object]
-    console.log(foo[Symbol.toStringTag]); // undefined
-
+    let foo = new Foo()
+    console.log(foo) // Object {  }
+    console.log(foo.toString()) // [object Object]
+    console.log(foo[Symbol.toStringTag]) // undefined
+    
     class Bar {
       constructor() {
-        this[Symbol.toStringTag] = 'Bar';
+        this[Symbol.toStringTag] = "Bar"
       }
     }
-    let bar = new Bar();
-    console.log(bar); // Object { Symbol("Symbol.toStringTag"): "Bar" }
-    console.log(bar.toString()); // [object Bar]
-    console.log(bar[Symbol.toStringTag]); // Bar
+    let bar = new Bar()
+    console.log(bar) // Object { Symbol("Symbol.toStringTag"): "Bar" }
+    console.log(bar.toString()) // [object Bar]
+    console.log(bar[Symbol.toStringTag]) // Bar
     ```
 
     12）[`Symbol.unscopables`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/unscopables)（因为不推荐使用
@@ -1768,8 +1768,8 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 8.  对象类型
 
     ``` js
-    let o = new Object();
-    console.log(o); // Object {  }
+    let o = new Object()
+    console.log(o) // Object {  }
     ```
 
     `Object` 可以被添加属性方法，也可以定义新的对象。因为
@@ -1851,79 +1851,79 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
         number.
 
     ``` js
-    let s1 = '2';
-    let s2 = 'z';
-    let b = false;
-    let f = 1.1;
+    let s1 = "2"
+    let s2 = "z"
+    let b = false
+    let f = 1.1
     let o = {
       valueOf() {
-        return -1;
+        return -1
       },
-    };
-    s1++;
-    s2++;
-    b++;
-    f--;
-    o--;
-    console.log(s1); // 3
-    console.log(s2); // NaN
-    console.log(b); // 1
-    console.log(f); // 0.10000000000000009
-    console.log(o); // -2
+    }
+    s1++
+    s2++
+    b++
+    f--
+    o--
+    console.log(s1) // 3
+    console.log(s2) // NaN
+    console.log(b) // 1
+    console.log(f) // 0.10000000000000009
+    console.log(o) // -2
     ```
 
     1.  `+/-`
 
     ``` js
-    let num = 23;
-    num = -num;
-    console.log(num); // -23
+    let num = 23
+    num = -num
+    console.log(num) // -23
     ```
 
     ``` js
-    let num = 23;
-    num = +num;
-    console.log(num); // 23
+    let num = 23
+    num = +num
+    console.log(num) // 23
     ```
 
     ``` js
-    let s1 = '01',
-      s2 = '1.1',
-      s3 = 'z',
+    let s1 = "01",
+      s2 = "1.1",
+      s3 = "z",
       b = false,
       f = 1.1,
       o = {
         valueOf() {
-          return -1;
+          return -1
         },
-      };
-    s1 = +s1;
-    s2 = +s2;
-    s3 = +s3;
-    b = +b;
-    f = +f;
-    o = +o;
-    console.log(`${s1}, ${s2}, ${s3}, ${b}, ${f}, ${o}`); // 1, 1.1, NaN, 0, 1.1, -1
+      }
+    s1 = +s1
+    s2 = +s2
+    s3 = +s3
+    b = +b
+    f = +f
+    o = +o
+    console.log(`${s1}, ${s2}, ${s3}, ${b}, ${f}, ${o}`) // 1, 1.1, NaN, 0, 1.1, -1
     ```
 
     ``` js
-    let s1 = '01',
-      s2 = '1.1',
-      s3 = 'z',
+    let s1 = "01",
+      s2 = "1.1",
+      s3 = "z",
       b = false,
       f = 1.1,
       o = {
         valueOf() {
-          return -1;
+          return -1
         },
-      };
-    s1 = -s1;
-    s2 = -s2;
-    s3 = -s3;
-    b = -b;
-    f = -f;
-    o = -o;
-    console.log(`${s1}, ${s2}, ${s3}, ${b}, ${f}, ${o}`); // -1, -1.1, NaN, 0, -1.1, 1
+      }
+    s1 = -s1
+    s2 = -s2
+    s3 = -s3
+    b = -b
+    f = -f
+    o = -o
+    console.log(`${s1}, ${s2}, ${s3}, ${b}, ${f}, ${o}`) // -1, -1.1, NaN, 0, -1.1, 1
     ```
 
 2.  位
@@ -1936,69 +1936,69 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     1.  NOT
 
     ``` js
-    let num = 21;
-    let num2 = ~21;
-    console.log(num); // 21
-    console.log(num2); // -22
-    console.log(num.toString(2)); // 10101
-    console.log(num2.toString(2)); // -10110
+    let num = 21
+    let num2 = ~21
+    console.log(num) // 21
+    console.log(num2) // -22
+    console.log(num.toString(2)) // 10101
+    console.log(num2.toString(2)) // -10110
     ```
 
     1.  AND
 
     ``` js
-    console.log(1 & 1); // 1
-    console.log(1 & 0); // 0
-    console.log(0 & 1); // 0
-    console.log(0 & 0); // 0
+    console.log(1 & 1) // 1
+    console.log(1 & 0) // 0
+    console.log(0 & 1) // 0
+    console.log(0 & 0) // 0
     ```
 
     1.  OR
 
     ``` js
-    console.log(1 | 1); // 1
-    console.log(1 | 0); // 1
-    console.log(0 | 1); // 1
-    console.log(0 | 0); // 0
+    console.log(1 | 1) // 1
+    console.log(1 | 0) // 1
+    console.log(0 | 1) // 1
+    console.log(0 | 0) // 0
     ```
 
     1.  XOR
 
     ``` js
-    console.log(1 ^ 1); // 0
-    console.log(1 ^ 0); // 1
-    console.log(0 ^ 1); // 1
-    console.log(0 ^ 0); // 0`
+    console.log(1 ^ 1) // 0
+    console.log(1 ^ 0) // 1
+    console.log(0 ^ 1) // 1
+    console.log(0 ^ 0) // 0`
     ```
 
     1.  左移
 
     ``` js
-    let oldValue = 2; // 10
-    let newValue = oldValue << 5; // 二进制左移 5 位 => 64(1,000,000)
-    console.log(newValue); // 64
+    let oldValue = 2 // 10
+    let newValue = oldValue << 5 // 二进制左移 5 位 => 64(1,000,000)
+    console.log(newValue) // 64
     ```
 
     1.  有符号右移
 
     ``` js
-    let oldValue = 64; // 1,000,000
-    let newValue = oldValue >> 5; // 二进制右移 5 位 => 2（10
-    console.log(newValue); // 2
+    let oldValue = 64 // 1,000,000
+    let newValue = oldValue >> 5 // 二进制右移 5 位 => 2（10
+    console.log(newValue) // 2
     ```
 
     1.  无符号右移
 
     ``` js
-    let oldValue = 64; // 1,000,000
-    let newValue = oldValue >>> 5; // 二进制右移 5 位 => 2（10
-    console.log(newValue); // 2
+    let oldValue = 64 // 1,000,000
+    let newValue = oldValue >>> 5 // 二进制右移 5 位 => 2（10
+    console.log(newValue) // 2
     ```
 
     ``` js
-    let oldValue = -64;
-    let newValue = oldValue >>> 5;
-    console.log(newValue); // 134217726
+    let oldValue = -64
+    let newValue = oldValue >>> 5
+    console.log(newValue) // 134217726
     ```
 
 3.  布尔
@@ -2015,15 +2015,15 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     -   null，NaN，undefined 的非是 true
 
     ``` js
-    console.log(!Object());
-    console.log(!false);
-    console.log(!'');
-    console.log(!'nihao');
-    console.log(!0);
-    console.log(!Infinity);
-    console.log(!NaN);
-    console.log(!null);
-    console.log(!undefined);
+    console.log(!Object())
+    console.log(!false)
+    console.log(!"")
+    console.log(!"nihao")
+    console.log(!0)
+    console.log(!Infinity)
+    console.log(!NaN)
+    console.log(!null)
+    console.log(!undefined)
     ```
 
     1.  AND
@@ -2038,15 +2038,15 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     -   如果 2 个操作数都是 undefined，返回 undefined
 
     ``` js
-    let found = true;
-    let result = found && sth; // 这一行无法执行，下一行也执行不了
-    console.log(`${result}, nihao`);
+    let found = true
+    let result = found && sth // 这一行无法执行，下一行也执行不了
+    console.log(`${result}, nihao`)
     ```
 
     ``` js
-    let found = false;
-    let result = found && sth;
-    console.log(`${result}, nihao`); // false, nihao
+    let found = false
+    let result = found && sth
+    console.log(`${result}, nihao`) // false, nihao
     ```
 
     1.  OR
@@ -2061,15 +2061,15 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     -   如果 2 个操作数都是 undefined，返回 undefined
 
     ``` js
-    let found = false;
-    let result = found || sth; // 无法执行
-    console.log(`${result}, nihao`);
+    let found = false
+    let result = found || sth // 无法执行
+    console.log(`${result}, nihao`)
     ```
 
     ``` js
-    let found = true;
-    let result = found || sth;
-    console.log(`${result}, nihao`); // true, nihao
+    let found = true
+    let result = found || sth
+    console.log(`${result}, nihao`) // true, nihao
     ```
 
 4.  乘性
@@ -2112,16 +2112,16 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     `**` 等价于 =Math.pow()=，前者于 ES2016 引入。
 
     ``` js
-    console.log(3 ** 2); // 9
-    console.log(Math.pow(3, 2)); // 9
+    console.log(3 ** 2) // 9
+    console.log(Math.pow(3, 2)) // 9
     ```
 
     它还有幂加赋值操作符。
 
     ``` js
-    let num = 3;
-    num **= 2;
-    console.log(num); // 9
+    let num = 3
+    num **= 2
+    console.log(num) // 9
     ```
 
 6.  加性
@@ -2186,7 +2186,7 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 7.  标签
 
     ``` js
-    start: for(let i = 0; i < 5; i++)  {
+    for(let i = 0; i < 5; i++)  {
       console.log(i)
     }
     ```
@@ -2197,7 +2197,7 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     let num = 0
     for (let i = 1; i < 10; i++) {
       if (i % 5 == 0) {
-        break;
+        break
       }
       num++
     }
@@ -2208,7 +2208,7 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     let num = 0
     for (let i = 1; i < 10; i++) {
       if (i % 5 == 0) {
-        continue;
+        continue
       }
       num++
     }
@@ -2218,29 +2218,29 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     与标签语句一起使用：
 
     ``` js
-    let num = 0;
+    let num = 0
     outermost: for (let i = 0; i < 10; i++) {
       for (let j = 0; j < 10; j++) {
         if (i == 5 && j == 5) {
-          break outermost;
+          break outermost
         }
-        num++;
+        num++
       }
     }
-    console.log(num); // 55
+    console.log(num) // 55
     ```
 
     ``` js
-    let num = 0;
+    let num = 0
     outermost: for (let i = 0; i < 10; i++) {
       for (let j = 0; j < 10; j++) {
         if (i == 5 && j == 5) {
-          continue outermost;
+          continue outermost
         }
-        num++;
+        num++
       }
     }
-    console.log(num); // 95
+    console.log(num) // 95
     ```
 
 9.  with 语句废弃了
@@ -2253,7 +2253,7 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
     } else if (i == 22) {
       console.log(22)
     } else {
-      console.log('Other nums')
+      console.log("Other nums")
     }
     ```
 
@@ -2261,14 +2261,14 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 
     ``` js
     switch (i) {
-      case 11:
-        console.log(11)
-        break
-      case 22:
-        console.log(22)
-        break
-      default:
-        console.log('Other nums')
+    case 11:
+      console.log(11)
+      break
+    case 22:
+      console.log(22)
+      break
+    default:
+      console.log("Other nums")
     }
     ```
 
@@ -2280,17 +2280,17 @@ types）：undefined、null、boolean、number、bigint、string、symbol。
 function sayHi(name, msg) {
   console.log(`Hello, ${name}. ${msg}`) // Hello, Tianhe Gao. How are you?
 }
-sayHi('Tianhe Gao', 'How are you?')
+sayHi("Tianhe Gao", "How are you?")
 ```
 
 在函数内部，执行到 `return` 部分，即停止，不再执行剩余部分。
 
 ``` js
 function sayHi(name, msg) {
-  return 'nihao'
+  return "nihao"
   console.log(`Hello, ${name}. ${msg}`)
 }
-sayHi('Tianhe Gao', 'How are you?')
+sayHi("Tianhe Gao", "How are you?")
 ```
 
 # 第 4 章 变量、作用域与内存（要多次阅读，很多地方都不理解）
@@ -2319,18 +2319,18 @@ sayHi('Tianhe Gao', 'How are you?')
     当处理引用值时，可以任意增加、改变、删除属性和方法。
 
     ``` js
-    let person = new Object();
-    person.name = 'Tianhe Gao';
-    console.log(person.name);
+    let person = new Object()
+    person.name = "Tianhe Gao"
+    console.log(person.name)
     ```
 
     新属性 name 是一直可以访问的，知道对象 person 被销毁，或者 name
     属性被移除。
 
     ``` js
-    let name = 'Tianhe Gao';
-    name.age = 22;
-    console.log(name.age); // TypeError: can't assign to property "age" on "Tianhe Gao": not an object
+    let name = "Tianhe Gao"
+    name.age = 22
+    console.log(name.age) // TypeError: can't assign to property "age" on "Tianhe Gao": not an object
     ```
 
     给原始类型进行这样操作，就会报错。
@@ -2340,14 +2340,14 @@ sayHi('Tianhe Gao', 'How are you?')
     关键字创建原始类型，得到的是一个对象，而不是字符串。
 
     ``` js
-    let name1 = 'Tianhe';
-    let name2 = new String('Gao');
+    let name1 = "Tianhe"
+    let name2 = new String("Gao")
     // name1.age = 21 如果不注释掉，会无法执行下去
-    name2.age = 22;
-    console.log(name1.age);
-    console.log(name2.age); // 22
-    console.log(typeof name1); // string
-    console.log(typeof name2); // object
+    name2.age = 22
+    console.log(name1.age)
+    console.log(name2.age) // 22
+    console.log(typeof name1) // string
+    console.log(typeof name2) // object
     ```
 
 2.  复制值
@@ -2355,8 +2355,8 @@ sayHi('Tianhe Gao', 'How are you?')
     原始值在传递时是完全复制的。
 
     ``` js
-    let num1 = 21;
-    let num2 = num1;
+    let num1 = 21
+    let num2 = num1
     ```
 
     以上代码，当 num1 把自己的值赋给 num2
@@ -2371,10 +2371,10 @@ sayHi('Tianhe Gao', 'How are you?')
     而对于引用值来讲，赋值只是将新变量指向了旧变量所指向的堆（Heap）中的对象，旧变量的变化同样反映在新变量上。
 
     ``` js
-    let obj1 = new Object();
-    let obj2 = obj1;
-    obj1.name = 'Tianhe Gao';
-    console.log(obj2.name); // Tianhe Gao
+    let obj1 = new Object()
+    let obj2 = obj1
+    obj1.name = "Tianhe Gao"
+    console.log(obj2.name) // Tianhe Gao
     ```
 
     ```{=org}
@@ -2392,26 +2392,26 @@ sayHi('Tianhe Gao', 'How are you?')
 
     ``` js
     function addTen(num) {
-      num += 10;
-      return num;
+      num += 10
+      return num
     }
 
-    let count = 20;
-    let result = addTen(count);
-    console.log(count); // 20 - no change
-    console.log(result); // 30
+    let count = 20
+    let result = addTen(count)
+    console.log(count) // 20 - no change
+    console.log(result) // 30
     ```
 
     这是原始值的情况。
 
     ``` js
     function setName(obj) {
-      obj.name = 'Nicholas';
+      obj.name = "Nicholas"
     }
 
-    let person = new Object();
-    setName(person);
-    console.log(person.name); // "Nicholas"
+    let person = new Object()
+    setName(person)
+    console.log(person.name) // "Nicholas"
     ```
 
     这是引用值的情况。person 和 obj 指向同一个对象。
@@ -2430,14 +2430,14 @@ sayHi('Tianhe Gao', 'How are you?')
 
     ``` js
     function setName(obj) {
-      obj.name = 'Tianhe';
-      obj = new Object();
-      obj.name = 'Gao';
+      obj.name = "Tianhe"
+      obj = new Object()
+      obj.name = "Gao"
     }
 
-    let person = new Object();
-    setName(person);
-    console.log(person.name); // "Tianhe"
+    let person = new Object()
+    setName(person)
+    console.log(person.name) // "Tianhe"
     ```
 
     obj
@@ -2459,26 +2459,26 @@ sayHi('Tianhe Gao', 'How are you?')
     undefined。它无法区分对象和 null。
 
     ``` js
-    let s = 'Nicholas';
-    let b = true;
-    let i = 22;
-    let u;
-    let n = null;
-    let o = new Object();
-
-    console.log(typeof s); // string
-    console.log(typeof i); // number
-    console.log(typeof b); // boolean
-    console.log(typeof u); // undefined
-    console.log(typeof n); // object
-    console.log(typeof o); // object
+    let s = "Nicholas"
+    let b = true
+    let i = 22
+    let u
+    let n = null
+    let o = new Object()
+    
+    console.log(typeof s) // string
+    console.log(typeof i) // number
+    console.log(typeof b) // boolean
+    console.log(typeof u) // undefined
+    console.log(typeof n) // object
+    console.log(typeof o) // object
     ```
 
     为了区分是哪种对象，ECMAScript 有
     [`instanceof`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)。
 
     ``` js
-    result = variable instanceof constructor;
+    result = variable instanceof constructor
     ```
 
     > The **`instanceof` operator** tests to see if the
@@ -2489,9 +2489,9 @@ sayHi('Tianhe Gao', 'How are you?')
     根据定义，所有的引用值都是 Object 的实例。
 
     ``` js
-    console.log(person instanceof Object); // is the variable person an Object?
-    console.log(colors instanceof Array); // is the variable colors an Array?
-    console.log(pattern instanceof RegExp); // is the variable pattern a RegExp?
+    console.log(person instanceof Object) // is the variable person an Object?
+    console.log(colors instanceof Array) // is the variable colors an Array?
+    console.log(pattern instanceof RegExp) // is the variable pattern a RegExp?
     ```
 
 ### 执行上下文和作用域
@@ -2510,42 +2510,42 @@ window。所有由 var 定义的全局变量和函数都是 window
 context）。以此类推，直至全局上下文；全局上下文的变量对象始终是作用域链的最后一个变量对象。
 
 ``` js
-var color = 'blue';
+var color = "blue"
 
 function changeColor() {
-  if (color === 'blue') {
-    color = 'red';
-    return color;
+  if (color === "blue") {
+    color = "red"
+    return color
   } else {
-    color = 'blue';
+    color = "blue"
   }
 }
 
-console.log(changeColor()); // red
+console.log(changeColor()) // red
 ```
 
 关于作用域链的简单例子。
 
 ``` js
-var color = 'blue';
+var color = "blue"
 
 function changeColor() {
-  let anotherColor = 'red';
+  let anotherColor = "red"
 
   function swapColors() {
-    let tempColor = anotherColor;
-    anotherColor = color;
-    color = tempColor;
+    let tempColor = anotherColor
+    anotherColor = color
+    color = tempColor
 
     // color, anotherColor, and tempColor are all accessible here
   }
 
   // color and anotherColor are accessible here, but not tempColor
-  swapColors();
+  swapColors()
 }
 
 // only color is accessible here
-changeColor();
+changeColor()
 ```
 
 ```{=org}
@@ -2575,24 +2575,24 @@ the same access rules as any other variable in the execution context.
 
     ``` js
     function add(num1, num2) {
-      var sum = num1 + num2;
-      return sum;
+      var sum = num1 + num2
+      return sum
     }
 
-    let result = add(21, 22);
-    console.log(result); // 43
-    console.log(sum); // ReferenceError: sum is not defined
+    let result = add(21, 22)
+    console.log(result) // 43
+    console.log(sum) // ReferenceError: sum is not defined
     ```
 
     ``` js
     function add(num1, num2) {
-      sum = num1 + num2;
-      return sum;
+      sum = num1 + num2
+      return sum
     }
 
-    let result = add(21, 22);
-    console.log(result); // 43
-    console.log(sum); // 43
+    let result = add(21, 22)
+    console.log(result) // 43
+    console.log(sum) // 43
     ```
 
     如果函数内部的变量，未经声明就初始化，变量会被自动加到全局上下文。如第二个例子。
@@ -2600,23 +2600,23 @@ the same access rules as any other variable in the execution context.
     ::: tip 变量一定要先声明，再初始化赋值。 :::
 
     ``` js
-    var name = 'Jake';
-
+    var name = "Jake"
+    
     // This is equivalent to:
-
-    name = 'Jake';
-    var name;
+    
+    name = "Jake"
+    var name
     ```
 
     ``` js
     function fn1() {
-      var name = 'Jake';
+      var name = "Jake"
     }
 
     // This is equivalent to:
     function fn2() {
-      var name;
-      name = 'Jake';
+      var name
+      name = "Jake"
     }
     ```
 
@@ -2626,28 +2626,28 @@ the same access rules as any other variable in the execution context.
 
     ``` js
     if (true) {
-      let a;
+      let a
     }
-    console.log(a); // ReferenceError: a is not defined
-
+    console.log(a) // ReferenceError: a is not defined
+    
     while (true) {
-      let b;
+      let b
     }
-    console.log(b); // ReferenceError: b is not defined
-
+    console.log(b) // ReferenceError: b is not defined
+    
     function foo() {
-      let c;
+      let c
     }
-    console.log(c); // ReferenceError: c is not defined
+    console.log(c) // ReferenceError: c is not defined
     // This should be unsurprising, as
     // a var declaration would also throw an Error
-
+    
     // This is not an object literal, this is a standalone block.
     // The JavaScript interpreter will identify it as such based on its contents.
     {
-      let d;
+      let d
     }
-    console.log(d); // ReferenceError: d is not defined
+    console.log(d) // ReferenceError: d is not defined
     ```
 
     ``` js
@@ -2664,10 +2664,10 @@ the same access rules as any other variable in the execution context.
 
     ``` js
     for (var i = 0; i < 10; ++i) {}
-    console.log(i); // 10
-
+    console.log(i) // 10
+    
     for (let j = 0; j < 10; ++j) {}
-    console.log(j); // ReferenceError: j is not defined
+    console.log(j) // ReferenceError: j is not defined
     ```
 
     1.  使用 const 的常量声明
@@ -2682,39 +2682,39 @@ the same access rules as any other variable in the execution context.
 
     ``` js
     if (true) {
-      const a = 0;
+      const a = 0
     }
-    console.log(a); // ReferenceError: a is not defined
-
+    console.log(a) // ReferenceError: a is not defined
+    
     while (true) {
-      const b = 1;
+      const b = 1
     }
-    console.log(b); // ReferenceError: b is not defined
-
+    console.log(b) // ReferenceError: b is not defined
+    
     function foo() {
-      const c = 2;
+      const c = 2
     }
-    console.log(c); // ReferenceError: c is not defined
-
+    console.log(c) // ReferenceError: c is not defined
+    
     {
-      const d = 3;
+      const d = 3
     }
-    console.log(d); // ReferenceError: d is not defined
+    console.log(d) // ReferenceError: d is not defined
     ```
 
     ``` js
-    const o1 = {};
-    o1 = {}; // TypeError: Assignment to a constant variable;
-
-    const o2 = {};
-    o2.name = 'Jake';
-    console.log(o2.name); // 'Jake'
+    const o1 = {}
+    o1 = {} // TypeError: Assignment to a constant variable;
+    
+    const o2 = {}
+    o2.name = "Jake"
+    console.log(o2.name) // 'Jake'
     ```
 
     ``` js
-    const o3 = Object.freeze({});
-    o3.name = 'Jake';
-    console.log(o3.name); // undefined
+    const o3 = Object.freeze({})
+    o3.name = "Jake"
+    console.log(o3.name) // undefined
     ```
 
     ::: tip 一个好选择是全部使用 const 声明常量，除非需要变量时才用
@@ -2723,56 +2723,56 @@ the same access rules as any other variable in the execution context.
     1.  标识符查找
 
     ``` js
-    var color = 'blue';
-
+    var color = "blue"
+    
     function getColor() {
-      return color;
+      return color
     }
 
-    console.log(getColor()); // 'blue'
+    console.log(getColor()) // 'blue'
     ```
 
     如果本地上下文存在与全局上下文一致的变量，优先引用本地上下文的变量。
 
     ``` js
-    var color = 'blue';
-
+    var color = "blue"
+    
     function getColor() {
-      let color = 'red';
-      return color;
+      let color = "red"
+      return color
     }
 
-    console.log(getColor()); // red
+    console.log(getColor()) // red
     ```
 
     使用块级作用域声明并不改变，搜索过程，但它可以给词法层级添加额外的层次。
 
     ``` js
-    var color = 'blue';
-
+    var color = "blue"
+    
     function getColor() {
-      let color = 'red';
+      let color = "red"
       {
-        let color = 'green';
-        return color;
+        let color = "green"
+        return color
       }
     }
 
-    console.log(getColor()); // green
+    console.log(getColor()) // green
     ```
 
     ``` js
-    var color = 'blue';
-
+    var color = "blue"
+    
     function getColor() {
-      let color;
+      let color
       {
-        color = 'green';
-        return color;
+        color = "green"
+        return color
       }
     }
 
-    console.log(getColor());
+    console.log(getColor())
     ```
 
     这样的结果也是 green。
@@ -2825,15 +2825,15 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function createPerson(name) {
-      let localPerson = new Object();
-      localPerson.name = name;
-      return localPerson;
+      let localPerson = new Object()
+      localPerson.name = name
+      return localPerson
     }
 
-    let globalPerson = createPerson('Tianhe');
-    console.log(globalPerson);
-    globalPerson = null;
-    console.log(globalPerson);
+    let globalPerson = createPerson("Tianhe")
+    console.log(globalPerson)
+    globalPerson = null
+    console.log(globalPerson)
     ```
 
     Keep in mind that dereferencing a value doesn\'t automatically
@@ -2861,11 +2861,11 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function Article(opt_author) {
-      this.title = 'Hello, World'
+      this.title = "Hello, World"
       this.author = opt_author
     }
     let a1 = new Article()
-    let a2 = new Article('Tianhe')
+    let a2 = new Article("Tianhe")
     console.log(a1) // { title: "Hello, World", author: undefined }
     console.log(a2) // { title: "Hello, World", author: "Tianhe" }
     ```
@@ -2878,8 +2878,8 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function Article() {
-      this.title = 'Hello, World'
-      this.author = 'opt_author'
+      this.title = "Hello, World"
+      this.author = "opt_author"
     }
     let a1 = new Article()
     let a2 = new Article()
@@ -2898,8 +2898,8 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function Article() {
-      this.title = 'Hello, World'
-      this.author = 'opt_author'
+      this.title = "Hello, World"
+      this.author = "opt_author"
     }
     let a1 = new Article()
     let a2 = new Article()
@@ -2916,7 +2916,7 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function Person() {
-      name = 'Tianhe'
+      name = "Tianhe"
     }
     ```
 
@@ -2929,7 +2929,7 @@ be used so it can identify likely candidates for memory reclamation. :::
     间隔计时器（Interval timers）也可能导致内存泄露。
 
     ``` js
-    let name = 'Tianhe'
+    let name = "Tianhe"
     setInterval(() => {
       console.log(name)
     }, 100)
@@ -2943,10 +2943,10 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function addVector(a, b) {
-      let resultant = new Vector();
-      resultant.x = a.x + b.x;
-      resultant.y = a.y + b.y;
-      return resultant;
+      let resultant = new Vector()
+      resultant.x = a.x + b.x
+      resultant.y = a.y + b.y
+      return resultant
     }
     ```
 
@@ -2954,9 +2954,9 @@ be used so it can identify likely candidates for memory reclamation. :::
 
     ``` js
     function addVector(a, b, resultant) {
-      resultant.x = a.x + b.x;
-      resultant.y = a.y + b.y;
-      return resultant;
+      resultant.x = a.x + b.x
+      resultant.y = a.y + b.y
+      return resultant
     }
     ```
 
@@ -3074,9 +3074,9 @@ let pattern = /[bc]at/i
 使用 RegExp 可以选择性地基于已有的正则。
 
 ``` js
-const re1 = /cat/g;
+const re1 = /cat/g
 
-const re2 = new RegExp(re1);
+const re2 = new RegExp(re1)
 
 const re3 = new RegExp(re1, "i")
 ```
@@ -3111,7 +3111,7 @@ const re3 = new RegExp(re1, "i")
 
 ``` js
 for (let i = 1; i <= 20; ++i) {
-    console.log(i);
+  console.log(i)
 }
 ```
 
@@ -3120,10 +3120,10 @@ for (let i = 1; i <= 20; ++i) {
 迭代会在一个有序集合上进行。数组是 JS 中有序集合的典型例子：
 
 ``` js
-let collection = ['foo', 'bar', 'baz'];
+let collection = ["foo", "bar", "baz"]
 
 for (let index = 0; index < collection.length; ++index) {
-    console.log(collection[index])
+  console.log(collection[index])
 }
 ```
 
@@ -3136,9 +3136,9 @@ ES5 新增了 `Array.prototype.forEach()`
 方法，部分解决了通过迭代的需要（但不够理想）：
 
 ``` js
-let collection = ['foo', 'bar', 'baz'];
+let collection = ["foo", "bar", "baz"]
 
-collection.forEach((item) => console.log(item));
+collection.forEach((item) => console.log(item))
 ```
 
 该方法解决了「单独记录索引」和「通过数组对象取值」的问题，但无法标识迭代的终止时间。故而它只适用于「数组」，且回调结构笨拙。
@@ -3194,34 +3194,34 @@ Iterator 接口的对象」。
 这些原生语言结构会在后台调用提供的可迭代对象的这个工厂函数，从而创建一个迭代器：
 
 ``` js
-let arr = ["foo", "bar", "baz"];
+let arr = ["foo", "bar", "baz"]
 
 // for...of 循环
 for (let el of arr) {
-    console.log(el);
+  console.log(el)
 }
 
 // 数组解构
-let [a, b, c] = arr;
-console.log(a, b, c);
+let [a, b, c] = arr
+console.log(a, b, c)
 
 // 扩展操作符
-let arr2 = [...arr];
-console.log(arr2);
+let arr2 = [...arr]
+console.log(arr2)
 
 // Array.from()
-let arr3 = Array.from(arr);
-console.log(arr3);
+let arr3 = Array.from(arr)
+console.log(arr3)
 
 // Set 构造函数
-let set = new Set(arr);
-console.log(set);
+let set = new Set(arr)
+console.log(set)
 
 // Map 构造函数
-let pairs = arr.map((x, i) => [x,, i]);
-console.log(pairs);
-let map = new Map(pairs);
-console.log(map);
+let pairs = arr.map((x, i) => [x,, i])
+console.log(pairs)
+let map = new Map(pairs)
+console.log(map)
 ```
 
 # 第 18 章 动画与 Canvas 图形
@@ -3447,7 +3447,7 @@ let form = document.getElementById("myForm")
 let field1 = form.elements[0]
 
 // 找到表单中名为 “txt” 的字段
-let field2 = form.elements['txt']
+let field2 = form.elements["txt"]
 
 // 当前表格的字段数量
 form.elements.length
@@ -3468,13 +3468,13 @@ form.elements.length
 如何在第一次点击提交后禁用提交按钮？
 
 ``` js
-let form = document.getElementById('myForm')
+let form = document.getElementById("myForm")
 
-form.addEventListener('submit', (event) => {
+form.addEventListener("submit", (event) => {
   let target = event.target
 
   // 找到提交按钮
-  let btn = target.elements['submit-btn']
+  let btn = target.elements["submit-btn"]
   // 禁用提交按钮
   btn.disabled = true
 })
@@ -3518,7 +3518,7 @@ window.addEventListener("load", (event) => {
 
   if (element.autofocus !== true) {
     element.focus()
-    console.log('JS focus')
+    console.log("JS focus")
   }
 })
 ```
@@ -3619,29 +3619,29 @@ textbox.addEventListener("input", (event) => {
 
 ``` js
 function tabForward(event) {
-  let target = event.target;
+  let target = event.target
   if (target.value.length == target.maxLength) {
-    let form = target.form;
+    let form = target.form
     for (let i = 0, len = form.elements.length; i < len; i++) {
       if (form.elements[i] == target) {
         if (form.elements[i + 1]) {
-          form.elements[i + 1].focus();
+          form.elements[i + 1].focus()
         }
-        return;
+        return
       }
     }
   }
 }
 
-let inputIds = ["txtTel1", "txtTel2", "txtTel3"];
+let inputIds = ["txtTel1", "txtTel2", "txtTel3"]
 for (let id of inputIds) {
-  let textbox = document.getElementById(id);
-  textbox.addEventListener("keyup", tabForward);
+  let textbox = document.getElementById(id)
+  textbox.addEventListener("keyup", tabForward)
 }
 
-let textbox1 = document.getElementById("txtTel1");
-let textbox2 = document.getElementById("txtTel2");
-let textbox3 = document.getElementById("txtTel3");
+let textbox1 = document.getElementById("txtTel1")
+let textbox2 = document.getElementById("txtTel2")
+let textbox3 = document.getElementById("txtTel3")
 ```
 
 ```{=html}
@@ -3743,8 +3743,8 @@ See the Pen Untitled by tianheg (@tianheg) on CodePen.
 另一种添加新选项的方法：add()。
 
 ``` js
-let newOption2 = new Option("Option2 text", "Option2 value");
-selectbox.add(newOption2, null); // null 换成 undefined 也可以
+let newOption2 = new Option("Option2 text", "Option2 value")
+selectbox.add(newOption2, null) // null 换成 undefined 也可以
 ```
 
 ### 移除选项
