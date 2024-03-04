@@ -14,6 +14,98 @@ If you have difficulty reading Chinese, you can use <https://immersivetranslate.
 >
 > 博客不记不是自己的话产出的内容
 
+## book index
+
+<!--
+Vitepress supported emoji https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.mjs
+
+I need:
+
+- :+1:
+- :star:
+
+TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
+-->
+
+<!-- index start -->
+- [格（杂志）](/ge-magazine)
+- [癌症密码](/cancer-code)
+- [MAKE：独立创客手册](/make-the-indie-maker-handbook)
+- [狼书Node.js](/langshu-nodejs)
+- [面纱](/the-painted-veil)
+- [月亮与六便士](/the-moon-and-sixpence)
+- [红楼梦](/honglou-meng)
+- [学会如何学习](/learning-how-to-learn)
+- [人的自我寻求](/mans-search-for-himself)
+- [幸福的方法](/happier)
+- [芒格之道](/tao-of-munger)
+- [穷查理宝典](/poor-charlies-almanack)
+- [玄幻小说](/xuanhuan)
+- [哑舍](/yashe)
+- [狂热分子](/true-believer)
+- [操作系统概念](/operating-system-concepts)
+- [操作系统导论](/operating-system-three-easy-pieces)
+- [文化苦旅](/wenhua-kulv)
+- [挽救计划](/project-hail-mary)
+- [小偷家族](/shoplifters)
+- [献给阿尔吉侬的花束](/flowers-for-algernon)
+- [只是为了好玩](/just-for-fun)
+- [索拉里斯星](/solaris)
+- [以鸟兽之名](/yiniaoshou-zhi-ming)
+- [寂寞的游戏](/jimo-de-youxi)
+- [钢铁是怎样炼成的](/how-the-steel-was-tempered)
+- [心理学与生活](/psychology-and-life)
+- [哲学的故事](/story-of-philosophy)
+- [CSS设计的禅意](/the-zen-of-css-design)
+- [窗边的小豆豆](/chuangbian-de-xiaodoudou)
+- [张春桥：1949及以后](/zhang-chunqiao-1949-jiyihou)
+- [高效能人士的七个习惯](/the-7-habits-of-highly-effective-people)
+- [阿西莫夫索引](/asimov)
+- [如何阅读一本书](/how-to-read-a-book)
+- [史蒂夫·乔布斯传](/steve-jobs)
+- [黑客与画家](/hackers-and-painters)
+- [如何成为一名程序员](/how-to-be-a-programmer)
+- [谈美](/tan-mei)
+- [那些忧伤的年轻人](/naxie-youshangde-nianqingren)
+- [查拉图斯特拉如是说](/thus-spoke-zarathustra)
+- [社会心理学](/social-psychology-book)
+- [神曲](/divine-comedy)
+- [道德经](/dao-de-jing)
+- [借我一生](/jiewo-yisheng)
+- [心经](/xinjing)
+- [SICP(JS ver.)](/sicpjs)
+- [醉步男](/zui-bu-nan)
+- [看海的人](/kanhaide-ren)
+- [朝花夕拾](/zhaohua-xishi)
+- :+1::+1:[人性的枷锁](/of-human-bondage)
+- :+1::+1:[刀锋](/the-razors-edge)
+- [图解HTTP](/tujie-http)
+- [寻欢作乐](/cakes-and-ale)
+- [爱你就像爱生命](/aini-jiuxiang-aishengming)
+- [天生有罪](/born-a-crime)
+- [Web开发JS专业指南](/professional-javascript-for-web-developers)
+- [读书随想录](/the-summing-up)
+- [雪崩](/snow-crash)
+- [极简个性心理学](/making-sence-of-people)
+- :+1::+1:[牧羊少年奇幻之旅](/o-alquimista)
+- [爱因斯坦自述](/einstein-himself)
+- [克拉拉与太阳](/klara-and-the-sun)
+- [什锦拼盘](/shijin-pinpan)
+- [拉多之星](/la-duo-zhi-xing)
+- [我生有涯愿无尽：梁漱溟自述文录](/wo-shengyouya-yuanwujin)
+- [时间之书](/shijian-zhi-shu)
+- [未来世界的幸存者](/weilai-shijie-de-xingcunzhe)
+- [三体](/santi)
+- [程序员修炼之道](/the-pragmatic-programmer)
+- [一九八四](/nineteen-eighty-four)
+- [看见](/kanjian)
+- [不迷茫手册](/bumimang-shouce)
+- [恍惚人间](/huanghu-renjian)
+- [过于喧嚣的孤独](/too-loud-a-solitude)
+- [你的第一本哲学书](/what-does-it-all-mean)
+- [遥远的救世主](/yaoyuande-jiushizhu)
+<!-- index end -->
+
 ## 待整理书单
 
 - 狼王梦，by 沈石溪
