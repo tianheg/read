@@ -4,7 +4,7 @@ import fs from "fs/promises";
 (async () => {
   try {
     const bookList = config.themeConfig.sidebar
-      .map(({ text, link }) => `- [${text}](${link})`)
+      .map(({ text, link, score }) => `- [${":+1:".repeat(score)}${text}](${link})`)
       .join("\n")
 
     const filePath = "books/index.md"

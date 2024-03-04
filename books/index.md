@@ -28,8 +28,8 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
-- [:+1: 格（杂志）](/ge-magazine)
-- [癌症密码](/cancer-code)
+- [:+1:格（杂志）](/ge-magazine)
+- [:+1::+1::+1::+1::+1:癌症密码](/cancer-code)
 - [MAKE：独立创客手册](/make-the-indie-maker-handbook)
 - [狼书Node.js](/langshu-nodejs)
 - [面纱](/the-painted-veil)
