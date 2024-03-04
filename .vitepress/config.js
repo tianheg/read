@@ -20,7 +20,7 @@ export default defineConfig({
     outline: [2, 3],
     sidebar:
     [
-      { text: "格（杂志）", link: "/ge-magazine" },
+      { text: ":+1: 格（杂志）", link: "/ge-magazine" },
       { text: "癌症密码", link: "/cancer-code" },
       { text: "MAKE：独立创客手册", link: "/make-the-indie-maker-handbook" },
       { text: "狼书Node.js", link: "/langshu-nodejs" },
@@ -69,8 +69,8 @@ export default defineConfig({
       { text: "醉步男", link: "/zui-bu-nan" },
       { text: "看海的人", link: "/kanhaide-ren" },
       { text: "朝花夕拾", link: "/zhaohua-xishi" },
-      { text: "人性的枷锁", link: "/of-human-bondage" },
-      { text: "刀锋", link: "/the-razors-edge" },
+      { text: ":+1::+1:人性的枷锁", link: "/of-human-bondage" },
+      { text: ":+1::+1:刀锋", link: "/the-razors-edge" },
       { text: "图解HTTP", link: "/tujie-http" },
       { text: "寻欢作乐", link: "/cakes-and-ale" },
       { text: "爱你就像爱生命", link: "/aini-jiuxiang-aishengming" },

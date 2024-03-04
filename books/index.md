@@ -28,7 +28,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
-- [格（杂志）](/ge-magazine)
+- [:+1: 格（杂志）](/ge-magazine)
 - [癌症密码](/cancer-code)
 - [MAKE：独立创客手册](/make-the-indie-maker-handbook)
 - [狼书Node.js](/langshu-nodejs)
@@ -77,8 +77,8 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [醉步男](/zui-bu-nan)
 - [看海的人](/kanhaide-ren)
 - [朝花夕拾](/zhaohua-xishi)
-- :+1::+1:[人性的枷锁](/of-human-bondage)
-- :+1::+1:[刀锋](/the-razors-edge)
+- [:+1::+1:人性的枷锁](/of-human-bondage)
+- [:+1::+1:刀锋](/the-razors-edge)
 - [图解HTTP](/tujie-http)
 - [寻欢作乐](/cakes-and-ale)
 - [爱你就像爱生命](/aini-jiuxiang-aishengming)
@@ -87,7 +87,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [读书随想录](/the-summing-up)
 - [雪崩](/snow-crash)
 - [极简个性心理学](/making-sence-of-people)
-- :+1::+1:[牧羊少年奇幻之旅](/o-alquimista)
+- [牧羊少年奇幻之旅](/o-alquimista)
 - [爱因斯坦自述](/einstein-himself)
 - [克拉拉与太阳](/klara-and-the-sun)
 - [什锦拼盘](/shijin-pinpan)
