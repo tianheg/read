@@ -6,15 +6,3 @@
 html, body {
   font-size: 18px;
 }
-
-.VPSidebar {
-  display: none !important;
-}
-
-/* Mobile */
-.menu {
-  display: none !important;
-}
-.VPLocalNavOutlineDropdown {
-  text-align: justify;
-}
