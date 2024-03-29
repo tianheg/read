@@ -2,7 +2,7 @@
 
 To those who speak English:
 
-If you have difficulty reading Chinese, you can use <https://immersivetranslate.com/en/> to translate from Chinese to English in order to partially understand my Chinese notes. Welcome to learn Chinese, I am happy to help you([email](https://tianheg.co/about/)).
+If you have difficulty reading Chinese, you can use [Trancy(referrer code contains)](https://trancy.org?referrer=66029bf36575252f0f514f92) to translate from Chinese to English in order to partially understand my Chinese notes. Welcome to learn Chinese, I am happy to help you([email](https://tianheg.co/about/)).
 
 ---
 
