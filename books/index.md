@@ -1,4 +1,4 @@
-# 书帮助我思考
+# 书帮助我思考 | book help me think
 
 To those who speak English:
 
