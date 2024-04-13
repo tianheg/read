@@ -14,6 +14,10 @@ If you have difficulty reading Chinese, you can use [Trancy(referrer code contai
 >
 > 博客不记不是自己的话产出的内容
 
+## 备忘
+
+- 书籍文件命名：中文书籍用拼音，英文书籍用英文
+
 ## book index
 
 <!--
