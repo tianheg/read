@@ -182,6 +182,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - 安妮日记
 - 蝇王
 - 城南旧事
+- 《儿童青少年心理治疗》，作者彼得·布莱克
 
 ## 很好的资源
 
