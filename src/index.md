@@ -2,7 +2,7 @@
 
 To those who speak English:
 
-If you have difficulty reading Chinese, you can use [Trancy(referrer code contains)](https://trancy.org?referrer=66029bf36575252f0f514f92) to translate from Chinese to English in order to partially understand my Chinese notes. Welcome to learn Chinese, I am happy to help you([email](https://tianheg.co/about/)).
+If you have difficulty reading Chinese, you can use [Immersive Translate(沉浸式翻译)](https://immersivetranslate.com/?via=tianheg) to translate from Chinese to English in order to partially understand my Chinese notes. Welcome to learn Chinese, I am happy to help you([email](https://tianheg.co/about/)).
 
 ---
 
@@ -13,6 +13,8 @@ If you have difficulty reading Chinese, you can use [Trancy(referrer code contai
 > 改变思想定义：让我做出积极改变
 >
 > 博客不记不是自己的话产出的内容
+>
+> 阅读的目的：打开更多元的感官
 
 ## 备忘
 
