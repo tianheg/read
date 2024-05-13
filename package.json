@@ -1,20 +1,20 @@
 {
   "name": "read",
   "devDependencies": {
-    "eslint": "^8.52.0",
+    "@biomejs/biome": "1.7.2",
     "husky": "latest",
     "lint-staged": "^15.0.2",
     "vitepress": "latest"
   },
   "lint-staged": {
-    ".vitepress/**/*.js": "eslint --fix --ignore-pattern '!.vitepress'",
-    "scripts/*.mjs": "eslint --fix --ignore-pattern '!scripts'"
+    ".vitepress/**/*.{js,css}": "biome check --apply .",
+    "scripts/*.mjs": "biome check --apply ."
   },
   "private": true,
   "scripts": {
     "dev": "vitepress dev --port 4321",
     "build": "node scripts/gen_book_list.mjs && vitepress build",
-    "lint": "eslint .vitepress/**/*.js --fix --ignore-pattern '!.vitepress' && eslint scripts/*.mjs --fix --ignore-pattern '!scripts'",
+    "lint": "biome check --apply .",
     "prepare": "husky"
   },
   "type": "module"
