@@ -4,7 +4,7 @@ export default defineConfig({
   title: "书Book",
   titleTemplate: "📚",
   description: "一生所读，尽皆于此",
-  lang: "zh-CN",
+  lang: "zh",
   head: [
     ["link", { rel: "icon", href: "/favicon.svg" }]
   ],

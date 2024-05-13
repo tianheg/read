@@ -1,8 +1,4 @@
 /* .vitepress/theme/custom.css */
-:root {
-  --vp-font-family-base: -apple-system,system-ui,BlinkMacSystemFont,"Noto Serif SC",Arial,"Amstelvar","Josefin Sans","Hiragino Sans GB","Microsoft Yahei","ST Heiti",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";/* normal text font */
-}
-
 html, body {
   font-size: 18px;
 }
