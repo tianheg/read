@@ -37,7 +37,7 @@ elements that are chosen for their purpose and not their appearance.
 
 HTML 中相同的部分：
 
-``` {.example}
+```html
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -79,7 +79,7 @@ id 是只能在一个页面上使用一次的唯一属性。
 
 1.  替换图片
 
-``` {.example}
+```html
     <style>
       h3 > span {
         display: none;

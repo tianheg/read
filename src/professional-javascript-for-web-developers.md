@@ -3259,7 +3259,7 @@ Mozilla 的 Robert O\' Callahan 创造了一个 mozRequestAnimationFrame()
 
 canvas 标签要设置 id、width、height，还有当 canvas 不被支持的说明文字。
 
-``` example
+```html
 <canvas id="canvas" width="250" height="200">Sorry, your browser don't support canvas tag yet.</canvas>
 ```
 
@@ -3349,7 +3349,7 @@ restore，保存和恢复「绘图上下文的设置和变换」。
 
 三种书写方式：
 
-``` example
+```html
 <!-- 通用 -->
 <input type="submit" value="Submit Form">
 
@@ -3396,7 +3396,7 @@ submit 事件。
 
 通过重置按钮重置表单，有以下两种形式：
 
-``` example
+```html
 <!-- 通用重置按钮 -->
 <input type="reset" value="Reset Form">
 
@@ -3543,13 +3543,13 @@ input 省略 type 默认 type 为 text。
 
 示例------一个可显示 25 个字符、但最多允许显示 50 个字符的文本框：
 
-``` example
+```html
 <input type="text" size="25" maxLength="50" value="初始值">
 ```
 
 textarea 示例------一个高 25 字符、宽 5 字符的多行文本框：
 
-``` example
+```html
 <textarea rows="25" cols="5">初始值</textarea>
 ```
 
@@ -3610,7 +3610,7 @@ textbox.addEventListener("input", (event) => {
 
 一个输入美国号码的例子：
 
-``` example
+```html
 <form action="">
   <input type="text" id="txtTel1" maxlength="3">
   <input type="text" id="txtTel2" maxlength="3">
