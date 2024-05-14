@@ -19,6 +19,11 @@ export default defineConfig({
       provider: "local",
     },
     sidebar: [
+      {
+        text: "Resilient web design",
+        link: "/resilient-web-design",
+        score: "3",
+      },
       { text: "亲爱的三毛", link: "/qinaide-sanmao" },
       { text: "CSS: The Definitive Guide", link: "/css-the-definitive-guide" },
       { text: "被讨厌的勇气", link: "/courage-to-be-disliked" },
