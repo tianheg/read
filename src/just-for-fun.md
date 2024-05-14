@@ -1,5 +1,6 @@
+# 只是为了好玩 by Linus Torvalds
 
-作者是 Linus Torvalds，Linux 系统的最初作者。
+作者是 Linus Torvalds，Linux 内核的最初作者。
 
 > 战争是建立社会秩序的手段。
 

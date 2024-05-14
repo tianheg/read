@@ -18,7 +18,7 @@ If you have difficulty reading Chinese, you can use [Immersive Translate(沉浸�
 
 ## 备忘
 
-- 书籍文件命名：中文书籍用拼音，英文书籍用英文
+- 书籍文件命名：中国人写的书用拼音，其他书用英文
 
 ## book index
 
@@ -34,6 +34,12 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
+- [亲爱的三毛](/qinaide-sanmao)
+- [CSS: The Definitive Guide](/css-the-definitive-guide)
+- [被讨厌的勇气](/courage-to-be-disliked)
+- [蒙田全集](/complete-works-of-montaigne)
+- [美学、心理学和宗教信仰的演讲与对话集(1938—1946)](/lectures-and-conversations-on-aesthetics-psychology-and-religious-belief)
+- [吉米-哈利索引](/james-herriot)
 - [:+1::+1::+1::+1::+1:你是你吃出来的](/ni-shini-chichulai-de)
 - [:+1:格（杂志）](/ge-magazine)
 - [:+1::+1::+1::+1::+1:癌症密码](/cancer-code)

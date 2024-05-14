@@ -16,6 +16,15 @@ export default defineConfig({
   themeConfig: {
     outline: [2, 3],
     sidebar: [
+      { text: "亲爱的三毛", link: "/qinaide-sanmao" },
+      { text: "CSS: The Definitive Guide", link: "/css-the-definitive-guide" },
+      { text: "被讨厌的勇气", link: "/courage-to-be-disliked" },
+      { text: "蒙田全集", link: "/complete-works-of-montaigne" },
+      {
+        text: "美学、心理学和宗教信仰的演讲与对话集(1938—1946)",
+        link: "/lectures-and-conversations-on-aesthetics-psychology-and-religious-belief",
+      },
+      { text: "吉米-哈利索引", link: "/james-herriot" },
       { text: "你是你吃出来的", link: "/ni-shini-chichulai-de", score: "5" },
       { text: "格（杂志）", link: "/ge-magazine", score: "1" },
       { text: "癌症密码", link: "/cancer-code", score: "5" },

@@ -1,5 +1,6 @@
+# Web开发JS专业指南 4 版 by Nicholas C. Zakas
 
-出版时间：2019年
+出版时间：2019年，有新版了 <https://www.oreilly.com/library/view/professional-javascript-for/9781394193219/>
 
 ## 第 1 章 什么是JavaScript
 

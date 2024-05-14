@@ -1,11 +1,10 @@
+# How to be a Programmer by Robert L. Read with Community
+
 https://github.com/braydie/HowToBeAProgrammer
 
 https://braydie.gitbooks.io/how-to-be-a-programmer/content/en/
 
 这本书属于「第 2 层书籍」。
-
-文章中的原文来自翻译，所以一定会有翻译不当的地方，如果你自认为英文水平够高，直接阅读\
-[英文原文](https://braydie.gitbooks.io/how-to-be-a-programmer/content/en/)。
 
 提出问题
 --------

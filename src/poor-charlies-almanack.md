@@ -1,4 +1,4 @@
-# 穷查理宝典 Poor Charlie's Almanack
+# 穷查理宝典 by Charlie Munger
 
 https://www.stripe.press/poor-charlies-almanack/cover
 

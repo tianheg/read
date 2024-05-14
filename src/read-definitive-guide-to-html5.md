@@ -14,9 +14,7 @@ Part V: 32-40 高级特性：Ajax、多媒体、Canvas、拖拽、地理、Web
 
 HTML5 不仅仅指最新的 HTML 标准，还包含构成 Web 的一系列重要技术。
 
-有问题就去 \[World Wide Web Consortium
-(W3C)\](<https://www.w3.org/>)。另一个好去处 \[MDN Web
-Docs\](<https://developer.mozilla.org/en-US/>)。
+有问题就去 \[World Wide Web Consortium(W3C)\](<https://www.w3.org/>)。另一个好去处 \[MDN Web Docs\](<https://developer.mozilla.org/en-US/>)。
 
 不了解的元素：accesskey、contenteditable、draggable、spellcheck。
 

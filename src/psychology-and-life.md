@@ -1,5 +1,4 @@
-
-心理学与生活 19 版，作者是 Richard J. Gerrig, Philip G. Zimbardo。
+# 心理学与生活 19 版 by Richard J. Gerrig, Philip G. Zimbardo
 
 ## 19 版序言 {#19-版序言}
 
