@@ -15,6 +15,9 @@ export default defineConfig({
 
   themeConfig: {
     outline: [2, 3],
+    search: {
+      provider: "local",
+    },
     sidebar: [
       { text: "亲爱的三毛", link: "/qinaide-sanmao" },
       { text: "CSS: The Definitive Guide", link: "/css-the-definitive-guide" },
