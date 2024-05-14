@@ -248,13 +248,15 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 1. Sci-Hub <https://sci-hub.wf/> <https://sci-hub.ren/> <https://sci-hub.se/>
 2. <https://arxiv.org/archive/cs>
 
-### 读书工具
-
-### 纸质
+### 读书媒介
 
 ### 微信读书
 
-### Kindle
+### 在线网站
+
+### 纸质（不常读）
+
+### ~~Kindle~~（很久没用过了）
 
 - [Kindle 退出中国市场后购买 Kindle 设备的四种渠道 – 书伴](https://bookfere.com/post/1010.html)
 - [Kindle 退出中国后如何继续购买电子书及使用推送服务 – 书伴](https://bookfere.com/post/985.html)
