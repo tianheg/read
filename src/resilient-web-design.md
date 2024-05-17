@@ -172,3 +172,286 @@ Håkon Wium Lie 提出了 Cascading Style Sheets。
 初代 iPhone 于 2007 年发布，这在根本上改变了网页设计师们的思维定势。
 
 ### we are one
+
+尽可能使用相同的技术，并适配不同的设备，使得不同终端的用户得到一致的体验。
+
+但并不意味着，小屏幕上呈现的内容必须和大屏幕上的保持一致。
+
+### positive response
+
+Responsive design 来自建筑学。Ethan Marcotte 于 May 25, 2010 发表了一篇文章《[Responsive Web Design – A List Apart](https://alistapart.com/article/responsive-web-design/)》。
+
+### adjacent possible
+
+邻近可能
+
+> At every moment in the timeline of an expanding biosphere, there are doors that cannot be unlocked yet. In human culture, we like to think of breakthrough ideas as sudden accelerations on the timeline, where a genius jumps ahead fifty years and invents something that normal minds, trapped in the present moment, couldn’t possibly have come up with. But the truth is that technological (and scientific) advances rarely break out of the adjacent possible; the history of cultural progress is, almost without exception, a story of one door leading to another door, exploring the palace one room at a time.
+>
+> --Steven Johnson *Where Good Ideas Come From*
+
+科学与技术发展的每一步都是在前人基础上进行的。
+
+生产、能源、理论 -> 微波炉
+
+电脑 -> 因特网 -> 万维网 -> Facebook
+
+响应式设计的一些技术：
+
+1. fluid grids
+2. flexible images
+3. media queries
+
+### changing mindset
+
+改变心态——移动优先（这迫使网页设计师思考哪些内容是最重要的，不重要的内容都被删除了，以便能够在小屏幕上展示）。移动优先不是将注意力放在移动设备上，而是将注意力放在重要的内容上。避免对移动设备的具体型号、网络使用和浏览器兼容性进行假设。
+
+## Chapter 4: Languages
+
+> Be conservative in what you send; be liberal in what you accept.
+>
+> --Robustness Principle(Postel’s Law)
+
+网络中流动的数据具有容错性，这和浏览器处理 HTML 和 CSS 是一致的。
+
+### declaration
+
+HTML 和 CSS 都是声明型语言。在编写它们时，只需要说明想做什么，而不需要输入具体让计算机执行的指令，这些指令的部分由浏览器代劳。
+
+大多数编程语言是命令型的，像 Java、C++。你必须提供精确的指令，如果有错误，程序就会停止执行。
+
+### scripting
+
+> Q: I would like to know, whether anybody has extended WWW such, that it is possible to start arbitrary programs by hitting a button in a WWW browser.
+>
+> A: Very good question. The problem is that of programming language. You need something really powerful, but at the same time ubiquitous. Remember a facet of the web is universal readership. There is no universal interpreted programming language.
+
+### patterns of progress
+
+解决方案从 JS 中不断迁移到 HTML/CSS 中，与前者相比，这些解决方案在后者中更简单更安全。
+
+### responsibility
+
+JS 能够让设计师创建出更动态的网站，但同时也让设计师创建出更慢的网站。
+
+设计师最好记住，在网络上用户说了算。
+
+### 2.0
+
+Ajax -> smoother user experience
+
+The age of web apps was at hand.
+
+### appiness
+
+a web app required JS to run
+
+### unforgiven
+
+类比 JS 与 XHTML，它们都有一些强制措施。
+
+HTML 可以一点一点渲染，但 JS 如果存储在文件中，则必须等它全部下载后才能开始解析。
+
+### platform
+
+> The language we use can subtly influence our thinking. In his book *Metaphors We Live By*, George Lakoff highlights the dangers of political language.
+>
+> Obvious examples are “friendly fire” and “collateral damage”, but a more insidious example is “tax relief”—before a debate has even begun, taxation has been framed as something requiring relief.
+
+Web 不是一个平台，是多平台的，是跨平台的。
+
+> The web isn’t a platform. It’s a continuum.
+>
+> The web is a hot mess.
+
+## Chapter 5: Layers
+
+> A building properly conceived is several layers of longevity.
+>
+> --In his classic book *How Buildings Learn* Stewart Brand highlights an idea by the British architect Frank Duffy
+
+1. Site—the physical location of a building only changes on a geological timescale.
+2. Structure—the building itself can last for centuries.
+3. Skin—the exterior surface gets a facelift or a new lick of paint every few decades.
+4. Services—the plumbing and wiring need to be updated every ten years or so.
+5. Space plan—the layout of walls and doors might change occasionally.
+6. Stuff—the arrangement of furniture in a room can change on a daily basis.
+
+![A diagram of a house.](https://resilientwebdesign.com/chapter5/images/small/shearing-layers.jpg)
+
+> The slowest moving layer is nature, then there’s culture, followed by governance, then infrastructure, and finally commerce and fashion are the fastest layers.
+>
+> --Stewart Brand *The Clock Of The Long Now*
+
+每层以松散的方式相互依赖。正因为如此，每个层次的累积使得“临近可能”充满更多的机会。
+
+与此（文明）类似，CSS 和 JS 基于 HTML，HTML 需要一个指向的 URL，这又依赖于 HTTP，HTTP 又是基于 TCP/IP。
+
+> [!IMPORTANT]
+> Each of the web’s shearing layers can be peeled back to reveal a layer below. Running that process in reverse—applying each layer in turn—is a key principle of resilient web design.
+
+### progressive enhancement
+
+> Web design must mature and accept the developments of the past several years, abandon the exclusionary attitudes formed in the rough and tumble dotcom era, realize the coming future of a wide variety of devices and platforms, and separate semantic markup from presentation logic and behavior.
+>
+> --Steven Champeon and Nick Finck *Inclusive Web Design For the Future with Progressive Enhancement*, 2003
+
+提供同样的内容给大多数人，但每个人的体验不一定都相同。
+
+### do websites need to look exactly the same in every browser?
+
+结构和样式分离相对简单，如果使用一些错误的 JS 用法，浏览器会罢工。
+
+在使用 JS 的一些功能之前，需要检查一下浏览器的支持情况。
+
+### aggressive enhancement
+
+以前的浏览器支持的功能比较少，设计师们在设计网站的时候，为了让网页在所有种类浏览器中都一致，所有浏览器都支持的使用标准方法，不支持的使用各种 hack 的方式，这就导致了网页的展现上的不够诚实——语义和样式没有分离。
+
+后来移动互联网的兴起，让设计师从保持网站一致性上稍微挣脱出来。
+
+一个观点：支持每个浏览器，但并非对每个浏览器都优化。
+
+渐进式增强的意思是：为所有人提供核心功能，然后根据不同种类浏览器的支持程度，使用喜好的功能。
+
+要分清：*核心功能与增强功能*。
+
+## Chapter 6: Steps
+
+在设计网站时，设计师思考的是各种网页的操作，滑动、点击、滚动、拖拽。但用户在浏览网站时不会思考这些，他们大多会想的是，阅读、写作、分享、购物或售卖。设计师需要看清楚设计网页与用户行为之间的联系。
+
+作者提供的设计网站的三步法：
+
+1. 确定核心功能；
+2. 使用尽可能简单的技术实现；
+3. 使用 CSS 和 JS 增强功能。
+
+但是，关键在于：如何确定核心功能？
+
+### information
+
+举例，一个新闻网站最核心的功能是：提供新闻，其他的诸如实时通知、互动谜题，都没有提供新闻最重要。
+
+而在网络中提供新闻的最简单方式是：一个 URL 指向的 HTML 文件。但并非这么简单，HTML 可能会变得冗杂、URL 可能很长不那么容易使用。
+
+现代的新闻已经通过各种语义化标签，对新闻进行了分区，比如，文章、标题、段落、列表和图像。
+
+第三步是：增强。这需要借助 CSS 和 JS。
+
+### communication
+
+举例，社交网站。核心功能是：收发信息。使用和新闻网站应用的 HTML 足够使用了。
+
+第三步增强如何实现？
+
+应用 CSS 添加样式，使用 JS 添加交互性（动画、Ajax）。
+
+添加 Websockets、浏览器间点对点直接通信技术。
+
+### creation
+
+一个图片分享网站的核心功能：发送和接收图像。HTML 可以对图片进行排列，还需要表单处理文件的上传。
+
+增强部分：除了前一小节提到的动画、Ajax、Websockets 等，还可以
+
+- 使用 HTML5 中的文件操作 API，直接在浏览器操作图像。
+- 通过 CSS 为图像添加滤镜。
+
+### collaboration
+
+在线文档处理的核心功能：写作、编辑、分享。
+
+第二步，确定如何实现核心功能。
+
+分享通过 URL 就能做到。写作和编辑，可以通过 HTML 元素 `<textarea>`。
+
+第三步，增强。
+
+通过 JS 添加丰富的交互，检测键盘的敲击实时显示输入状态，支持根据喜好切换字体，Ajax 支持自动将编辑的内容实时同步到服务器，Websockewts 支持了多人同步，Service worker 保证在网络条件不支持前面的丰富交互时能够维持基本功能的可用。
+
+### scale
+
+“技术债务”：在项目开始时没有妥善地计划，使得项目到后期很难推动。
+
+“技术信用”：按照网页开发三步法，就能积累信用。
+
+再次回顾三步法：
+
+1. 确定核心功能；
+2. 使用尽可能简单的技术实现；
+3. 添加增强功能。
+
+> What is the core functionality of this component? How can I make that functionality available using the simplest possible technology? Now how can I enhance it?
+>
+> Websites do not need to look exactly the same in every browser.
+
+## Chapter 7: Challenges
+
+在第四届超文本年会上，Tim Berners-Lee 提交了万维网项目提案，但被拒绝，理由是这个项目太过简单。
+
+简单，正是 WWW 得以流行的原因。
+
+> It’s all‐too tempting to quickly declare that an approach is naïve, overly simplistic, and unrealistic. The idea that a website can simultaneously offer universal access to everyone while also providing a rich immersive experience for more capable devices.
+
+### "this is too simple"
+
+推广 CSS 时，遇到了阻力，一些人认为它不能用于复杂项目，一些人使用 CSS 重构流行网站，做出了表率。
+
+推广响应式设计时，又遇到阻力（应该不是同一批人吧`:)`），又有人做出了表率。
+
+如今，渐进式增强（progressive enhancement）似乎遇到了类似的一群人，拒绝更好的网站设计方式，固执守旧。
+
+### "this is too difficult"
+
+为了构建弹性网站，为了为网站设计分层，需要时间的投入。但回报很可观：能更好地应对意外情况——不寻常的浏览器、不稳定的网络连接、过时的设备。
+
+渐进式增强意味着，网站的核心功能是最高优先级，其他增强内容可以循序渐进地实现，不必急于一时。
+
+### how do I convince...?
+
+改变自己的行为思想就很困难，改变他人的就更困难，但是并非无法改变。
+
+### tools
+
+如果工作流程与所使用的工具发生冲突，那么改变工作流会变得不那么容易。
+
+工具应该帮助人们高效地完成工作。工具应该服从工作流程。
+
+但很多时候，是工具决定了工作流程。比如，所见即所得编辑器、图形设计程序、内容管理系统或 JS 框架。
+
+如果能够意识到这种影响，我们就可以据此选择更符合自己哲学观念的工具，比如，在选择 JS 框架时，就是如此。
+
+每个框架都有一种哲学，因为它们都是由人写出来的。如果你的理念与框架的哲学一致，那么框架将提高你的工作效率，反之则在使用框架时，举步维艰，最后甚至直接按照框架的哲学，安排自己的工作流。
+
+明智地选择你的工具。如果因为与某个工具的理念不同，导致你放弃了弹性网站设计，这将是一种遗憾。
+
+争论常常因为优先事项的不一致。渐进式增强优先考虑人们的需求，而不是开发者的需求。
+
+每当遇到问题，总是认为是自己的问题，而不是用户的问题。因为这就是我们的工作。
+
+### future friendly
+
+唯一确定的是不确定：
+
+> Disruption will only accelerate. The quantity and diversity of connected devices—many of which we haven’t imagined yet—will explode, as will the quantity and diversity of the people around the world who use them.
+
+这并不是绝望的原因；这是值得庆祝的。我们要么与这个未来作斗争，要么拥抱它。意识到不可能面向未来，我们决定对未来友好：
+
+1. Acknowledge and embrace unpredictability.
+2. Think and behave in a future-friendly way.
+3. Help others do the same.
+
+第一步最重要：承认并接受不可预测性。这就是弹性网页设计背后的驱动力。对未来友好的最佳方式是向后兼容（The best way to be future-friendly is to be backwards‐compatible.）。
+
+### assumptions
+
+我们总会对现实状况做出一些假设，但这些假设往往背离现实。
+
+### the future
+
+> I wish I could predict the future. The only thing that I can predict for sure is that things are going to change.
+>
+> I don’t know what kind of devices people will be using on the web. I don’t know what kind of software people will be using on the web.
+>
+> The future, like the web, is unknown.
+>
+> The future, like the web, will be written by you.
