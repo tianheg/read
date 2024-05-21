@@ -12,6 +12,7 @@ export default defineConfig({
   sitemap: {
     hostname: "https://read.tianheg.org",
   },
+  metaChunk: true,
 
   themeConfig: {
     outline: [2, 3],
