@@ -20,6 +20,7 @@ export default defineConfig({
       provider: "local",
     },
     sidebar: [
+      { text: "Refactoring UI", link: "/refactoring-ui" },
       {
         text: "Resilient web design",
         link: "/resilient-web-design",
