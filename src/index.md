@@ -34,6 +34,8 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
+- [RESTful Best Practices](/restful-best-practices)
+- [Refactoring UI](/refactoring-ui)
 - [:+1::+1::+1:Resilient web design](/resilient-web-design)
 - [亲爱的三毛](/qinaide-sanmao)
 - [CSS: The Definitive Guide](/css-the-definitive-guide)
