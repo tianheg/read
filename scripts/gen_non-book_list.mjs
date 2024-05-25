@@ -3,14 +3,14 @@ import config from "../.vitepress/config.js";
 
 (async () => {
   try {
-    const bookList = config.themeConfig.sidebar["/"]
+    const bookList = config.themeConfig.sidebar["/non-book/"]
       .map(
         ({ text, link, score }) =>
           `- [${":+1:".repeat(score)}${text}](${link})`,
       )
       .join("\n");
 
-    const filePath = "src/index.md";
+    const filePath = "src/non-book/index.md";
     const startIndex = "<!-- index start -->";
     const endIndex = "<!-- index end -->";
 
@@ -30,7 +30,7 @@ import config from "../.vitepress/config.js";
 
     await fs.writeFile(filePath, updatedData, "utf8");
 
-    console.log("Book list added to index.md successfully");
+    console.log("Non-book list added to index.md successfully");
   } catch (err) {
     console.error(err);
   }
