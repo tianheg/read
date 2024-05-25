@@ -19,6 +19,7 @@ If you have difficulty reading Chinese, you can use [Immersive Translate(沉浸�
 ## 备忘
 
 - 书籍文件命名：中国人写的书用拼音，其他书用英文
+- professional-javascript-for-web-developers 这个文件太大，build 后的 HTML 大小超过 500KB，需要拆分
 
 ## book index
 
