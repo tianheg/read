@@ -3,10 +3,10 @@ import config from "../.vitepress/config.js";
 
 (async () => {
   try {
-    const bookList = config.themeConfig.sidebar["/non-book/"]
+    const nonBookList = config.themeConfig.sidebar["/non-book/"]
       .map(
-        ({ text, link, score }) =>
-          `- [${":+1:".repeat(score)}${text}](${link})`,
+        ({ text, link, score }, index) =>
+          `${index + 1}. [${":+1:".repeat(score)}${text}](${link})`,
       )
       .join("\n");
 
@@ -26,7 +26,7 @@ import config from "../.vitepress/config.js";
     const updatedData = `${data.slice(
       0,
       startIndexPos + startIndex.length,
-    )}\n${bookList}\n${data.slice(endIndexPos)}`;
+    )}\n${nonBookList}\n${data.slice(endIndexPos)}`;
 
     await fs.writeFile(filePath, updatedData, "utf8");
 
