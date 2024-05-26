@@ -6,11 +6,20 @@
 
 有价值的一时半会无法消化的 non-book 不会有很多。所以，non-book 条目最多维持在 50 条。
 
+## Non-book index
+
 <!-- index start -->
+1. [:+1::+1::+1::+1::+1:王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
+2. [:+1::+1::+1::+1::+1:So you sucks, now what?](/non-book/so-you-sucks-now-what)
 <!-- index end -->
 
 ## TODO
 
+
+- https://s75w5y7vut.feishu.cn/docs/doccn3BatnScBJe7wD7K3S5poFf 认知偏差知识手册
+  - 100个思维模型 https://pdai.tech/md/team/person/person-think-model.html
+- [Advice From A 19 Year Old Girl & Software Developer | by Lydia Hallie | Medium](https://medium.com/@lydiahallie/advice-from-a-19-y-o-girl-software-developer-88737bcc6be5)
+- [How We Work (Volume III)](https://blog.railway.app/p/how-we-work-volume-iii)
 - [Reader: Frequently Asked Questions](https://blog.readwise.io/p/f8c0f71c-fe5f-4025-af57-f9f65c53fed7/)
 - [A guide to troublesome UI components](https://www.a11yproject.com/posts/a-guide-to-troublesome-ui-components/)
 - [Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
