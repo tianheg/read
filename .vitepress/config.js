@@ -131,7 +131,13 @@ export default defineConfig({
         { text: "你的第一本哲学书", link: "/what-does-it-all-mean" },
         { text: "遥远的救世主", link: "/yaoyuande-jiushizhu" },
       ],
-      "/non-book/": [{ text: "笔记", link: "/non-book/" }],
+      "/non-book/": [
+        {
+          text: "王小伟：一个哲学视角的日常审查",
+          link: "/non-book/wang-xiaowei-zhexue-richang-shencha",
+          score: "5",
+        },
+      ],
     },
   },
 });
