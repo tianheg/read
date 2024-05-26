@@ -21,6 +21,7 @@
   - https://invertedpassion.com/free-book-mental-models-for-startup-founders/
   - https://untools.co/
   - 思维谬误 https://thedecisionlab.com/biases-index
+- [狗熊来信63：从时薪到被动收入 - by Bear Liu - 狗熊来信](https://bearliu.substack.com/p/63)
 - [Advice From A 19 Year Old Girl & Software Developer | by Lydia Hallie | Medium](https://medium.com/@lydiahallie/advice-from-a-19-y-o-girl-software-developer-88737bcc6be5)
 - [How We Work (Volume III)](https://blog.railway.app/p/how-we-work-volume-iii)
 - [Reader: Frequently Asked Questions](https://blog.readwise.io/p/f8c0f71c-fe5f-4025-af57-f9f65c53fed7/)
