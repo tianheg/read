@@ -137,6 +137,11 @@ export default defineConfig({
           link: "/non-book/wang-xiaowei-zhexue-richang-shencha",
           score: "5",
         },
+        {
+          text: "So you sucks, now what?",
+          link: "/non-book/so-you-sucks-now-what",
+          score: "5",
+        },
       ],
     },
   },
