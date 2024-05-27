@@ -142,6 +142,11 @@ export default defineConfig({
           link: "/non-book/so-you-sucks-now-what",
           score: "5",
         },
+        {
+          text: "You're a shit",
+          link: "/non-book/you-re-a-shit",
+          score: "5",
+        },
       ],
     },
   },
