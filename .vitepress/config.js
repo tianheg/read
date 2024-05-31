@@ -147,6 +147,11 @@ export default defineConfig({
           link: "/non-book/you-re-a-shit",
           score: "5",
         },
+        {
+          text: "How To Learn Stuff Quickly",
+          link: "/non-book/how-to-learn-stuff-quickly",
+          score: "5",
+        },
       ],
     },
   },

@@ -12,6 +12,7 @@
 1. [:+1::+1::+1::+1::+1:王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
 2. [:+1::+1::+1::+1::+1:So you sucks, now what?](/non-book/so-you-sucks-now-what)
 3. [:+1::+1::+1::+1::+1:You're a shit](/non-book/you-re-a-shit)
+4. [:+1::+1::+1::+1::+1:How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
 <!-- index end -->
 
 ## TODO
