@@ -9,10 +9,11 @@
 ## Non-book index
 
 <!-- index start -->
-1. [:+1::+1::+1::+1::+1:王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
-2. [:+1::+1::+1::+1::+1:So you sucks, now what?](/non-book/so-you-sucks-now-what)
-3. [:+1::+1::+1::+1::+1:You're a shit](/non-book/you-re-a-shit)
-4. [:+1::+1::+1::+1::+1:How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
+1. [:star: 王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
+2. [:star: So you sucks, now what?](/non-book/so-you-sucks-now-what)
+3. [:star: You're a shit](/non-book/you-re-a-shit)
+4. [:star: How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
+5. [:star: Write for others but mostly for yourself](/non-book/write-for-others-but-mostly-for-yourself)
 <!-- index end -->
 
 ## TODO

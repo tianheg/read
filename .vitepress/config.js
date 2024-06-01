@@ -135,22 +135,22 @@ export default defineConfig({
         {
           text: "王小伟：一个哲学视角的日常审查",
           link: "/non-book/wang-xiaowei-zhexue-richang-shencha",
-          score: "5",
         },
         {
           text: "So you sucks, now what?",
           link: "/non-book/so-you-sucks-now-what",
-          score: "5",
         },
         {
           text: "You're a shit",
           link: "/non-book/you-re-a-shit",
-          score: "5",
         },
         {
           text: "How To Learn Stuff Quickly",
           link: "/non-book/how-to-learn-stuff-quickly",
-          score: "5",
+        },
+        {
+          text: "Write for others but mostly for yourself",
+          link: "/non-book/write-for-others-but-mostly-for-yourself",
         },
       ],
     },

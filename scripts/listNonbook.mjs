@@ -5,8 +5,10 @@ import config from "../.vitepress/config.js";
   try {
     const nonBookList = config.themeConfig.sidebar["/non-book/"]
       .map(
-        ({ text, link, score }, index) =>
-          `${index + 1}. [${":+1:".repeat(score)}${text}](${link})`,
+        ({ text, link }, index) =>
+          // emojis https://www.emojitell.com/
+          // 📄👍💯
+          `${index + 1}. [:star: ${text}](${link})`,
       )
       .join("\n");
 
