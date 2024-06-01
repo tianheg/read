@@ -204,9 +204,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [free-programming-books](https://ebookfoundation.github.io/free-programming-books/)
 - [书格](https://www.shuge.org/)
 - [Web-Security-Learning](https://chybeta.github.io/2017/08/19/Web-Security-Learning/)
-- Z-lib（[Z-library 现阶段可行的访问方法和替代方法【持续更新】](https://anotherdayu.com/2022/3809/)）
-  - 可通过 <https://singlelogin.re/> 创建 Telegram bot、获得私有三级域名
-  - 使用多平台应用（[下载地址](https://go-to-zlibrary.se/)）
+- [Z-Library Official Telegram Channel](https://t.me/zlibrary_official)
 - <https://annas-archive.org/>
 - [图灵-计算机纸质书](https://www.ituring.com.cn/)
 - [书伴-Kindle](https://bookfere.com/)
