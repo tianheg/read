@@ -152,6 +152,10 @@ export default defineConfig({
           text: "Write for others but mostly for yourself",
           link: "/non-book/write-for-others-but-mostly-for-yourself",
         },
+        {
+          text: "Let’s learn how modern JavaScript frameworks work by building one",
+          link: "/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one",
+        },
       ],
     },
   },
