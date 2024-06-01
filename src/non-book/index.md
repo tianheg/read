@@ -19,6 +19,7 @@
 
 ## TODO
 
+- https://1byte.io/articles/luck/
 - 思维模型
   - https://s75w5y7vut.feishu.cn/docs/doccn3BatnScBJe7wD7K3S5poFf 认知偏差知识手册
   - 100个思维模型 https://pdai.tech/md/team/person/person-think-model.html
