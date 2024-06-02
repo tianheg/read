@@ -13,9 +13,9 @@
     "scripts/*.mjs": "biome check --apply ."
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.2",
-    "husky": "latest",
-    "lint-staged": "^15.0.2",
-    "vitepress": "latest"
+    "@biomejs/biome": "^1.7.3",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "vitepress": "^1.2.2"
   }
 }
