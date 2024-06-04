@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "vitepress dev --port 4321",
     "build": "vitepress build",
-    "lint": "biome check --apply .",
+    "lint": "biome check --write .",
     "prepare": "husky"
   },
   "lint-staged": {
-    ".vitepress/**/*.{js,css}": "biome check --apply .",
-    "scripts/*.mjs": "biome check --apply ."
+    ".vitepress/**/*.{js,css}": "biome check --write .",
+    "scripts/*.mjs": "biome check --write ."
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.0",
