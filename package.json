@@ -13,9 +13,11 @@
     "scripts/*.mjs": "biome check --apply ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
+    "@biomejs/biome": "^1.8.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.5",
-    "vitepress": "^1.2.2"
+    "pagefind": "^1.1.0",
+    "vitepress": "^1.2.3",
+    "vitepress-plugin-pagefind": "^0.4.0"
   }
 }
