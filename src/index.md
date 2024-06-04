@@ -19,7 +19,7 @@ If you have difficulty reading Chinese, you can use [Immersive Translate(沉浸�
 ## 备忘
 
 - 书籍文件命名：中国人写的书用拼音，其他书用英文
-- professional-javascript-for-web-developers 这个文件太大，build 后的 HTML 大小超过 500KB，需要拆分
+- 侧边栏和标题：读的中文就用中文，读的英文就用英文
 
 ## book index
 
@@ -35,11 +35,17 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
+- [:+1::+1::+1::+1::+1:The Little Prince](/the-little-prince)
+- [刘擎现代思想讲义](/liuqing-xiandai-sixiang-jiangyi)
+- [创新者](/the-innovators)
+- [追忆似水年华](/in-search-of-lost-time)
 - [RESTful Best Practices](/restful-best-practices)
 - [Refactoring UI](/refactoring-ui)
 - [:+1::+1::+1:Resilient web design](/resilient-web-design)
 - [亲爱的三毛](/qinaide-sanmao)
-- [CSS: The Definitive Guide](/css-the-definitive-guide)
+- [:+1::+1::+1:CSS: The Definitive Guide](/css-the-definitive-guide)
+- [:+1::+1::+1::+1:CSS设计的禅意](/the-zen-of-css-design)
+- [:+1::+1::+1:The Definitive Guide to HTML5](/the-definitive-guide-html5)
 - [被讨厌的勇气](/courage-to-be-disliked)
 - [蒙田全集](/complete-works-of-montaigne)
 - [美学、心理学和宗教信仰的演讲与对话集(1938—1946)](/lectures-and-conversations-on-aesthetics-psychology-and-religious-belief)
@@ -48,18 +54,17 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [:+1:格（杂志）](/ge-magazine)
 - [:+1::+1::+1::+1::+1:癌症密码](/cancer-code)
 - [MAKE：独立创客手册](/make-the-indie-maker-handbook)
-- [狼书Node.js](/langshu-nodejs)
 - [面纱](/the-painted-veil)
 - [月亮与六便士](/the-moon-and-sixpence)
 - [红楼梦](/honglou-meng)
 - [学会如何学习](/learning-how-to-learn)
-- [人的自我寻求](/mans-search-for-himself)
+- [:+1::+1::+1::+1::+1:人的自我寻求](/mans-search-for-himself)
 - [幸福的方法](/happier)
 - [芒格之道](/tao-of-munger)
 - [穷查理宝典](/poor-charlies-almanack)
 - [玄幻小说](/xuanhuan)
 - [哑舍](/yashe)
-- [狂热分子](/true-believer)
+- [:+1::+1::+1::+1::+1:狂热分子](/true-believer)
 - [操作系统概念](/operating-system-concepts)
 - [操作系统导论](/operating-system-three-easy-pieces)
 - [文化苦旅](/wenhua-kulv)
@@ -73,7 +78,6 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [钢铁是怎样炼成的](/how-the-steel-was-tempered)
 - [心理学与生活](/psychology-and-life)
 - [哲学的故事](/story-of-philosophy)
-- [CSS设计的禅意](/the-zen-of-css-design)
 - [窗边的小豆豆](/chuangbian-de-xiaodoudou)
 - [张春桥：1949及以后](/zhang-chunqiao-1949-jiyihou)
 - [高效能人士的七个习惯](/the-7-habits-of-highly-effective-people)
@@ -90,7 +94,6 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [道德经](/dao-de-jing)
 - [借我一生](/jiewo-yisheng)
 - [心经](/xinjing)
-- [SICP(JS ver.)](/sicpjs)
 - [醉步男](/zui-bu-nan)
 - [看海的人](/kanhaide-ren)
 - [朝花夕拾](/zhaohua-xishi)
@@ -100,7 +103,6 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [寻欢作乐](/cakes-and-ale)
 - [爱你就像爱生命](/aini-jiuxiang-aishengming)
 - [天生有罪](/born-a-crime)
-- [Web开发JS专业指南](/professional-javascript-for-web-developers)
 - [读书随想录](/the-summing-up)
 - [雪崩](/snow-crash)
 - [极简个性心理学](/making-sence-of-people)
@@ -109,7 +111,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [克拉拉与太阳](/klara-and-the-sun)
 - [什锦拼盘](/shijin-pinpan)
 - [拉多之星](/la-duo-zhi-xing)
-- [我生有涯愿无尽：梁漱溟自述文录](/wo-shengyouya-yuanwujin)
+- [:+1::+1::+1::+1::+1:我生有涯愿无尽：梁漱溟自述文录](/wo-shengyouya-yuanwujin)
 - [时间之书](/shijian-zhi-shu)
 - [未来世界的幸存者](/weilai-shijie-de-xingcunzhe)
 - [三体](/santi)

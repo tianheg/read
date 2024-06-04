@@ -25,6 +25,10 @@ export default defineConfig({
     ],
     sidebar: {
       "/": [
+        { text: "The Little Prince", link: "/the-little-prince", score: "5" },
+        { text: "刘擎现代思想讲义", link: "/liuqing-xiandai-sixiang-jiangyi" },
+        { text: "创新者", link: "/the-innovators" },
+        { text: "追忆似水年华", link: "/in-search-of-lost-time" },
         { text: "RESTful Best Practices", link: "/restful-best-practices" },
         { text: "Refactoring UI", link: "/refactoring-ui" },
         {
@@ -36,6 +40,13 @@ export default defineConfig({
         {
           text: "CSS: The Definitive Guide",
           link: "/css-the-definitive-guide",
+          score: "3",
+        },
+        { text: "CSS设计的禅意", link: "/the-zen-of-css-design", score: "4" },
+        {
+          text: "The Definitive Guide to HTML5",
+          link: "/the-definitive-guide-html5",
+          score: "3",
         },
         { text: "被讨厌的勇气", link: "/courage-to-be-disliked" },
         { text: "蒙田全集", link: "/complete-works-of-montaigne" },
@@ -48,12 +59,11 @@ export default defineConfig({
         { text: "格（杂志）", link: "/ge-magazine", score: "1" },
         { text: "癌症密码", link: "/cancer-code", score: "5" },
         { text: "MAKE：独立创客手册", link: "/make-the-indie-maker-handbook" },
-        { text: "狼书Node.js", link: "/langshu-nodejs" },
         { text: "面纱", link: "/the-painted-veil" },
         { text: "月亮与六便士", link: "/the-moon-and-sixpence" },
         { text: "红楼梦", link: "/honglou-meng" },
         { text: "学会如何学习", link: "/learning-how-to-learn" },
-        { text: "人的自我寻求", link: "/mans-search-for-himself" },
+        { text: "人的自我寻求", link: "/mans-search-for-himself", score: "5" },
         { text: "幸福的方法", link: "/happier" },
         { text: "芒格之道", link: "/tao-of-munger" },
         { text: "穷查理宝典", link: "/poor-charlies-almanack" },
@@ -73,7 +83,6 @@ export default defineConfig({
         { text: "钢铁是怎样炼成的", link: "/how-the-steel-was-tempered" },
         { text: "心理学与生活", link: "/psychology-and-life" },
         { text: "哲学的故事", link: "/story-of-philosophy" },
-        { text: "CSS设计的禅意", link: "/the-zen-of-css-design" },
         { text: "窗边的小豆豆", link: "/chuangbian-de-xiaodoudou" },
         { text: "张春桥：1949及以后", link: "/zhang-chunqiao-1949-jiyihou" },
         {
@@ -93,7 +102,6 @@ export default defineConfig({
         { text: "道德经", link: "/dao-de-jing" },
         { text: "借我一生", link: "/jiewo-yisheng" },
         { text: "心经", link: "/xinjing" },
-        { text: "SICP(JS ver.)", link: "/sicpjs" },
         { text: "醉步男", link: "/zui-bu-nan" },
         { text: "看海的人", link: "/kanhaide-ren" },
         { text: "朝花夕拾", link: "/zhaohua-xishi" },
@@ -103,10 +111,6 @@ export default defineConfig({
         { text: "寻欢作乐", link: "/cakes-and-ale" },
         { text: "爱你就像爱生命", link: "/aini-jiuxiang-aishengming" },
         { text: "天生有罪", link: "/born-a-crime" },
-        {
-          text: "Web开发JS专业指南",
-          link: "/professional-javascript-for-web-developers",
-        },
         { text: "读书随想录", link: "/the-summing-up" },
         { text: "雪崩", link: "/snow-crash" },
         { text: "极简个性心理学", link: "/making-sence-of-people" },
@@ -118,6 +122,7 @@ export default defineConfig({
         {
           text: "我生有涯愿无尽：梁漱溟自述文录",
           link: "/wo-shengyouya-yuanwujin",
+          score: "5",
         },
         { text: "时间之书", link: "/shijian-zhi-shu" },
         { text: "未来世界的幸存者", link: "/weilai-shijie-de-xingcunzhe" },
@@ -155,6 +160,10 @@ export default defineConfig({
         {
           text: "Let’s learn how modern JavaScript frameworks work by building one",
           link: "/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one",
+        },
+        {
+          text: "History of Psychology",
+          link: "/non-book/history-of-psychology",
         },
       ],
     },

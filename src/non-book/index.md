@@ -15,6 +15,7 @@
 4. [:star: How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
 5. [:star: Write for others but mostly for yourself](/non-book/write-for-others-but-mostly-for-yourself)
 6. [:star: Let’s learn how modern JavaScript frameworks work by building one](/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one)
+7. [:star: History of Psychology](/non-book/history-of-psychology)
 <!-- index end -->
 
 ## TODO

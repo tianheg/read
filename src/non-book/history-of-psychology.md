@@ -1,4 +1,5 @@
-# read-history-of-psychology
+# History of Psychology
+
 Source: <https://nobaproject.com/modules/history-of-psychology>
 
 心理学发展史。
@@ -15,7 +16,7 @@ Source: <https://nobaproject.com/modules/history-of-psychology>
 -   培养一种对科学进程发展和改变的理解
 -   认识到女性和有色人种在美国心理学史上的作用
 
-\## Introduction
+## Introduction
 
 心理学的开始：
 
@@ -26,14 +27,14 @@ Source: <https://nobaproject.com/modules/history-of-psychology>
 
 本书以 19 世纪中期作为起始点。为了方便，称之为现代心理学史。
 
-\## A Prehistory of Psychology
+## A Prehistory of Psychology
 
 美国心理学的前身在哲学和心理学中。John Locke 和 Thomas Reid
 两位哲学家提出经验主义（empiricism），核心是一切知识来源于经验。洛克、里德和其他人的工作强调了人类观察者的作用以及感官在定义大脑如何获得知识方面的首要地位。在
 19
 世纪早期的美国学院和大学里，这些原则在精神和道德哲学的相关课程上被教授。大多数情况下，这些课程是基于智力、意志和感官的能力来教授心智的。
 
-\## Physiology（生理学） and Psychophysics（心理物理学）
+## Physiology（生理学） and Psychophysics（心理物理学）
 
 关于心灵和知识本质的哲学问题，在19世纪通过对人类观察者感觉系统的生理学研究得到了证实。德国生理学家
 Hermann von Helmholtz
@@ -59,7 +60,7 @@ Gustav Fechner
 1879
 年冯特的实验室开放之后，仅仅用了四年时间，美国就开设了第一个心理学实验室。
 
-\## Scientific Psychology Comes to the United States
+## Scientific Psychology Comes to the United States
 
 Wundt 的心理学贡献由他的学生 Edward Bradford Titchener
 引入美国。Titchener
@@ -79,7 +80,7 @@ Titchener
 在心理学的科学和实践之间取得平衡一直持续到今天。1988
 年，美国心理学会(现在称为心理科学协会)成立，其中心任务是推进心理科学的发展。
 
-\## Toward a Functional Psychology
+## Toward a Functional Psychology
 
 尽管 Titchener
 和他的追随者坚持研究结构心理学，美国的其他人却在追求不同的道路。William
