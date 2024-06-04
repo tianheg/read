@@ -59,7 +59,7 @@ export default defineConfig({
         { text: "穷查理宝典", link: "/poor-charlies-almanack" },
         { text: "玄幻小说", link: "/xuanhuan" },
         { text: "哑舍", link: "/yashe" },
-        { text: "狂热分子", link: "/true-believer" },
+        { text: "狂热分子", link: "/true-believer", score: "5" },
         { text: "操作系统概念", link: "/operating-system-concepts" },
         { text: "操作系统导论", link: "/operating-system-three-easy-pieces" },
         { text: "文化苦旅", link: "/wenhua-kulv" },

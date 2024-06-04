@@ -1,6 +1,7 @@
-# 狂热分子
+# 狂热分子 True Believer : Thoughts on the Nature of Mass Movements by Eric Hoffer
 
-## 码头工人哲学家——霍弗其人及其书
+https://en.wikipedia.org/wiki/The_True_Believer
+
 ## 序言 狂热分子的心灵
 
 > 所有群众运动都会激发起其追随者赴死的决心和团结行动的意愿；不管它们宣扬的主张或制定的纲领为何，所有群众运动都会助长狂热、激情、热望、仇恨和不宽容；所有群众运动都能够从生活的某些部门释放出强大的动能；它们全都要求信徒盲从和一心一意效忠。
