@@ -46,8 +46,10 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [:+1::+1::+1:CSS: The Definitive Guide](/css-the-definitive-guide)
 - [:+1::+1::+1::+1:CSS设计的禅意](/the-zen-of-css-design)
 - [:+1::+1::+1:The Definitive Guide to HTML5](/the-definitive-guide-html5)
+- [如何成为一名程序员](/how-to-be-a-programmer)
+- [:+1::+1::+1::+1:程序员修炼之道](/the-pragmatic-programmer)
 - [被讨厌的勇气](/courage-to-be-disliked)
-- [蒙田全集](/complete-works-of-montaigne)
+- [蒙田随笔全集](/essays-montaigne)
 - [美学、心理学和宗教信仰的演讲与对话集(1938—1946)](/lectures-and-conversations-on-aesthetics-psychology-and-religious-belief)
 - [吉米-哈利索引](/james-herriot)
 - [:+1::+1::+1::+1::+1:你是你吃出来的](/ni-shini-chichulai-de)
@@ -85,7 +87,6 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [如何阅读一本书](/how-to-read-a-book)
 - [史蒂夫·乔布斯传](/steve-jobs)
 - [黑客与画家](/hackers-and-painters)
-- [如何成为一名程序员](/how-to-be-a-programmer)
 - [谈美](/tan-mei)
 - [那些忧伤的年轻人](/naxie-youshangde-nianqingren)
 - [查拉图斯特拉如是说](/thus-spoke-zarathustra)
@@ -115,7 +116,6 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [时间之书](/shijian-zhi-shu)
 - [未来世界的幸存者](/weilai-shijie-de-xingcunzhe)
 - [三体](/santi)
-- [程序员修炼之道](/the-pragmatic-programmer)
 - [一九八四](/nineteen-eighty-four)
 - [看见](/kanjian)
 - [不迷茫手册](/bumimang-shouce)
@@ -125,98 +125,16 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [遥远的救世主](/yaoyuande-jiushizhu)
 <!-- index end -->
 
-## 待整理书单
-
-- 狼王梦，by 沈石溪
-- 狼的故事（独狼），by 金曾毫
-- 致 D 情史，by 安德烈·高兹
-- 明天也是小春日和，by 津端英子、津端修一
-- 小窗幽记，by 陆绍珩
-- 二十首情诗和一首绝望的歌，by 巴勃罗・聂鲁达
-- 沙漠里的爱情，by 巴尔扎克（士兵与母豹的奇妙爱情）
-- 卢思浩
-  - 愿有人陪你颠沛流离
-  - 离开前请叫醒我
-- 刘同
-  - 我在未来等你
-- 瓦尔登湖，by 梭罗
-- 人生有何意义，by 胡适
-- 林清玄散文精选，by 林清玄
-- 人间有味是清欢，by 林清玄
-- 白岩松：行走在爱与恨之间，by 白岩松
-- 皮囊，by 蔡崇达
-- 青春电影手册：影史 100 佳青春电影，by 程青松
-- 时间之问，by 汪波
-- 傅雷家书，by 傅雷、朱敏馥、傅聪、傅敏
-- 外婆的道歉信，by 弗雷德里克・巴克曼
-- 过于喧嚣的孤独，by 博胡米尔·赫拉巴尔
-- 82 年生的金智英，by 【韩】 赵南柱
-- 给青年的十二封信，by 朱光潜
-- 一九八四，by George Orwell
-- 天年，by 何夕
-- 查拉图斯特拉如是说，by Friedrich Nietzsche
-- 那些忧伤的年轻人，by 许知远
-- 借我一生，by 余秋雨
-- 新版文化苦旅，by 余秋雨
-- 局外人，by 加缪
-- 一只特立独行的猪，by 王小波
-- 亲爱的三毛，by 三毛
-- 醉步男，by 小林泰三
-- 看海的人，by 小林泰三
-- 时间机器，by 赫伯特·乔治·威尔斯
-- Isaac Asimov
-  - 银河帝国：基地
-  - 银河帝国：基地与帝国
-  - 银河帝国：第二基地
-  - 银河帝国：基地前奏
-  - 银河帝国：迈向基地
-  - 银河帝国：基地边缘
-  - 银河帝国：基地与地球
-  - 银河帝国：我，机器人
-  - 银河帝国：钢穴
-  - 银河帝国：裸阳
-  - 银河帝国：曙光中的机器人
-  - 银河帝国：机器人与帝国
-  - 银河帝国：繁星若尘
-  - 银河帝国：星空暗流
-  - 银河帝国：苍穹一粟
-  - 神们自己（心理预言、宇宙蛋）
-- 天生有罪 by 特雷弗·诺亚
-- 爱你就像爱生命，by 王小波
-- 雪崩，by Neal Stephenson
-- 克拉拉与太阳，by 石黑一雄
-- 挽救计划，by Andy Weir
-- 房思琪的初恋乐园，by 林奕含
-- 献给阿尔吉侬的花束，by丹尼尔·凯斯
-- 赡养人类，by 刘慈欣
-- 小偷家族，by 是枝裕和
-- 索拉里斯星，by Stanislaw Lem
-- 以鸟兽之名，by 孙频
-- 寂寞的游戏，by 袁哲生
-- 时间之墟，by 宝树
-- 安妮日记
-- 蝇王
-- 城南旧事
-- 《儿童青少年心理治疗》，作者彼得·布莱克
-
 ## 很好的资源
 
 - [中国哲学书电子化计划](https://ctext.org/zhs)
-- [All IT eBooks - Best Free IT eBooks Download](https://allitebook.xyz/)
-- [free-programming-books](https://ebookfoundation.github.io/free-programming-books/)
-- [书格](https://www.shuge.org/)
-- [Web-Security-Learning](https://chybeta.github.io/2017/08/19/Web-Security-Learning/)
-- [Z-Library Official Telegram Channel](https://t.me/zlibrary_official)
-- <https://annas-archive.org/>
-- [图灵-计算机纸质书](https://www.ituring.com.cn/)
-- [书伴-Kindle](https://bookfere.com/)
-- [读写人-文学](http://www.duxieren.com/)
-- [全国图书馆参考咨询联盟](http://www.ucdrs.superlib.net/)
-- <https://standardebooks.org/ebooks>
-- [Open Library](https://openlibrary.org/) - Internet Archive 经营的一个项目，可以免费借书
 - [识典古籍](https://www.shidianguji.com/)
 - [掘火档案 | A Selection of Critical Mass in Music, Films and Beyond](https://www.digforfire.net/)
-- [读书](https://doosho.com/)
+- [读写人-文学](http://www.duxieren.com/)
+- [书格](https://www.shuge.org/)
+- [Z-Library Official Telegram Channel](https://t.me/zlibrary_official)
+- [Anna’s Archive](https://annas-archive.org/)
+- [图灵](https://www.ituring.com.cn/)
 
 ### 外文书籍网站
 

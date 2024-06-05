@@ -1,3 +1,5 @@
+# 程序员修炼之道1&2 by Andrew Hunt and David Thomas
+
 ## 第一版
 
 > 务实（Pragmatic）这个词来自拉丁语 _pragmaticus_ ------
