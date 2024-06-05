@@ -1,9 +1,6 @@
 # 如何阅读一本书 by Mortimer J. Adler / Charles Van Doren
 
-<https://program-think.blogspot.com/2013/04/how-to-read-book.html>
-
 这本书属于「第 2 层书籍」。
-
 
 ## 阅读的目的 {#阅读的目的}
 

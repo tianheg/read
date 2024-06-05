@@ -1,4 +1,4 @@
-# 道德经
+# 道德经/老子 by 老子
 
 <https://ctext.org/dao-de-jing/zhs>
 
