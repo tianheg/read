@@ -41,6 +41,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [刘擎现代思想讲义](/liuqing-xiandai-sixiang-jiangyi)
 - [创新者](/the-innovators)
 - [追忆似水年华](/in-search-of-lost-time)
+- [:+1::+1::+1::+1::+1:Eloquent JavaScript](/eloquent-javascript)
 - [RESTful Best Practices](/restful-best-practices)
 - [Refactoring UI](/refactoring-ui)
 - [:+1::+1::+1:Resilient web design](/resilient-web-design)

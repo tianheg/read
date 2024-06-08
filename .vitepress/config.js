@@ -9,6 +9,7 @@ const sidebar = {
     { text: "刘擎现代思想讲义", link: "/liuqing-xiandai-sixiang-jiangyi" },
     { text: "创新者", link: "/the-innovators" },
     { text: "追忆似水年华", link: "/in-search-of-lost-time" },
+    { text: "Eloquent JavaScript", link: "/eloquent-javascript", score: 5 },
     { text: "RESTful Best Practices", link: "/restful-best-practices" },
     { text: "Refactoring UI", link: "/refactoring-ui" },
     {
