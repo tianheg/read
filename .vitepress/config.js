@@ -1,5 +1,8 @@
 import { defineConfig } from "vitepress";
-import { pagefindPlugin } from "vitepress-plugin-pagefind";
+import {
+  chineseSearchOptimize,
+  pagefindPlugin,
+} from "vitepress-plugin-pagefind";
 
 const sidebar = {
   "/": [
@@ -175,13 +178,7 @@ export default defineConfig({
         placeholder: "搜索文档",
         emptyText: "空空如也",
         heading: "共: {{searchResult}} 条结果",
-        customSearchQuery(input) {
-          // 将搜索的每个中文单字两侧加上空格
-          return input
-            .replace(/[\u4E00-\u9FA5]/g, " $& ")
-            .replace(/\s+/g, " ")
-            .trim();
-        },
+        customSearchQuery: chineseSearchOptimize,
       }),
     ],
   },
