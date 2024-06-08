@@ -6,6 +6,7 @@ import {
 
 const sidebar = {
   "/": [
+    { text: "Techno Feudalism", link: "/techno-feudalism" },
     { text: "永生的操练", link: "/divine-comedy-comment-by-canxue" },
     { text: "神曲", link: "/divine-comedy" },
     { text: "The Little Prince", link: "/the-little-prince", score: "5" },
