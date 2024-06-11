@@ -95,7 +95,7 @@ typeof 只接受一个参数，之前介绍的运算符需要两个，其中最�
 - (10 - 8)
 ```
 
-## Boolean values
+### Boolean values
 
 使用 <, > 对数字、字符串进行数值比较。
 
@@ -135,11 +135,11 @@ true | false // 1
 1 + 1 == 2 && 10 * 10 > 50
 ```
 
-## Empty values
+### Empty values
 
 两个表达“空值”含义的保留字：null, undefined。在大多数情况下，可以将这两种视为同等存在。
 
-## Automatic type conversion
+### Automatic type conversion
 
 ```js
 console.log(4 * null)
@@ -158,3 +158,118 @@ null == 0
 在测试变量时，可以与 null 进行比较，true 就是没定义，false 就是有值。
 
 禁止自动类型转换的操作符：===, !==。
+
+```js
+0 == false // true
+"" == false // true
+0 === false // false
+"" === false // false
+```
+
+逻辑操作符（|| &&）的特点：要么返回算式左边的值，要么是右边。
+
+而 ?? 只有当左边是 null 或 undefined 时，才返回右边的值。
+
+```js
+null || 'fggf' // 'fggf'
+'fff' || 'fggf' // 'fff'
+null ?? 100 // 100
+undefined ?? 1000 // 1000
+123 ?? 100 // 123
+123 && 100 // 100
+'' && 100 // ''
+undefined && 100 // undefined
+```
+
+> short-circuit evaluation:
+>
+> The part to their right is evaluated only when necessary. In the case of true || X, no matter what X is—even if it’s a piece of program that does something terrible—the result will be true, and X is never evaluated. The same goes for false && X, which is false and will ignore X.
+
+### Summary
+
+先是了解了四种类型的值：数值、字符串、布尔值和 undefined/null。
+
+介绍了几种操作符：
+
+- 算术操作符：+, -, *, /, %
+- 字符串拼接：+
+- 比较操作符：==, !=, ===, !==, <, >, <=, >=
+- 逻辑操作符：&&, ||, ??
+- 一元操作符：取负数 -，取逻辑反 !，找到值的类型 typeof
+- 三元操作符：a ? b : c
+
+## Program structure
+
+### Expressions and statements
+
+表达式定义：产生值的一段代码。
+
+语句定义：由表达式构成的完整句子。
+
+程序定义：由多个语句构成的完成某项功能的一段代码。
+
+```js
+1;
+!true;
+```
+
+像这样的无法产生可见的影响的，只能称它是表达式，但不能称它是程序。
+
+分号的关键之处：大多数时候可省略，但有些时候如果下一行是某个立即执行函数表达式，当前行的分号就无法省略。
+
+### Bindings
+
+程序是如何存储值的呢？
+
+通过数据绑定，也就是变量。
+
+```js
+let caught = 4 * 5;
+console.log(caught);
+```
+
+因为 JS 的动态语言的特性，变量定义后，可以对变量名再次定义。
+
+```js
+let caught = 4 * 5;
+caught = 5 * 5;
+console.log(caught);
+```
+
+变量就像触手，caught 一开始抓着 4 * 5，后来换了，开始抓着 5 * 5。在一段程序中，只能通过变量访问值，不能直接访问。想要创建新值，要么创建新变量名，要么对现有变量名重新赋值。
+
+```js
+let caught = 4 * 5;
+caught = caught - 2;
+console.log(caught);
+```
+
+### Binding names
+
+变量命名的要求：
+
+- 不能以数字开头，否则 Firefox 目前报错内容是 [`Uncaught SyntaxError: identifier starts immediately after numeric literal`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Identifier_after_number)
+- 不能用保留字作变量名，例如 `let let = 123;`，Firefox 报错 `Uncaught SyntaxError: a lexical declaration can't define a 'let' binding`
+- 只能以 字母、下划线、美元符号 开头
+
+### The environment
+
+程序存在的地方，会有一种叫做环境的概念。环境中包含着程序定义的变量名和变量值。
+
+### Functions
+
+在浏览器 JS 环境中，有一种特殊的值的类型——函数。
+
+函数定义：包括返回值的一段代码。
+
+执行一个函数的术语：invoking, calling, applying。
+
+有函数名为 `prompt`，通过在后面加一对括号调用 `prompt(arguments)`。括号内部是传入函数的值。函数不同需要的参数值的类型和数目也不同。
+
+### The console.log function
+
+console.log 是一个函数，console 是一个对象，console 对象的属性是函数，其中就有 log()。
+
+### Return values
+
+ 
