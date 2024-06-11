@@ -1,5 +1,5 @@
 // .vitepress/theme/index.js
-import DefaultTheme from "vitepress/theme-without-fonts";
+import DefaultTheme from "vitepress/theme";
 import "./custom.css";
 
 export default DefaultTheme;
