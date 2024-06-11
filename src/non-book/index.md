@@ -9,13 +9,14 @@
 ## Non-book index
 
 <!-- index start -->
-1. [:star: 王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
-2. [:star: So you sucks, now what?](/non-book/so-you-sucks-now-what)
-3. [:star: You're a shit](/non-book/you-re-a-shit)
-4. [:star: How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
-5. [:star: Write for others but mostly for yourself](/non-book/write-for-others-but-mostly-for-yourself)
-6. [:star: Let’s learn how modern JavaScript frameworks work by building one](/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one)
-7. [:star: History of Psychology](/non-book/history-of-psychology)
+1. [:star: Hacker News Guidelines](/non-book/hacker-news-guidelines)
+2. [:star: 王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
+3. [:star: So you sucks, now what?](/non-book/so-you-sucks-now-what)
+4. [:star: You're a shit](/non-book/you-re-a-shit)
+5. [:star: How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
+6. [:star: Write for others but mostly for yourself](/non-book/write-for-others-but-mostly-for-yourself)
+7. [:star: Let’s learn how modern JavaScript frameworks work by building one](/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one)
+8. [:star: History of Psychology](/non-book/history-of-psychology)
 <!-- index end -->
 
 ## TODO

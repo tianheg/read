@@ -116,6 +116,10 @@ const sidebar = {
   ],
   "/non-book/": [
     {
+      text: "Hacker News Guidelines",
+      link: "/non-book/hacker-news-guidelines",
+    },
+    {
       text: "王小伟：一个哲学视角的日常审查",
       link: "/non-book/wang-xiaowei-zhexue-richang-shencha",
     },
