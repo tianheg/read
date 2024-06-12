@@ -272,4 +272,69 @@ console.log 是一个函数，console 是一个对象，console 对象的属性�
 
 ### Return values
 
- 
+JS 中的表达式会返回值。这意味着在更大的表达式中可以调用函数，获取函数的返回值。
+
+### Control flow
+
+顺序执行函数
+
+```js
+let theNumber = Number(prompt("Pick a number"));
+console.log("Your number is the square root of " +
+            theNumber * theNumber);
+```
+
+### Conditional execution
+
+条件执行流：满足条件 a，执行 a 后续的语句；满足条件 b，执行 b 后续的语句。
+
+```js
+let theNumber = Number(prompt("Pick a number"));
+if (!Number.isNaN(theNumber)) {
+  console.log("Your number is the square root of " +
+              theNumber * theNumber);
+}
+```
+
+上述例子中，使用了 `{}` 包裹了 if 条件满足的语句。这是一个块儿。只要后面的语句不是只有一个，都需要 `{}`。
+
+if 和 else 是一对，经常配合使用。
+
+```js
+let a = 1, b = 2;
+
+if (a > b) {
+  console.log('a > b');
+} else {
+  console.log('a < b');
+}
+```
+
+还可以有多个 if。
+
+```js
+let a = 1, b = 2;
+
+if (a > b) {
+  console.log('a > b');
+} else if (a == b) {
+  console.log('a == b');
+} else {
+  console.log('a < b');
+}
+```
+
+### While and do loops
+
+循环，就是重复执行一段代码多次。
+
+### Indenting code
+
+缩进是为了方便人类阅读。约定一致的的缩进规则，方便团队协作。
+
+### For loops
+
+For 循环是简化版本的 while 。
+
+### Breaking out of a loop
+
