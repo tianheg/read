@@ -35,6 +35,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
+- [Techno Feudalism](/techno-feudalism)
 - [永生的操练](/divine-comedy-comment-by-canxue)
 - [神曲](/divine-comedy)
 - [:+1::+1::+1::+1::+1:The Little Prince](/the-little-prince)
