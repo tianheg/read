@@ -116,6 +116,10 @@ const sidebar = {
   ],
   "/non-book/": [
     {
+      text: "全面理解机器智能与生成式AI加速的新工业革命",
+      link: "/non-book/understanding-genai-and-the-new-industrial-revolution",
+    },
+    {
       text: "Hacker News Guidelines",
       link: "/non-book/hacker-news-guidelines",
     },
