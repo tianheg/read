@@ -22,7 +22,7 @@ https://eloquentjavascript.net/
 
 学习是困难的，但所有你学到的都成为了你的一部分，你会发现往深处学习会变得更容易。
 
-> The skill of programming is the skill of building programs that don’t confuse the programmer.
+> The skill of programming is the skill of building programs that don't confuse the programmer.
 
 > The best programs are those that manage to do something interesting while still being easy to understand.
 
