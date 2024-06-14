@@ -8,7 +8,7 @@ https://eloquentjavascript.net/
 
 ## Introduction
 
-> We think we are creating the system for our own purposes. We believe we are making it in our own image... But the computer is not really like us. It is a projection of a very slim part of ourselves: that portion devoted to logic, order, ruls, and clarity.
+> We think we are creating the system for our own purposes. We believe we are making it in our own image... But the computer is not really like us. It is a projection of a very slim part of ourselves: that portion devoted to logic, order, rule, and clarity.
 
 “我们”以自己的形象制造计算机，但计算机和我们相比，只是我们性格中，特定于逻辑、秩序、规则和明晰的那一部分。
 
