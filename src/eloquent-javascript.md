@@ -183,7 +183,7 @@ undefined && 100 // undefined
 
 > short-circuit evaluation:
 >
-> The part to their right is evaluated only when necessary. In the case of true || X, no matter what X is—even if it’s a piece of program that does something terrible—the result will be true, and X is never evaluated. The same goes for false && X, which is false and will ignore X.
+> The part to their right is evaluated only when necessary. In the case of true || X, no matter what X is—even if it's a piece of program that does something terrible—the result will be true, and X is never evaluated. The same goes for false && X, which is false and will ignore X.
 
 ### Summary
 
