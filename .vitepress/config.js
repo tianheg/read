@@ -116,6 +116,10 @@ const sidebar = {
   ],
   "/non-book/": [
     {
+      text: "Art is useless, and so am I",
+      link: "/non-book/art-is-usefull-so-am-i",
+    },
+    {
       text: "全面理解机器智能与生成式AI加速的新工业革命",
       link: "/non-book/understanding-genai-and-the-new-industrial-revolution",
     },
