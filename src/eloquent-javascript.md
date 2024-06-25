@@ -338,3 +338,343 @@ For 循环是简化版本的 while 。
 
 ### Breaking out of a loop
 
+`break` 用于中断循环
+
+### Updating bindings succinctly
+
+```js
+counter = counter + 1
+counter += 1
+```
+
+Other: `-=`, `*=`.
+
+For `counter += 1`, shorter version `counter++`.
+
+For `counter -= 1`, shorter version `counter--`.
+
+Note the diff between `counter++` and `++counter`: `counter++` first returns the current value of counter and then increments it, while `++counter` first increments `counter` and then returns the updated value.
+
+### Dispatching on a value with switch
+
+```js
+switch (prompt("Which book do you like the most?")) {
+  case "寻找家园":
+    console.log("体会到作者真挚的情感")
+    break
+  case "一九八四":
+    console.log("这是一部恐怖小说")
+    break
+  default:
+    console.log("最近没看书")
+    break
+}
+```
+
+### Capitalization
+
+```txt
+fuzzylittleturtle
+fuzzy_little_turtle
+FuzzyLittleTurtle
+fuzzyLittleTurtle
+```
+
+为了方便阅读代码，需要在定义变量的形式上下工夫，以上四种变量形式以最后一种最清晰易读。
+
+### Comments
+
+```js
+// 一个加法函数
+function add(a, b) {
+  return a + b
+}
+/*
+  以上函数的作用：做加法运算
+*/
+```
+
+### Summary总结
+
+一个程序由表达式组成的语句构成，里面有变量、函数、不同执行顺序。
+
+### Exercises
+
+Looping a triangle
+
+https://chatgpt.com/share/a5aa0adf-b394-402a-b62d-3e91ab410592
+
+The answer is so simple, love it!
+
+```js
+for (let line = "#"; line.length < 8; line += "#")
+  console.log(line)
+```
+
+
+FizzBuzz
+
+https://chatgpt.com/share/35526df4-79d2-42fb-9b3c-9d4baa6cd4c8
+
+```js
+
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    console.log('FizzBuzz')
+  }
+  else if (i % 3 == 0) console.log('Fizz')
+  else if (i % 5 == 0) {
+    console.log('Buzz')
+  }
+  else {console.log(i)}
+}
+```
+
+ChessBoard
+
+https://chatgpt.com/share/0500dcc7-9608-4f2b-af8e-0fa2b37cd47f
+
+```js
+const size = 8;
+let output = "";
+for (let i = 0; i < size; i++) {
+  if (i % 2 == 0) {
+    for (let j = 0; j < size; j++) {
+      if (j % 2 == 0) {
+        output += "_";
+      } else {
+        output += "#";
+      }
+    }
+  } else {
+    for (let j = 0; j < size; j++) {
+      if (j % 2 == 0) {
+        output += "#";
+      } else {
+        output += "_";
+      }
+    }
+  }
+  output += "\n";
+}
+console.log(output);
+```
+
+Refactored code:
+
+```js
+const size = 8;
+let output = '';
+
+for (let i = 0; i < size; i++) {
+  for (let j = 0; j < size; j++) {
+    output += (i + j) % 2 === 0 ? '_' : '#';
+  }
+  output += '\n';
+}
+
+console.log(output);
+```
+
+## Functions
+
+> People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.
+>
+> --Donald Knuth
+
+计算机科学不是天才们的艺术玩物，而是一代代人共同积累的结果。
+
+### Defining a function
+
+- 表达式
+- function 关键字
+
+```js
+const square = function (x) {
+  return x * x;
+}
+```
+
+用这种方式定义函数，大括号不能省略。
+
+有的函数通过 return 返回值，有的则不然。如下代码，有输出但只是 log，这是这个函数的“副作用”。
+
+```js
+const makeNoise = function() {
+  console.log('Pling!')
+}
+```
+
+在函数中如果有 return 但其后没有表达式，或者没有 return。其最终输出 undefined。
+
+```js
+function returnTest() {
+  return
+}
+console.log(returnTest())
+```
+
+### Bindings and scopes
+
+变量所在的作用域。
+
+- 全局作用域
+- 块级作用域
+- 函数作用域
+
+> Bindings created for function parameters or declared inside a function can be referenced only in that function, so they are known as local bindings. Every time the function is called, new instances of these bindings are created.
+
+每次的函数调用会新建一个局部绑定环境。
+
+使用 let/const 声明的变量，对这个块来说，是局部的。比如在一个循环块中声明变量，在块的外部是无法访问的。
+
+访问不同名变量时，从局部作用域向全局作用域寻找；但如果**全局作用域和局部作用域都定义了同一个变量，在局部作用域中优先使用局部作用域中定义的变量**。
+
+### Nested scope
+
+> Each local scope can also see all the local scopes that contain it, and all scopes can see the global scope. This approach to binding visibility is called *lexical scoping*.
+
+```js
+const getAge = function (person) {
+  const who = function (somebody) {
+    if (somebody == person) { return 21 }
+  }
+  console.log(who(person))
+}
+```
+
+### Functions as values
+
+```js
+// Assigning a function to a variable
+const add = function(a, b) {
+    return a + b;
+};
+
+// Passing a function as an argument
+const operate = function(func, a, b) {
+    return func(a, b);
+};
+
+// Returning a function from a function
+const createMultiplier = function(factor) {
+    return function(x) {
+        return x * factor;
+    };
+};
+
+const multiplyBy3 = createMultiplier(3);
+console.log(multiplyBy3(4)); // Output: 12
+
+// Using an anonymous function
+console.log(operate(function(a, b) { return a * b; }, 5, 2)); // Output: 10
+```
+
+### Declaration notation
+
+使用 function 声明函数时，函数定义可以在后面，调用函数在前。
+
+```js
+console.log(add(1, 2))
+
+function add(a, b) {
+  return a + b;
+}
+```
+
+### Arrow functions
+
+```js
+const roundTo = (n, step) => {
+  let remainder = n % step;
+  return n - remainder + (remainder < step / 2 ? 0 : step);
+};
+
+console.log(roundTo(1, 2))
+```
+
+```js
+const square1 = (x) => { return x * x; };
+const square2 = x => x * x;
+```
+
+```js
+const horn = () => {
+  console.log("Toot");
+};
+```
+
+### The call stack
+
+> The place where the computer stores this context is the call stack. Every time a function is called, the current context is stored on top of this stack. When a function returns, it removes the top context from the stack and uses that context to continue execution.
+
+调用栈：在程序运行时，遵循的是从上到下的执行顺序，但如果遇到函数，情况稍有不同。
+
+在顺序执行过程中遇到函数时，计算机会寻找函数定义的位置，对函数内部的内容进行顺序执行。执行时，把寻找函数的过程（也就是 context 上下文）通过一种特别设计的数据结构（stack 栈）存储起来。这样在当前函数执行完毕时，能够根据该调用栈找到来时的路。
+
+```js
+function chicken() {
+  return egg();
+}
+function egg() {
+  return chicken();
+}
+console.log(chicken() + " came first.");
+// Output: Uncaught InternalError: too much recursion
+```
+
+### Optional Arguments
+
+定义函数时，只有一个参数，但调用时输入了多余参数，这些参数会被自动忽略；如果输入的参数数目少于定义函数时要求的参数，未定义的参数的值就是 undefined。
+
+这样做（输入多余参数/少输入参数）有坏有好，坏处是不容易发现参数数目不正确，好处是可以通过参数数目控制函数的输出结果。
+
+```js
+function minus(a, b) {
+  if (b === undefined) return -a;
+  else return a - b;
+}
+
+console.log(minus(10));
+console.log(minus(10, 5));
+```
+
+### Closure
+
+> what happens to local bindings when the function call that created them is no longer active?
+
+```js
+function wrapValue(n) {
+  let local = n
+  
+  return () => local
+}
+
+let wrap1 = wrapValue(1)
+let wrap2 = wrapValue(2)
+console.log(wrap1())
+console.log(wrap2())
+```
+
+每次调用函数都会创建一个全新的环境，函数中的本地绑定在函数调用之间是互不影响的。
+
+> Closure: being able to reference a specific instance of a local binding in an enclosing scope
+>
+> A closure: a function that references bindings from local scopes around it
+
+下面这个函数一眼没看懂：
+
+```js
+function multiplier(factor) {
+  return number => number * factor;
+}
+
+let twice = multiplier(2)
+console.log(twice(5))
+```
+
+闭包允许内部函数访问外部函数的变量，即使外部函数已经执行结束了。在这段代码中，因为箭头函数和外部函数形成了闭包，所以 factor 参数的值被保留了下来，以后每次调用返回的函数（例如 twice）时，箭头函数仍然可以访问和使用这个保留下来的值。
+
+闭包的特性：
+
+当我调用一个闭包函数时，继承了函数定义时的内部环境（变量和上下文），所以才能在外部访问局部变量，并得出返回值。
