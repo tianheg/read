@@ -116,6 +116,10 @@ const sidebar = {
   ],
   "/non-book/": [
     {
+      text: "Building Programmable Web Sites",
+      link: "/non-book/building-programmable-web-sites",
+    },
+    {
       text: "Art is useless, and so am I",
       link: "/non-book/art-is-usefull-so-am-i",
     },
