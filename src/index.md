@@ -126,7 +126,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [读写人-文学](http://www.duxieren.com/)
 - [书格](https://www.shuge.org/)
 - [Z-Library Official Telegram Channel](https://t.me/zlibrary_official)
-- [Anna’s Archive](https://annas-archive.org/)
+- [Anna’s Archive](https://annas-archive.gs/)
 - [图灵](https://www.ituring.com.cn/)
 
 ### 外文书籍网站
