@@ -678,3 +678,7 @@ console.log(twice(5))
 闭包的特性：
 
 当我调用一个闭包函数时，继承了函数定义时的内部环境（变量和上下文），所以才能在外部访问局部变量，并得出返回值。
+
+### Recursion
+
+> The dilemma of speed versus elegance is an interesting one. You can see it as a kind of continuum between human-friendliness and machine-friendliness. Almost any program can be made faster by making it bigger and more convoluted. The programmer has to find an appropriate balance.
