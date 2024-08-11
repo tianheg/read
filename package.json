@@ -14,10 +14,10 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8",
     "pagefind": "^1.1.0",
-    "vitepress": "^1.2.3",
-    "vitepress-plugin-pagefind": "^0.4.5"
+    "vitepress": "^1.3.2",
+    "vitepress-plugin-pagefind": "^0.4.10"
   }
 }
