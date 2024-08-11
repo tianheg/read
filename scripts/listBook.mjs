@@ -1,12 +1,14 @@
-import fs from "fs/promises";
+import fs from "node:fs/promises";
 import config from "../.vitepress/config.js";
 
 (async () => {
   try {
     const bookList = config.themeConfig.sidebar["/"]
       .map(
-        ({ text, link, score }) =>
-          `- [${":+1:".repeat(score)}${text}](${link})`,
+        ({ text, items }) =>
+          `- ${text}\n${items ? items.map(({ text, link, score }) => `  - [${":+1:".repeat(score)}${text}](${link})`).join("\n") : ""}`,
+        // ({ text, link, score }) =>
+        //   `- [${":+1:".repeat(score)}${text}](${link})`,
       )
       .join("\n");
 
