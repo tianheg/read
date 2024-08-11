@@ -1,4 +1,36 @@
 /* .vitepress/theme/custom.css */
-html, body {
+:root {
+  --vp-nav-bg-color: transparent;
+}
+
+body {
   font-size: 18px;
+}
+
+html:not(.dark) {
+  body {
+    background: url("/flowers-with-cream-paper.webp");
+  }
+
+  /* NavBar */
+  .VPNavBar {
+    .divider {
+      display: none;
+    }
+  }
+
+  /* SideBar */
+  .VPSidebar {
+    background: url("/flowers-with-cream-paper.webp");
+
+    .curtain {
+      background: transparent;
+    }
+  }
+
+  .VPDoc .aside {
+    .aside-curtain {
+      background: transparent;
+    }
+  }
 }
