@@ -39,6 +39,10 @@ const sidebar = {
         { text: "MAKE：独立创客手册", link: "/make-the-indie-maker-handbook" },
         { text: "操作系统概念", link: "/operating-system-concepts" },
         { text: "操作系统导论", link: "/operating-system-three-easy-pieces" },
+        {
+          text: "Linux C编程一站式学习",
+          link: "/linux-and-c",
+        },
       ],
     },
     {

@@ -50,6 +50,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
   - [MAKE：独立创客手册](/make-the-indie-maker-handbook)
   - [操作系统概念](/operating-system-concepts)
   - [操作系统导论](/operating-system-three-easy-pieces)
+  - [Linux C编程一站式学习](/linux-and-c)
 - 人物传记+随笔
   - [创新者](/the-innovators)
   - [亲爱的三毛](/qinaide-sanmao)
