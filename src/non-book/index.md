@@ -9,17 +9,18 @@
 ## Non-book index
 
 <!-- index start -->
-1. [:star: Building Programmable Web Sites](/non-book/building-programmable-web-sites)
-2. [:star: Art is useless, and so am I](/non-book/art-is-usefull-so-am-i)
-3. [:star: 全面理解机器智能与生成式AI加速的新工业革命](/non-book/understanding-genai-and-the-new-industrial-revolution)
-4. [:star: Hacker News Guidelines](/non-book/hacker-news-guidelines)
-5. [:star: 王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
-6. [:star: So you sucks, now what?](/non-book/so-you-sucks-now-what)
-7. [:star: You're a shit](/non-book/you-re-a-shit)
-8. [:star: How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
-9. [:star: Write for others but mostly for yourself](/non-book/write-for-others-but-mostly-for-yourself)
-10. [:star: Let's learn how modern JavaScript frameworks work by building one](/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one)
-11. [:star: History of Psychology](/non-book/history-of-psychology)
+1. [:star: 张云帆与芒格](/non-book/zhang-yunfan-and-munger)
+2. [:star: Building Programmable Web Sites](/non-book/building-programmable-web-sites)
+3. [:star: Art is useless, and so am I](/non-book/art-is-usefull-so-am-i)
+4. [:star: 全面理解机器智能与生成式AI加速的新工业革命](/non-book/understanding-genai-and-the-new-industrial-revolution)
+5. [:star: Hacker News Guidelines](/non-book/hacker-news-guidelines)
+6. [:star: 王小伟：一个哲学视角的日常审查](/non-book/wang-xiaowei-zhexue-richang-shencha)
+7. [:star: So you sucks, now what?](/non-book/so-you-sucks-now-what)
+8. [:star: You're a shit](/non-book/you-re-a-shit)
+9. [:star: How To Learn Stuff Quickly](/non-book/how-to-learn-stuff-quickly)
+10. [:star: Write for others but mostly for yourself](/non-book/write-for-others-but-mostly-for-yourself)
+11. [:star: Let's learn how modern JavaScript frameworks work by building one](/non-book/lets-learn-how-modern-javascript-frameworks-work-by-building-one)
+12. [:star: History of Psychology](/non-book/history-of-psychology)
 <!-- index end -->
 
 ## TODO

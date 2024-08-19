@@ -145,6 +145,10 @@ const sidebar = {
   ],
   "/non-book/": [
     {
+      text: "张云帆与芒格",
+      link: "/non-book/zhang-yunfan-and-munger",
+    },
+    {
       text: "Building Programmable Web Sites",
       link: "/non-book/building-programmable-web-sites",
     },
