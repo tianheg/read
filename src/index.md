@@ -36,7 +36,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 -->
 
 <!-- index start -->
-- 软件开发+计算机科学
+- 软硬开发+计算机科学
   - [:+1::+1::+1::+1::+1:Eloquent JavaScript](/eloquent-javascript)
   - [RESTful Best Practices](/restful-best-practices)
   - [Refactoring UI](/refactoring-ui)
@@ -51,6 +51,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
   - [操作系统概念](/operating-system-concepts)
   - [操作系统导论](/operating-system-three-easy-pieces)
   - [Linux C编程一站式学习](/linux-and-c)
+  - [电子元器件从入门到精通](/dianzi-yuanqijian-rumen-dao-jingtong)
 - 人物传记+随笔
   - [创新者](/the-innovators)
   - [亲爱的三毛](/qinaide-sanmao)
@@ -83,6 +84,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
   - [社会心理学](/social-psychology)
   - [极简个性心理学](/making-sence-of-people)
   - [你的第一本哲学书](/what-does-it-all-mean)
+  - [爱的艺术](/art-of-loving)
 - 自我成长+健康
   - [:+1::+1::+1::+1::+1:你是你吃出来的](/ni-shini-chichulai-de)
   - [:+1::+1::+1::+1::+1:癌症密码](/cancer-code)

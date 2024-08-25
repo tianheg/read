@@ -1,7 +1,7 @@
 const sidebar = {
   "/": [
     {
-      text: "软件开发+计算机科学",
+      text: "软硬开发+计算机科学",
       collapsed: true,
       items: [
         { text: "Eloquent JavaScript", link: "/eloquent-javascript", score: 5 },
@@ -36,6 +36,10 @@ const sidebar = {
         {
           text: "Linux C编程一站式学习",
           link: "/linux-and-c",
+        },
+        {
+          text: "电子元器件从入门到精通",
+          link: "/dianzi-yuanqijian-rumen-dao-jingtong",
         },
       ],
     },
