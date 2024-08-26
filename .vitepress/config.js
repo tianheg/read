@@ -3,7 +3,7 @@ import {
   chineseSearchOptimize,
   pagefindPlugin,
 } from "vitepress-plugin-pagefind";
-import sidebar from "./sidebar.js";
+import { sidebarBook, sidebarNonBook } from "./sidebar.js";
 
 export default defineConfig({
   title: "书Book",
@@ -26,7 +26,10 @@ export default defineConfig({
       { text: "Book", link: "/" },
       { text: "Non-book", link: "/non-book/", activeMatch: "/non-book/" },
     ],
-    sidebar: sidebar,
+    sidebar: {
+      "/": { base: "/", items: sidebarBook() },
+      "/non-book/": { base: "/non-book/", items: sidebarNonBook() },
+    },
     editLink: {
       pattern: "https://github.com/tianheg/read/edit/main/src/:path",
       text: "Edit page",
@@ -46,15 +49,17 @@ export default defineConfig({
 });
 
 function todaysReview() {
-  const keys = Object.keys(sidebar);
-  const randomKey = keys[Math.floor(Math.random() * keys.length)];
-  const randomIndex = Math.floor(Math.random() * sidebar[randomKey].length);
-  const randomItem = sidebar[randomKey][randomIndex];
+  const books = [...sidebarBook()].flatMap(({ items }) => items);
+  const nonBooks = [...sidebarNonBook()];
+  const all = [...books, ...nonBooks];
 
-  if (randomItem) {
-    return {
-      text: randomItem.text,
-      link: randomItem.link,
-    };
-  }
+  return {
+    text: getRandomItem(all).text,
+    link: getRandomItem(all).link,
+  };
+}
+
+function getRandomItem(items) {
+  const randomIndex = Math.floor(Math.random() * items.length);
+  return items[randomIndex];
 }
