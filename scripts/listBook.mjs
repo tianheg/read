@@ -1,9 +1,9 @@
 import fs from "node:fs/promises";
-import config from "../.vitepress/config.js";
+import { sidebarBook } from "../.vitepress/sidebar";
 
 (async () => {
   try {
-    const bookList = config.themeConfig.sidebar["/"]
+    const bookList = sidebarBook()
       .map(
         ({ text, items }) =>
           `- ${text}\n${items ? items.map(({ text, link, score }) => `  - [${":+1:".repeat(score)}${text}](${link})`).join("\n") : ""}`,

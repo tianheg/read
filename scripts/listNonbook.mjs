@@ -1,9 +1,9 @@
 import fs from "node:fs/promises";
-import config from "../.vitepress/config.js";
+import { sidebarNonBook } from "../.vitepress/sidebar";
 
 (async () => {
   try {
-    const nonBookList = config.themeConfig.sidebar["/non-book/"]
+    const nonBookList = sidebarNonBook()
       .map(
         ({ text, link }, index) =>
           // emojis https://www.emojitell.com/
