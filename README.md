@@ -3,7 +3,7 @@
 ## TODO
 
 - 为读的每本书添加序号，但如果将来想删除某本书岂不是要重新排序？
-- 一个构建错误，log：
+- [SOLVED] by ([a190683](https://github.com/tianheg/read/commit/a190683848a75a4a451be7904cf699b136123ee5)) ~一个构建错误~，log：
 
 ```log
 ✓ building client + server bundles...
