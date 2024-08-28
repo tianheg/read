@@ -1,11 +1,5 @@
 # 书帮助我思考 | book help me think
 
-To those who speak English:
-
-If you have difficulty reading Chinese, you can use [Immersive Translate(沉浸式翻译)](https://immersivetranslate.com/?via=tianheg) to translate from Chinese to English in order to partially understand my Chinese notes. Welcome to learn Chinese, I am happy to help you([contact](https://tianheg.co/msg/)).
-
----
-
 ![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.avif)
 ![How Much You Learn](/how-much-you-learn.webp)
 
