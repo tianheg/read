@@ -95,6 +95,7 @@ export function sidebarBook() {
         { text: "极简个性心理学", link: "making-sence-of-people" },
         { text: "你的第一本哲学书", link: "what-does-it-all-mean" },
         { text: "爱的艺术", link: "art-of-loving" },
+        { text: "福格行为模型", link: "tiny-habits" },
       ],
     },
     {
