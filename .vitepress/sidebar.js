@@ -41,6 +41,10 @@ export function sidebarBook() {
           text: "电子元器件从入门到精通",
           link: "dianzi-yuanqijian-rumen-dao-jingtong",
         },
+        {
+          text: "Accelerating Server-Side Development with Fastify",
+          link: "accelerating-server-side-development-with-fastify",
+        },
       ],
     },
     {
