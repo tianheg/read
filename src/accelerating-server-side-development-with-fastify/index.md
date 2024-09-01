@@ -27,6 +27,12 @@ Reply = http.ServerResponse
 
 ![](./fastify-app-lifecycle.png)
 
+app.server getter return http.Server or https.Server
+
+app.log return app logger
+
+app.initialConfig
+
 ## The Plugin System and the Boot Process
 
 ## Working with Routes
