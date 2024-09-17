@@ -1,36 +1,46 @@
 /* .vitepress/theme/custom.css */
+
 :root {
-  --vp-nav-bg-color: transparent;
+  --vp-font-family-base: "仓耳今楷", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
   font-size: 18px;
 }
 
-html:not(.dark) {
-  body {
-    background: url("/flowers-with-cream-paper.webp");
-  }
-
-  /* NavBar */
-  .VPNavBar {
-    .divider {
-      display: none;
-    }
-  }
-
-  /* SideBar */
-  .VPSidebar {
-    background: url("/flowers-with-cream-paper.webp");
-
-    .curtain {
-      background: transparent;
-    }
-  }
-
-  .VPDoc .aside {
-    .aside-curtain {
-      background: transparent;
-    }
-  }
+/* Fonts */
+@font-face {
+  font-family: 仓耳今楷;
+  src: url('/fonts/仓耳今楷03-W03.woff2') format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 仓耳今楷;
+  src: url('/fonts/仓耳今楷03-W04.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 仓耳今楷;
+  src: url('/fonts/仓耳今楷03-W05.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: Chinese Quotes;
+  src: local("PingFang SC Regular"),
+    local("PingFang SC"),
+    local("SimHei"),
+    local("Source Han Sans SC");
+  unicode-range: U+2018,
+    U+2019,
+    U+201C,
+    U+201D
+} */
