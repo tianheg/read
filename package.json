@@ -11,12 +11,12 @@
   "lint-staged": {
     ".vitepress/**/*.{js,css}": "biome check --write .",
     "scripts/*.mjs": "biome check --write ."
-  },    
+  },
   "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
-    "pagefind": "^1.1.0",
+    "@biomejs/biome": "^1.9.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "pagefind": "^1.1.1",
     "vitepress": "^1.3.4",
     "vitepress-plugin-pagefind": "^0.4.10"
   }
