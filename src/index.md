@@ -3,14 +3,6 @@
 ![Close up photography of book by Rhema Kallianpur](/rhema-kallianpur-2W3bDp7K1oQ-unsplash.avif)
 ![How Much You Learn](/how-much-you-learn.webp)
 
-> 不能改变我思想的书不需要记笔记
->
-> 改变思想定义：让我做出积极改变
->
-> 博客不记不是自己的话产出的内容
->
-> 阅读的目的：打开更多元的感官
-
 ## 备忘
 
 - 书籍文件命名：中国人写的书用拼音，其他书用英文
