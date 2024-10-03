@@ -52,10 +52,11 @@ function todaysReview() {
   const books = [...sidebarBook()].flatMap(({ items }) => items);
   const nonBooks = [...sidebarNonBook()];
   const all = [...books, ...nonBooks];
+  const randomItem = getRandomItem(all);
 
   return {
-    text: getRandomItem(all).text,
-    link: getRandomItem(all).link,
+    text: randomItem.text,
+    link: randomItem.link,
   };
 }
 
