@@ -1,8 +1,4 @@
 import { defineConfig } from "vitepress";
-import {
-  chineseSearchOptimize,
-  pagefindPlugin,
-} from "vitepress-plugin-pagefind";
 import { sidebarBook, sidebarNonBook } from "./sidebar.js";
 
 export default defineConfig({
@@ -26,6 +22,9 @@ export default defineConfig({
       { text: "Book", link: "/" },
       { text: "Non-book", link: "/non-book/", activeMatch: "/non-book/" },
     ],
+    search: {
+      provider: "local",
+    },
     sidebar: {
       "/": { base: "/", items: sidebarBook() },
       "/non-book/": { base: "/non-book/", items: sidebarNonBook() },
@@ -34,17 +33,6 @@ export default defineConfig({
       pattern: "https://github.com/tianheg/read/edit/main/src/:path",
       text: "Edit page",
     },
-  },
-  vite: {
-    plugins: [
-      pagefindPlugin({
-        btnPlaceholder: "搜索",
-        placeholder: "搜索文档",
-        emptyText: "空空如也",
-        heading: "共: {{searchResult}} 条结果",
-        customSearchQuery: chineseSearchOptimize,
-      }),
-    ],
   },
 });
 
