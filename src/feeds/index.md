@@ -1,0 +1,3 @@
+# Random Feed
+
+<SingleFeed />
