@@ -21,12 +21,13 @@ export default defineConfig({
       todaysReview(),
       { text: "Book", link: "/" },
       { text: "Non-book", link: "/non-book/", activeMatch: "/non-book/" },
+      { text: "Feeds", link: "/feeds/" },
     ],
     search: {
       provider: "local",
     },
     sidebar: {
-      "/": { base: "/", items: sidebarBook() },
+      "^(?!/feeds$).*": { base: "/", items: sidebarBook() },
       "/non-book/": { base: "/non-book/", items: sidebarNonBook() },
     },
     editLink: {
@@ -56,7 +57,7 @@ function todaysReview() {
 
   return {
     text: randomItem.text,
-    link: link,
+    link: randomItem.link,
   };
 }
 
