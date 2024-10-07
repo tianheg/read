@@ -37,14 +37,26 @@ export default defineConfig({
 });
 
 function todaysReview() {
-  const books = [...sidebarBook()].flatMap(({ items }) => items);
-  const nonBooks = [...sidebarNonBook()];
-  const all = [...books, ...nonBooks];
-  const randomItem = getRandomItem(all);
+  const today = new Date();
+  const dateNum = today.getDate();
+
+  let randomItem;
+
+  if (dateNum % 2 === 0) {
+    const books = [...sidebarBook()].flatMap(({ items }) => items);
+    randomItem = getRandomItem(books);
+  } else {
+    const nonBooks = [...sidebarNonBook()];
+    randomItem = getRandomItem(nonBooks);
+    return {
+      text: randomItem.text,
+      link: `/non-book/${randomItem.link}`,
+    };
+  }
 
   return {
     text: randomItem.text,
-    link: randomItem.link,
+    link: link,
   };
 }
 
