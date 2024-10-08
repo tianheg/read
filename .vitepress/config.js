@@ -27,7 +27,7 @@ export default defineConfig({
       provider: "local",
     },
     sidebar: {
-      "^(?!/feeds$).*": { base: "/", items: sidebarBook() },
+      "/": { base: "/", items: sidebarBook() },
       "/non-book/": { base: "/non-book/", items: sidebarNonBook() },
     },
     editLink: {
