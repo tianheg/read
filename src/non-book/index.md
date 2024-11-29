@@ -23,8 +23,10 @@
 12. [:star: History of Psychology](history-of-psychology)
 <!-- index end -->
 
-## TODO
+## Articles want to keep
 
+- 为什么善良可以解决一切事情？https://manateelazycat.github.io/2024/10/22/why-kindness-solve-everything/
+- 年轻人的技术选型 https://manateelazycat.github.io/2024/11/16/find-right-tech/
 - https://1byte.io/articles/luck/
 - 思维模型
   - https://s75w5y7vut.feishu.cn/docs/doccn3BatnScBJe7wD7K3S5poFf 认知偏差知识手册
