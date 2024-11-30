@@ -21,7 +21,6 @@ export default defineConfig({
       todaysReview(),
       { text: "Book", link: "/" },
       { text: "Non-book", link: "/non-book/", activeMatch: "/non-book/" },
-      { text: "Feeds", link: "/feeds/" },
     ],
     search: {
       provider: "local",
