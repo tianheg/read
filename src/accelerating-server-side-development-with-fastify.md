@@ -25,7 +25,7 @@ Reply = http.ServerResponse
 
 如果不需要进行一些异步操作（文件读写、数据库读取写入）的话，用回调方式能够提高一些性能。
 
-![](./fastify-app-lifecycle.png)
+![](/fastify-app-lifecycle.png)
 
 app.server getter return http.Server or https.Server
 
