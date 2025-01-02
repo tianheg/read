@@ -1,5 +1,5 @@
 import fs from "node:fs/promises";
-import { sidebarBook } from "../.vitepress/sidebar";
+import { sidebarBook } from "../.vitepress/sidebar.js";
 
 (async () => {
   try {
