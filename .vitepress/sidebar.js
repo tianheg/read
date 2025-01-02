@@ -3,7 +3,10 @@ export function sidebarBook() {
     {
       text: "2025",
       collapsed: false,
-      items: [{ text: "少年歌行", link: "shaonian-gexing" }],
+      items: [
+        { text: "少年歌行", link: "shaonian-gexing" },
+        { text: "支付战争", link: "paypal-wars" },
+      ],
     },
     {
       text: "2024",
