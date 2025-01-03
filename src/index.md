@@ -24,6 +24,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 <!-- index start -->
 - 2025
   - [少年歌行](shaonian-gexing)
+  - [支付战争](paypal-wars)
 - 2024
   - [:+1::+1::+1::+1::+1:Eloquent JavaScript](eloquent-javascript)
   - [RESTful Best Practices](restful-best-practices)
