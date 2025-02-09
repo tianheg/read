@@ -49,13 +49,13 @@ function todaysReview() {
     const nonBooks = [...sidebarNonBook()];
     randomItem = getRandomItem(nonBooks);
     return {
-      text: randomItem.text,
+      text: "随便看看",
       link: `/non-book/${randomItem.link}`,
     };
   }
 
   return {
-    text: randomItem.text,
+    text: "随便看看",
     link: randomItem.link,
   };
 }

@@ -1,4 +1,3 @@
-<!--.vitepress/theme/MyLayout.vue-->
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import { ref, onMounted, onUnmounted } from 'vue'

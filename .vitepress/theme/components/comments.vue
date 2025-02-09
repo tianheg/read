@@ -6,10 +6,8 @@ import Giscus from '@giscus/vue'
 const route = useRoute()
 const { isDark, frontmatter } = useData()
 
-// Match refer.vue's configuration style
 const theme = computed(() => isDark.value ? 'dark' : 'light')
 
-// Force reload on route change like refer.vue
 const showComment = ref(true)
 watch(
   () => route.path,
@@ -56,8 +54,6 @@ watch(
   transition: all 0.3s ease;
 }
 
-
-/* Giscus theme adaptation */
 :deep(.giscus, .giscus-frame) {
   width: 100%;
   min-height: 150px;
@@ -67,7 +63,6 @@ watch(
   background-color: transparent;
 }
 
-/* Mobile adaptation */
 @media (max-width: 768px) {
   .giscus-wrapper {
     margin: 1rem 0;
