@@ -6,6 +6,7 @@ export function sidebarBook() {
       items: [
         { text: "少年歌行", link: "shaonian-gexing" },
         { text: "支付战争", link: "paypal-wars" },
+        { text: "牧神记", link: "mu-shen-ji" },
       ],
     },
     {
