@@ -4,6 +4,7 @@ export function sidebarBook() {
       text: "2025",
       collapsed: false,
       items: [
+        { text: "逆流年代", link: "revolt" },
         { text: "少年歌行", link: "shaonian-gexing" },
         { text: "支付战争", link: "paypal-wars" },
         { text: "牧神记", link: "mu-shen-ji" },
