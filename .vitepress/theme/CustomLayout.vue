@@ -1,7 +1,7 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import { ref, onMounted, onUnmounted } from 'vue'
-import Comments from './components/comments.vue'
+// import Comments from './components/comments.vue'
 
 const { Layout } = DefaultTheme
 
@@ -26,9 +26,9 @@ onUnmounted(() => {
 
 <template>
   <Layout>
-    <template #doc-after>
+    <!-- <template #doc-after>
       <Comments />
-    </template>
+    </template> -->
     <template #aside-bottom>
       <div v-if="showGoToTop" class="go-to-top" @click="scrollToTop">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
