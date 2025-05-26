@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { sidebarBook, sidebarNonBook } from "./sidebar.js";
+import { sidebarBook } from "./sidebar.js";
 
 export default defineConfig({
   title: "书Book",
@@ -17,17 +17,12 @@ export default defineConfig({
 
   themeConfig: {
     outline: [2, 3],
-    nav: [
-      todaysReview(),
-      { text: "Book", link: "/" },
-      { text: "Non-book", link: "/non-book/", activeMatch: "/non-book/" },
-    ],
+    nav: [todaysReview()],
     search: {
       provider: "local",
     },
     sidebar: {
       "/": { base: "/", items: sidebarBook() },
-      "/non-book/": { base: "/non-book/", items: sidebarNonBook() },
     },
     editLink: {
       pattern: "https://github.com/tianheg/read/edit/main/src/:path",
@@ -37,23 +32,8 @@ export default defineConfig({
 });
 
 function todaysReview() {
-  const today = new Date();
-  const dateNum = today.getDate();
-
-  let randomItem;
-
-  if (dateNum % 2 === 0) {
-    const books = [...sidebarBook()].flatMap(({ items }) => items);
-    randomItem = getRandomItem(books);
-  } else {
-    const nonBooks = [...sidebarNonBook()];
-    randomItem = getRandomItem(nonBooks);
-    return {
-      text: "随便看看",
-      link: `/non-book/${randomItem.link}`,
-    };
-  }
-
+  const books = [...sidebarBook()].flatMap(({ items }) => items);
+  const randomItem = getRandomItem(books);
   return {
     text: "随便看看",
     link: randomItem.link,
