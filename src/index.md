@@ -23,8 +23,10 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 
 <!-- index start -->
 - 2025
+  - [逆流年代](revolt)
   - [少年歌行](shaonian-gexing)
   - [支付战争](paypal-wars)
+  - [牧神记](mu-shen-ji)
 - 2024
   - [:+1::+1::+1::+1::+1:Eloquent JavaScript](eloquent-javascript)
   - [RESTful Best Practices](restful-best-practices)
