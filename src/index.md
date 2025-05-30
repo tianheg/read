@@ -130,6 +130,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [Z-Library Official Telegram Channel](https://t.me/zlibrary_official)
 - [Anna’s Archive](https://annas-archive.gs/)
 - [图灵](https://www.ituring.com.cn/)
+- [可阅文学网](https://www.kepub.net/)
 
 ### 外文书籍网站
 
