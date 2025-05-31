@@ -131,17 +131,14 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - [Anna’s Archive](https://annas-archive.gs/)
 - [图灵](https://www.ituring.com.cn/)
 - [可阅文学网](https://www.kepub.net/)
+- [World Digital Library](https://www.loc.gov/collections/world-digital-library/about-this-collection/)
+- [Project Gutenberg](https://www.gutenberg.org/)
+- [manybooks](https://manybooks.net/)
+- [DigiLibraries.com - Free eBooks library](https://digilibraries.com/)
+- [MagazineLib](https://magazinelib.com/)
+- <https://libbyapp.com/>
 
-### 外文书籍网站
-
-1. [World Digital Library](https://www.loc.gov/collections/world-digital-library/about-this-collection/)
-2. [Project Gutenberg](https://www.gutenberg.org/)
-3. [manybooks](https://manybooks.net/)
-4. [DigiLibraries.com - Free eBooks library](https://digilibraries.com/)
-5. [MagazineLib](https://magazinelib.com/)
-6. <https://libbyapp.com/>
-
-### 网上书店
+## 网上书店
 
 1. [Amazon Kindle Books](https://www.amazon.com/kindle-dbs/storefront)
 2. [当当图书](https://book.dangdang.com/)
@@ -152,7 +149,7 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 7. [博库网](https://www.bookuu.com/)
 8. [商务印书馆](https://www.cp.com.cn/)
 
-### 找绝版书
+## 找绝版书
 
 <https://mp.weixin.qq.com/s/PNjMNmD6M8xcpNr3WnJltw>
 
@@ -161,18 +158,12 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 3. 联系出版社/作者（可以去「全国图书馆参考咨询联盟」搜书，在 *版权页* 找到联系方式；通过出版社的社交媒体；联系作者/译者购买样书）。更好的做法，是找到出版社仍在持续更新，明显有人在打理的社交媒体，然后留言。
 4. 图书馆借阅后复印/淘宝买影印版
 
-### 论文检索
-
-1. Sci-Hub <https://sci-hub.wf/> <https://sci-hub.ren/> <https://sci-hub.se/>
-2. <https://arxiv.org/archive/cs>
-
-### 读书媒介
+## 读书媒介
 
 - 微信读书
 - 在线网站
 - 纸质（不常读）
-
-::: details ~~Kindle~~（很久没用过了）
+- ::: details Kindle
 - [Kindle 退出中国市场后购买 Kindle 设备的四种渠道 – 书伴](https://bookfere.com/post/1010.html)
 - [Kindle 退出中国后如何继续购买电子书及使用推送服务 – 书伴](https://bookfere.com/post/985.html)
 - [Kindle 购买指南 – 书伴](https://bookfere.com/buy)
