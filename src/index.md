@@ -163,7 +163,9 @@ TODO https://web.archive.org/web/20231030155603/https://tianheg.co/readlist/
 - 微信读书
 - 在线网站
 - 纸质（不常读）
-- ::: details Kindle
+- Kindle
+
+::: details 关于Kindle
 - [Kindle 退出中国市场后购买 Kindle 设备的四种渠道 – 书伴](https://bookfere.com/post/1010.html)
 - [Kindle 退出中国后如何继续购买电子书及使用推送服务 – 书伴](https://bookfere.com/post/985.html)
 - [Kindle 购买指南 – 书伴](https://bookfere.com/buy)
